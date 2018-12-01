@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TrashZone;
 
 public class Grabber : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class Grabber : MonoBehaviour
 			print("Removing Joint");
 			go.GetComponent<FixedJoint2D>().connectedBody.bodyType = RigidbodyType2D.Static;
 			Destroy(go.GetComponent<FixedJoint2D>());
+			var trashZone = FindObjectOfType<TrashZoneBehaviour>();
+			if (trashZone != null) {
+				trashZone.CheckAndTakeOutTrash(go.GetComponent<FixedJoint2D>().connectedBody.transform);
+			}
 			return;
 		}
 		
