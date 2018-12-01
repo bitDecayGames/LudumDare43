@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="25" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="8">
+ <tileset firstgid="1" source="Zoria Tileset/water.tsx"/>
+ <tileset firstgid="229" source="Zoria Tileset/tiles.tsx"/>
+ <tileset firstgid="709" source="Zoria Tileset/scraps.tsx"/>
+ <tileset firstgid="1189" source="Zoria Tileset/overhead-objects.tsx"/>
+ <layer id="1" name="NotGround" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyLYGJgiATiKCA+SiQuBeIyHLgciA8yoOIKoNhMIK6isR2Vw8AOdEBrO4j1x1QgnoYDTwfiswyomJywAmFJoF4pIjG5dqgC9TISicm1w4gRggmZr0ZHf5CaB0HYEKi3Goe7qRVWMHuMcNiFyw4JUHrBg6VI9BO2sLKA2ocLW5HppwgmRLkLY+PCIDXFQByGA5cg2YWMAVxrt/Q=
+  </data>
+ </layer>
+ <layer id="5" name="NewLayer" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUkAKeMeHGw8GOUTA8AACkjBIh
+  </data>
+ </layer>
+ <layer id="2" name="Trim" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYEAATyYGvMALKO9NQA0hMFzs8Afq52ZE8DmhbC4obQCU16XQDnTAyYgp5ksDO9AxpXb4o+lH9wcnUphRYgcsPrih7obx1Zgw44dcO5ABtrCCYUrt4KbADGLsCADiD4y4MaUAlMcIYZhfKYkTQgA9znjJsIsfKR2BwCcg/gzFIPCeRmFIKQAAFKAZ9w==
+  </data>
+ </layer>
+ <layer id="3" name="Deco" width="25" height="15">
+  <data encoding="base64" compression="zlib">
+   eJzt1MkNQEAUgOFHC9qxU4adMiyxlKFMBfgPxFHChMv8yZd3meUyGZEr2xBx4MKDjwAhIsSGPM469ibMFBlyFChRoUbz4o6zljM69BiwmiIjc8KMRcEdm6I1Ot3X6Xd5n6Xgj/i7HY3ZDV0=
+  </data>
+ </layer>
+ <objectgroup id="4" name="OnGround">
+  <properties>
+   <property name="unity:sortingLayerName" value="OnGround"/>
+  </properties>
+  <object id="1" name="Pillar" gid="1189" x="87.3333" y="136" width="16" height="48"/>
+  <object id="2" name="Pillar (broken)" gid="1190" x="144" y="128" width="16" height="32"/>
+  <object id="3" name="Spawn" x="120" y="95.6667">
+   <properties>
+    <property name="test" value="ye"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+</map>
