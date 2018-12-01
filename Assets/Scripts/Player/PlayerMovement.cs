@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        var move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         move.Normalize();
         move.Scale(new Vector2(speed, speed));
 
