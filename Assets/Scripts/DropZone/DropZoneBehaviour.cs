@@ -51,6 +51,7 @@ namespace DropZone {
 			time = 0;
 			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
+			Shadow.transform.localScale = cargo.transform.localScale;
 		}
 
 		public void DropCargo() {
