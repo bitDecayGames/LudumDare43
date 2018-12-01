@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 66828981803334770}
   - component: {fileID: 61507387134928992}
   - component: {fileID: 61123565018120100}
+  - component: {fileID: 114671164583194210}
   m_Layer: 0
   m_Name: SCargo
   m_TagString: Untagged
@@ -162,6 +163,18 @@ CompositeCollider2D:
       - {x: -0.502056, y: -0.334704}
       - {x: 0.1769965, y: -0.334704}
   m_VertexDistance: 0.0005
+--- !u!114 &114671164583194210
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1788806769371370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!212 &212829583080129820
 SpriteRenderer:
   m_ObjectHideFlags: 1

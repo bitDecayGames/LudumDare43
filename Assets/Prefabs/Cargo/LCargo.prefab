@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 66204834408096226}
   - component: {fileID: 61747421200053296}
   - component: {fileID: 61895565881554344}
+  - component: {fileID: 114425983236918426}
   m_Layer: 0
   m_Name: LCargo
   m_TagString: Untagged
@@ -160,6 +161,18 @@ CompositeCollider2D:
       - {x: 0.334704, y: -0.502056}
       - {x: 0.334704, y: 0.502056}
   m_VertexDistance: 0.0005
+--- !u!114 &114425983236918426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1056799389585464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!212 &212344476521254262
 SpriteRenderer:
   m_ObjectHideFlags: 1
