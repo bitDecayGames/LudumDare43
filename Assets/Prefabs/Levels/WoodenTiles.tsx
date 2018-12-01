@@ -3,62 +3,62 @@
  <image source="../../Art/Tiles/Wooden.png" width="128" height="96"/>
  <tile id="3">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="10" y="0" width="6" height="16"/>
   </objectgroup>
  </tile>
  <tile id="4">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="10" y="0" width="6" height="16"/>
   </objectgroup>
  </tile>
  <tile id="5">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="7" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="6">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="7" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="7">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="7" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="8">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="6" height="16"/>
   </objectgroup>
  </tile>
  <tile id="9">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="6" height="16"/>
   </objectgroup>
  </tile>
  <tile id="10">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="11">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="12">
   <objectgroup draworder="index">
-   <object id="2" x="0" y="0" width="16" height="16"/>
+   <object id="2" x="0" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="15">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="0" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="16">
   <objectgroup draworder="index">
-   <object id="1" x="0" y="0" width="16" height="16"/>
+   <object id="1" x="7" y="0" width="9" height="16"/>
   </objectgroup>
  </tile>
  <tile id="17">

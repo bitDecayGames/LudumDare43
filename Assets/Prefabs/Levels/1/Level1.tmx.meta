@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: ae63a701a9e364145a9269b44339592e
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/Level1
+    100002: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (1)
+    100004: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (2)
+    100006: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (3)
+    100012: _MapPrfab/Level1/Water
+    100014: _MapPrfab/Level1/Water/Chunk (-16,-16)
+    100016: _MapPrfab/Level1/DumpZone
+    100018: _MapPrfab/Level1/Water/Chunk (-16,-32)
+    100020: _MapPrfab/Level1/Water/Chunk (-16,0)
+    100022: _MapPrfab/Level1/Water/Chunk (-32,-16)
+    100024: _MapPrfab/Level1/Water/Chunk (-32,-32)
+    100026: _MapPrfab/Level1/Water/Chunk (-32,0)
+    100028: _MapPrfab/Level1/Water/Chunk (0,-16)
+    100030: _MapPrfab/Level1/Water/Chunk (0,-32)
+    100032: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)
+    100034: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default
+    100036: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Polygon
+    100040: _MapPrfab/Level1/Water/Chunk (0,0)
+    100042: _MapPrfab/Level1/Water/Chunk (16,-16)
+    100056: _MapPrfab/Level1/Water/Chunk (16,-32)
+    100058: _MapPrfab/Level1/Water/Chunk (16,0)
+    100060: _MapPrfab/Level1/Boat
+    100062: _MapPrfab/Level1/Boat/Chunk (-16,-16)
+    100064: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default
+    100066: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon
+    100068: _MapPrfab/Level1/Boat/Chunk (-16,-32)
+    100070: _MapPrfab/Level1/Boat/Chunk (0,-16)
+    100072: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default
+    100074: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon
+    100076: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (1)
+    100078: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (2)
+    100080: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (3)
+    100082: _MapPrfab/Level1/Boat/Chunk (0,-32)
+    100084: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default
+    100086: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon
+    100088: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (1)
+    100090: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (2)
+    100092: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (3)
+    400000: _MapPrfab/Level1/Transform
+    400002: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (1)/Transform
+    400004: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (2)/Transform
+    400006: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (3)/Transform
+    400012: _MapPrfab/Level1/Water/Transform
+    400014: _MapPrfab/Level1/Water/Chunk (-16,-16)/Transform
+    400016: _MapPrfab/Level1/DumpZone/Transform
+    400018: _MapPrfab/Level1/Water/Chunk (-16,-32)/Transform
+    400020: _MapPrfab/Level1/Water/Chunk (-16,0)/Transform
+    400022: _MapPrfab/Level1/Water/Chunk (-32,-16)/Transform
+    400024: _MapPrfab/Level1/Water/Chunk (-32,-32)/Transform
+    400026: _MapPrfab/Level1/Water/Chunk (-32,0)/Transform
+    400028: _MapPrfab/Level1/Water/Chunk (0,-16)/Transform
+    400030: _MapPrfab/Level1/Water/Chunk (0,-32)/Transform
+    400032: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Transform
+    400034: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Transform
+    400036: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Polygon/Transform
+    400040: _MapPrfab/Level1/Water/Chunk (0,0)/Transform
+    400042: _MapPrfab/Level1/Water/Chunk (16,-16)/Transform
+    400056: _MapPrfab/Level1/Water/Chunk (16,-32)/Transform
+    400058: _MapPrfab/Level1/Water/Chunk (16,0)/Transform
+    400060: _MapPrfab/Level1/Boat/Transform
+    400062: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Transform
+    400064: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Transform
+    400066: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon/Transform
+    400068: _MapPrfab/Level1/Boat/Chunk (-16,-32)/Transform
+    400070: _MapPrfab/Level1/Boat/Chunk (0,-16)/Transform
+    400072: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Transform
+    400074: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon/Transform
+    400076: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (1)/Transform
+    400078: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (2)/Transform
+    400080: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (3)/Transform
+    400082: _MapPrfab/Level1/Boat/Chunk (0,-32)/Transform
+    400084: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Transform
+    400086: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon/Transform
+    400088: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (1)/Transform
+    400090: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (2)/Transform
+    400092: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (3)/Transform
+    5000002: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Rigidbody2D
+    5000004: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Rigidbody2D
+    5000006: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Rigidbody2D
+    5000008: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Rigidbody2D
+    6000000: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (1)/PolygonCollider2D
+    6000002: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (2)/PolygonCollider2D
+    6000004: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon/PolygonCollider2D
+    6000006: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon/PolygonCollider2D
+    6000008: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (1)/PolygonCollider2D
+    6000010: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (2)/PolygonCollider2D
+    6000012: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (3)/PolygonCollider2D
+    6000014: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon/PolygonCollider2D
+    6000016: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (1)/PolygonCollider2D
+    6000018: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (2)/PolygonCollider2D
+    6000020: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Polygon/PolygonCollider2D
+    6000022: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (3)/PolygonCollider2D
+    6000032: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (3)/PolygonCollider2D
+    6600002: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/CompositeCollider2D
+    6600004: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/CompositeCollider2D
+    6600006: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/CompositeCollider2D
+    6600008: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/CompositeCollider2D
+    11400000: _MapPrfab/Level1/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/Level1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400006: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400008: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400012: _MapPrfab/Level1/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400014: _MapPrfab/Level1/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400016: _MapPrfab/Level1/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400018: _MapPrfab/Level1/Boat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400020: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400022: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400024: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400026: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400028: _MapPrfab/Level1/DumpZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400030: _MapPrfab/Level1/DumpZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400032: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400040: _MapPrfab/Level1/Boat/Chunk (0,-16)/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400042: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400044: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400046: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400048: _MapPrfab/Level1/Boat/Chunk (0,-32)/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400062: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/Level1/Grid
+    3664157343022684178: _MapPrfab/Level1/Water/Chunk (-16,-16)/TilemapRenderer
+    3664157343022684180: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/TilemapRenderer
+    3664157343022684182: _MapPrfab/Level1/Water/Chunk (-16,-32)/TilemapRenderer
+    3664157343022684184: _MapPrfab/Level1/Water/Chunk (-16,0)/TilemapRenderer
+    3664157343022684186: _MapPrfab/Level1/Water/Chunk (-32,-16)/TilemapRenderer
+    3664157343022684188: _MapPrfab/Level1/Water/Chunk (-32,-32)/TilemapRenderer
+    3664157343022684190: _MapPrfab/Level1/Water/Chunk (-32,0)/TilemapRenderer
+    3664157343022684192: _MapPrfab/Level1/Water/Chunk (0,-16)/TilemapRenderer
+    3664157343022684194: _MapPrfab/Level1/Water/Chunk (0,-32)/TilemapRenderer
+    3664157343022684196: _MapPrfab/Level1/Water/Chunk (0,0)/TilemapRenderer
+    3664157343022684198: _MapPrfab/Level1/Water/Chunk (16,-16)/TilemapRenderer
+    3664157343022684200: _MapPrfab/Level1/Water/Chunk (16,-32)/TilemapRenderer
+    3664157343022684202: _MapPrfab/Level1/Water/Chunk (16,0)/TilemapRenderer
+    3664157343022684204: _MapPrfab/Level1/Boat/Chunk (-16,-16)/TilemapRenderer
+    3664157343022684206: _MapPrfab/Level1/Boat/Chunk (-16,-32)/TilemapRenderer
+    3664157343022684212: _MapPrfab/Level1/Boat/Chunk (0,-16)/TilemapRenderer
+    3664157343022684214: _MapPrfab/Level1/Boat/Chunk (0,-32)/TilemapRenderer
+    8195094279510102544: _MapPrfab/Level1/Water/Chunk (-16,-16)/Tilemap
+    8195094279510102546: _MapPrfab/Level1/DumpZone/Chunk (-16,-16)/Tilemap
+    8195094279510102548: _MapPrfab/Level1/Water/Chunk (-16,-32)/Tilemap
+    8195094279510102550: _MapPrfab/Level1/Water/Chunk (-16,0)/Tilemap
+    8195094279510102552: _MapPrfab/Level1/Water/Chunk (-32,-16)/Tilemap
+    8195094279510102554: _MapPrfab/Level1/Water/Chunk (-32,-32)/Tilemap
+    8195094279510102556: _MapPrfab/Level1/Water/Chunk (-32,0)/Tilemap
+    8195094279510102558: _MapPrfab/Level1/Water/Chunk (0,-16)/Tilemap
+    8195094279510102560: _MapPrfab/Level1/Water/Chunk (0,-32)/Tilemap
+    8195094279510102562: _MapPrfab/Level1/Water/Chunk (0,0)/Tilemap
+    8195094279510102564: _MapPrfab/Level1/Water/Chunk (16,-16)/Tilemap
+    8195094279510102566: _MapPrfab/Level1/Water/Chunk (16,-32)/Tilemap
+    8195094279510102568: _MapPrfab/Level1/Water/Chunk (16,0)/Tilemap
+    8195094279510102570: _MapPrfab/Level1/Boat/Chunk (-16,-16)/Tilemap
+    8195094279510102572: _MapPrfab/Level1/Boat/Chunk (-16,-32)/Tilemap
+    8195094279510102578: _MapPrfab/Level1/Boat/Chunk (0,-16)/Tilemap
+    8195094279510102580: _MapPrfab/Level1/Boat/Chunk (0,-32)/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  tilesAsObjects: 0
+  importSorting: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
