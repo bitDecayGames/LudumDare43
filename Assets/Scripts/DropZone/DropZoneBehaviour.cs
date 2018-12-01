@@ -56,7 +56,8 @@ namespace DropZone {
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
 			this.cargo = cargo;
-			this.timeTilDrop = timeTilDrop;
+			if (timeTilDrop <= 0) this.timeTilDrop = 1f; // minumum drop tile is 1 second
+			else this.timeTilDrop = timeTilDrop;
 			this.onDrop = onDrop;
 			time = 0;
 			Shadow.gameObject.SetActive(true);
@@ -82,6 +83,7 @@ namespace DropZone {
 
 		private IEnumerator WaitThenKillPlayerIfColliding(CargoBehaviour cargoInst) {
 			yield return new WaitForSeconds(0.1f);
+			cargoInst.KillSelfIfCollidingWithAnotherCargo();
 			cargoInst.KillPlayerIfColliding();
 			if (onDrop != null) {
 				var tmp = onDrop;

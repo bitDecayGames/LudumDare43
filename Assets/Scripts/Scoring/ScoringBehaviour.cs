@@ -47,8 +47,6 @@ namespace Scoring {
 			NextButton.onClick.AddListener(OnNext);
 				
 			gameObject.SetActive(false);
-			
-			SetScore(2.7f, 3000000, true, null, null, null); // TODO: MW this is debugging code
 		}
 
 		void Update() {
@@ -107,16 +105,16 @@ namespace Scoring {
 		/// <param name="onLevelSelect"></param>
 		/// <param name="onRestart"></param>
 		/// <param name="onNext"></param>
-		public void SetScore(float targetFill, int targetScore, bool bonus, Action onLevelSelect, Action onRestart, Action onNext) {
+		public void SetScore(float stars, int score, bool bonus, Action onLevelSelect, Action onRestart, Action onNext) {
 			gameObject.SetActive(true);
 			
 			time = 0;
-			this.targetFill = targetFill;
+			targetFill = stars;
 			currentFill = 0;
 			previousFill = 0;
 
 			currentScore = 0;
-			this.targetScore = targetScore;
+			targetScore = score;
 
 			this.bonus = bonus;
 
