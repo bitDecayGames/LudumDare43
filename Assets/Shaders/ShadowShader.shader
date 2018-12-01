@@ -5,6 +5,7 @@ Shader "Custom/ShadowShader" {
         [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
         _Color ("Tint", Color) = (1,1,1,1)
         [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
+        _Blurryness ("_Blurryness", Float) = 0.02
     }
 
     SubShader
@@ -65,7 +66,7 @@ Shader "Custom/ShadowShader" {
             sampler2D _MainTex;
             
             static const int samples = 5;
-            static const float blurryness = .02;
+            float _Blurryness;
             
             fixed4 blur(fixed4 orig, float2 texcoord){
             
@@ -73,11 +74,11 @@ Shader "Custom/ShadowShader" {
                 int sampleCount = 1;
                 float2 coord = float2(0, 0);
                 for (int x = -samples; x < samples; x++){
-                    float xCoord = texcoord.x + x * blurryness;
+                    float xCoord = texcoord.x + x * _Blurryness;
                     if (xCoord >= 0 && xCoord <= 1){
                         coord.x = xCoord;
                         for (int y = -samples; y < samples; y++){
-                            float yCoord = texcoord.y + y * blurryness;
+                            float yCoord = texcoord.y + y * _Blurryness;
                             if (yCoord >= 0 && yCoord <= 1) {
                                 coord.y = yCoord; 
                                 a += tex2D(_MainTex, coord).a;
@@ -86,7 +87,8 @@ Shader "Custom/ShadowShader" {
                         }
                     }
                 }
-                orig.a = a / sampleCount * .5;
+                if (sampleCount == 1) orig.a = 0;
+                else orig.a = a / sampleCount * .5;
                 
                 return orig;
             }

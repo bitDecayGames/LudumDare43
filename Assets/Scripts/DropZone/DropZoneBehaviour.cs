@@ -10,7 +10,7 @@ namespace DropZone {
 		public SpriteRenderer ZoneOutline;
 		private Material zoneMat;
 		public SpriteRenderer Shadow;
-		public CargoFactory Factory;
+		private Material shadowMat;
 
 		private CargoBehaviour cargo;
 		private Action<CargoBehaviour> onDrop;
@@ -19,17 +19,13 @@ namespace DropZone {
 
 		private float dashOffset;
 
-		void Start() {
-			// TODO: MW this is debug code
-			SetCargo(Factory.ByName("LCargo"), 3f, inst => {
-				Debug.Log("Dropped cargo1");
-				
-				SetCargo(Factory.ByName("TCargo"), 4f, inst2 => {
-					Debug.Log("Dropped cargo 2");
-				});
-			});
+		private const float blurrynessTarget = 0.01f;
+		private const float blurrynessStart = 0.03f;
+		private float blurryness = 0;
 
+		void Start() {
 			zoneMat = ZoneOutline.material;
+			shadowMat = Shadow.material;
 		}
 		
 		void Update() {
@@ -42,6 +38,11 @@ namespace DropZone {
 
 			dashOffset += Time.deltaTime * 2;
 			SetOutlineOffset();
+
+			if (blurryness > blurrynessTarget) {
+				blurryness *= 0.97f;
+				SetShadowBlurryness();
+			}
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -52,6 +53,7 @@ namespace DropZone {
 			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
 			Shadow.transform.localScale = cargo.transform.localScale;
+			blurryness = blurrynessStart;
 		}
 
 		public void DropCargo() {
@@ -79,6 +81,12 @@ namespace DropZone {
 		private void SetOutlineOffset() {
 			if (zoneMat != null) {
 				zoneMat.SetFloat("_DashOffset", dashOffset);
+			}
+		}
+
+		private void SetShadowBlurryness() {
+			if (shadowMat != null) {
+				shadowMat.SetFloat("_Blurryness", blurryness);
 			}
 		}
 	}
