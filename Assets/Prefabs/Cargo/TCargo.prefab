@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 66234448119833330}
   - component: {fileID: 61411650280288578}
   - component: {fileID: 61320194933606182}
+  - component: {fileID: 114815622729908170}
   m_Layer: 0
   m_Name: TCargo
   m_TagString: Untagged
@@ -162,6 +163,18 @@ CompositeCollider2D:
       - {x: -0.334704, y: -0.502056}
       - {x: 0.0000523, y: -0.502056}
   m_VertexDistance: 0.0005
+--- !u!114 &114815622729908170
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1775009527618978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
 --- !u!212 &212947420346954044
 SpriteRenderer:
   m_ObjectHideFlags: 1
