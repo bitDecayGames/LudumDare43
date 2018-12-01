@@ -6,6 +6,7 @@ Shader "Custom/ShadowShader" {
         _Color ("Tint", Color) = (1,1,1,1)
         [MaterialToggle] PixelSnap ("Pixel snap", Float) = 0
         _Blurryness ("_Blurryness", Float) = 0.02
+        _Transparentness ("_Transparentness", Float) = 0.5
     }
 
     SubShader
@@ -49,6 +50,7 @@ Shader "Custom/ShadowShader" {
 
             fixed4 _Color;
             float _DashOffset;
+            float _Transparentness;
 
             v2f vert(appdata_t IN)
             {
@@ -87,8 +89,7 @@ Shader "Custom/ShadowShader" {
                         }
                     }
                 }
-                if (sampleCount == 1) orig.a = 0;
-                else orig.a = a / sampleCount * .5;
+                orig.a = a / sampleCount * _Transparentness;
                 
                 return orig;
             }

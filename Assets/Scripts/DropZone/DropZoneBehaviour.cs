@@ -3,6 +3,7 @@ using System.Collections;
 using Cargo;
 using ScriptableObjects;
 using UnityEngine;
+using Utils;
 
 namespace DropZone {
 	public class DropZoneBehaviour : MonoBehaviour {
@@ -22,6 +23,9 @@ namespace DropZone {
 		private const float blurrynessTarget = 0.01f;
 		private const float blurrynessStart = 0.03f;
 		private float blurryness = 0;
+		private const float transparentnessTarget = .5f;
+		private const float transparentnessStart = 0f;
+		private float transparentness = 0;
 
 		void Start() {
 			zoneMat = ZoneOutline.material;
@@ -43,6 +47,11 @@ namespace DropZone {
 				blurryness *= 0.97f;
 				SetShadowBlurryness();
 			}
+
+			if (transparentness < transparentnessTarget) {
+				transparentness += 0.01f;
+				SetShadowTransparentness();
+			}
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -54,10 +63,14 @@ namespace DropZone {
 			Shadow.sprite = cargo.spriteRenderer.sprite;
 			Shadow.transform.localScale = cargo.transform.localScale;
 			blurryness = blurrynessStart;
+			SetShadowBlurryness();
+			transparentness = transparentnessStart;
+			SetShadowTransparentness();
 		}
 
 		public void DropCargo() {
 			if (cargo != null) {
+				Shadow.gameObject.SetActive(false);
 				var cargoInst = Instantiate(cargo);
 				cargoInst.transform.position = Shadow.transform.position;
 				StartCoroutine(WaitThenKillPlayerIfColliding(cargoInst));
@@ -70,7 +83,6 @@ namespace DropZone {
 		private IEnumerator WaitThenKillPlayerIfColliding(CargoBehaviour cargoInst) {
 			yield return new WaitForSeconds(0.1f);
 			cargoInst.KillPlayerIfColliding();
-			Shadow.gameObject.SetActive(false);
 			if (onDrop != null) {
 				var tmp = onDrop;
 				onDrop = null;
@@ -87,6 +99,12 @@ namespace DropZone {
 		private void SetShadowBlurryness() {
 			if (shadowMat != null) {
 				shadowMat.SetFloat("_Blurryness", blurryness);
+			}
+		}
+
+		private void SetShadowTransparentness() {
+			if (shadowMat != null) {
+				shadowMat.SetFloat("_Transparentness", transparentness);
 			}
 		}
 	}

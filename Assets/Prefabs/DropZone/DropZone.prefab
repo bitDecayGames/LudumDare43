@@ -113,7 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ZoneOutline: {fileID: 212756570284386378}
   Shadow: {fileID: 212126553583281482}
-  Factory: {fileID: 11400000, guid: d221466680ead49b18a2f0224751a4c8, type: 2}
 --- !u!212 &212126553583281482
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -149,7 +148,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 0c283273ce029e942b8d97f55acf0998, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 836bf1f0a20172a40bb2084b20ff82c8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
