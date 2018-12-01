@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378084335179026}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2205, y: -0.7479, z: -0.0073}
-  m_LocalScale: {x: 2.0919, y: 2.0919, z: 2.0919}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -86,7 +86,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.14, y: 0.64}
+  m_Size: {x: 0.16, y: 0.64}
   m_EdgeRadius: 0
 --- !u!114 &114734770761187084
 MonoBehaviour:
@@ -99,7 +99,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!212 &212017163755112652
 SpriteRenderer:
   m_ObjectHideFlags: 1
