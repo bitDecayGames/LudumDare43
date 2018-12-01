@@ -8,6 +8,7 @@ namespace DropZone {
 	public class DropZoneBehaviour : MonoBehaviour {
 
 		public SpriteRenderer ZoneOutline;
+		private Material zoneMat;
 		public SpriteRenderer Shadow;
 		public CargoFactory Factory;
 
@@ -15,6 +16,8 @@ namespace DropZone {
 		private Action<CargoBehaviour> onDrop;
 		private float timeTilDrop;
 		private float time;
+
+		private float dashOffset;
 
 		void Start() {
 			// TODO: MW this is debug code
@@ -25,6 +28,8 @@ namespace DropZone {
 					Debug.Log("Dropped cargo 2");
 				});
 			});
+
+			zoneMat = ZoneOutline.material;
 		}
 		
 		void Update() {
@@ -34,6 +39,9 @@ namespace DropZone {
 					DropCargo();
 				}
 			}
+
+			dashOffset += Time.deltaTime * 2;
+			SetOutlineOffset();
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -41,7 +49,9 @@ namespace DropZone {
 			this.timeTilDrop = timeTilDrop;
 			this.onDrop = onDrop;
 			time = 0;
+			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
+			Shadow.transform.localScale = cargo.transform.localScale;
 		}
 
 		public void DropCargo() {
@@ -58,10 +68,17 @@ namespace DropZone {
 		private IEnumerator WaitThenKillPlayerIfColliding(CargoBehaviour cargoInst) {
 			yield return new WaitForSeconds(0.1f);
 			cargoInst.KillPlayerIfColliding();
+			Shadow.gameObject.SetActive(false);
 			if (onDrop != null) {
 				var tmp = onDrop;
 				onDrop = null;
 				tmp(cargoInst);
+			}
+		}
+
+		private void SetOutlineOffset() {
+			if (zoneMat != null) {
+				zoneMat.SetFloat("_DashOffset", dashOffset);
 			}
 		}
 	}

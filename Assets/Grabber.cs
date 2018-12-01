@@ -1,18 +1,15 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Grabber : MonoBehaviour
 {
-
-	private Collider2D collider;
-
 	private Collider2D mostRecent;
 	
 	// Use this for initialization
 	void Start ()
 	{
-		collider = GetComponent<Collider2D>();
 	}
 	
 	// Update is called once per frame
@@ -24,6 +21,7 @@ public class Grabber : MonoBehaviour
 	{
 		if (go.GetComponent<FixedJoint2D>() != null)
 		{
+			print("Removing Joint");
 			go.GetComponent<FixedJoint2D>().connectedBody.bodyType = RigidbodyType2D.Static;
 			Destroy(go.GetComponent<FixedJoint2D>());
 			return;
@@ -31,6 +29,7 @@ public class Grabber : MonoBehaviour
 		
 		if (mostRecent != null)
 		{
+			print("Creating Joint");
 			mostRecent.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
 			go.AddComponent<FixedJoint2D>();  
 			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.GetComponent<Rigidbody2D>();
@@ -39,6 +38,13 @@ public class Grabber : MonoBehaviour
 
 	private void OnTriggerEnter2D(Collider2D other)
 	{
+		if (other.GetComponent<PlayerMovement>() != null )
+		{
+			print("ignoring trigger because it is me");
+			return;
+		}
+		
+		print("Adding trigger");
 		mostRecent = other;
 	}
 
@@ -46,6 +52,7 @@ public class Grabber : MonoBehaviour
 	{
 		if (other == mostRecent)
 		{
+			print("Removing trigger");
 			mostRecent = null;
 		}
 	}
