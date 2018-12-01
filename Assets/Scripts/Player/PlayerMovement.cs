@@ -9,9 +9,17 @@ public class PlayerMovement : MonoBehaviour
     public Transform playerHands;
     private int facing;
 
+    private void Update()
+    {
+        if (Input.GetKeyDown("space"))
+        {
+            playerHands.GetComponent<Grabber>().Activate(gameObject);
+        }
+    }
+
     private void FixedUpdate()
     {
-        var move = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        var move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         move.Normalize();
         move.Scale(new Vector2(speed, speed));
 
@@ -40,12 +48,7 @@ public class PlayerMovement : MonoBehaviour
         handPos.Scale(new Vector2(hitbox.radius, hitbox.radius));
         handPos += hitbox.offset;
 			
-        playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0); 
-		
-        if (Input.GetKey("space"))
-        {
-            playerHands.GetComponent<Grabber>().Activate(gameObject);
-        }
+        playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0);
     }
 	
     public Vector2 Vector2FromAngle(float a)
