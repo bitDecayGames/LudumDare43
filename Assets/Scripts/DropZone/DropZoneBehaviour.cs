@@ -8,6 +8,7 @@ namespace DropZone {
 	public class DropZoneBehaviour : MonoBehaviour {
 
 		public SpriteRenderer ZoneOutline;
+		private Material zoneMat;
 		public SpriteRenderer Shadow;
 		public CargoFactory Factory;
 
@@ -15,6 +16,8 @@ namespace DropZone {
 		private Action<CargoBehaviour> onDrop;
 		private float timeTilDrop;
 		private float time;
+
+		private float dashOffset;
 
 		void Start() {
 			// TODO: MW this is debug code
@@ -25,6 +28,8 @@ namespace DropZone {
 					Debug.Log("Dropped cargo 2");
 				});
 			});
+
+			zoneMat = ZoneOutline.material;
 		}
 		
 		void Update() {
@@ -34,6 +39,9 @@ namespace DropZone {
 					DropCargo();
 				}
 			}
+
+			dashOffset += Time.deltaTime * 2;
+			SetOutlineOffset();
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -62,6 +70,12 @@ namespace DropZone {
 				var tmp = onDrop;
 				onDrop = null;
 				tmp(cargoInst);
+			}
+		}
+
+		private void SetOutlineOffset() {
+			if (zoneMat != null) {
+				zoneMat.SetFloat("_DashOffset", dashOffset);
 			}
 		}
 	}
