@@ -39,8 +39,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1788806769371370}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.354, y: -0.506, z: -0.0073}
-  m_LocalScale: {x: 2.0919, y: 2.0919, z: 2.0919}
+  m_LocalPosition: {x: -8.38, y: 0.245, z: -0.007}
+  m_LocalScale: {x: 5.951456, y: 5.951456, z: 5.951456}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -128,40 +128,40 @@ CompositeCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
+  m_GeometryType: 1
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
   - m_Collider: {fileID: 61507387134928992}
     m_ColliderPaths:
-    - - X: 5020560
-        Y: 3347040
-      - X: -1694370
-        Y: 3347040
-      - X: -1694370
-        Y: -20847
-      - X: 5020560
-        Y: -20847
+    - - X: 14283495
+        Y: 9522330
+      - X: -4820484
+        Y: 9522330
+      - X: -4820484
+        Y: -59312
+      - X: 14283495
+        Y: -59312
   - m_Collider: {fileID: 61123565018120100}
     m_ColliderPaths:
-    - - X: 1769965
-        Y: 20847
-      - X: -5020560
-        Y: 20847
-      - X: -5020560
-        Y: -3347040
-      - X: 1769965
-        Y: -3347040
+    - - X: 5035551
+        Y: 59311
+      - X: -14283494
+        Y: 59311
+      - X: -14283494
+        Y: -9522330
+      - X: 5035551
+        Y: -9522330
   m_CompositePaths:
     m_Paths:
-    - - {x: 0.1769965, y: -0.0020847}
-      - {x: 0.502056, y: -0.0020847}
-      - {x: 0.502056, y: 0.334704}
-      - {x: -0.169437, y: 0.334704}
-      - {x: -0.169437, y: 0.0020847}
-      - {x: -0.502056, y: 0.0020847}
-      - {x: -0.502056, y: -0.334704}
-      - {x: 0.1769965, y: -0.334704}
+    - - {x: 0.5035551, y: -0.0059312}
+      - {x: 1.4283495, y: -0.0059312}
+      - {x: 1.4283495, y: 0.952233}
+      - {x: -0.4820484, y: 0.952233}
+      - {x: -0.4820484, y: 0.0059311}
+      - {x: -1.4283494, y: 0.0059311}
+      - {x: -1.4283494, y: -0.952233}
+      - {x: 0.5035551, y: -0.952233}
   m_VertexDistance: 0.0005
 --- !u!114 &114671164583194210
 MonoBehaviour:
@@ -174,7 +174,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
 --- !u!212 &212829583080129820
 SpriteRenderer:
   m_ObjectHideFlags: 1
