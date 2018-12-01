@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
 			
         playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0); 
 		
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKey("space"))
         {
             playerHands.GetComponent<Grabber>().Activate(gameObject);
         }
