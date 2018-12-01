@@ -49,6 +49,7 @@ namespace DropZone {
 			this.timeTilDrop = timeTilDrop;
 			this.onDrop = onDrop;
 			time = 0;
+			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
 		}
 
@@ -66,6 +67,7 @@ namespace DropZone {
 		private IEnumerator WaitThenKillPlayerIfColliding(CargoBehaviour cargoInst) {
 			yield return new WaitForSeconds(0.1f);
 			cargoInst.KillPlayerIfColliding();
+			Shadow.gameObject.SetActive(false);
 			if (onDrop != null) {
 				var tmp = onDrop;
 				onDrop = null;

@@ -86,7 +86,7 @@ Shader "Custom/ShadowShader" {
                         }
                     }
                 }
-                orig.a = a / sampleCount;
+                orig.a = a / sampleCount * .5;
                 
                 return orig;
             }
