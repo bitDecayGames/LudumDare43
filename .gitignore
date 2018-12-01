@@ -10,6 +10,7 @@ Wingfields-MBP:fireport mwingfield$ cat client/Fireport/.gitignore
 Assets/AssetStoreTools*
 
 # Visual Studio cache directory
+.vscode/
 .vs/
 
 # Intellij Dir
