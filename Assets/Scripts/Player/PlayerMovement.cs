@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey("space"))
+        if (Input.GetKeyDown("space"))
         {
             playerHands.GetComponent<Grabber>().Activate(gameObject);
         }
