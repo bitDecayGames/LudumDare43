@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
 
     public Transform playerHands;
     private int facing;
+
+    private bool attached;
     private int anchoredDirection;
     private bool anchorAligned;
 
@@ -43,31 +45,109 @@ public class PlayerMovement : MonoBehaviour
             targetVelocity = move;
             effectiveVelocity = move;
         }
-        
+
+        var neededAnimation = "";
         // set facing
         if (effectiveVelocity.x < 0)
         {
             facing = 180;
-
-            // only flip if we are actually facing left
-            sprite.flipX = anchoredDirection == facing;
+            if (attached)
+            {
+                if (facing == anchoredDirection)
+                {
+                    neededAnimation = "moving_pushing";
+                    sprite.flipX = true;
+                }
+                else
+                {
+                    neededAnimation = "moving_pulling";
+                    sprite.flipX = false;
+                }
+            }
+            else
+            {
+                neededAnimation = "moving_empty";
+                sprite.flipX = true;
+            }
         }
         else if (effectiveVelocity.x > 0)
         {
             facing = 0;
-            //sprite.flipX = anchoredDirection == facing;
+            // right facing is default and is never flipped
+            sprite.flipX = false;
+
+            if (attached)
+            {
+                if (facing == anchoredDirection)
+                {
+                    neededAnimation = "moving_pushing";
+                    sprite.flipX = false;
+                }
+                else
+                {
+                    neededAnimation = "moving_pulling";
+                    sprite.flipX = true;
+                }
+            }
+            else
+            {
+                neededAnimation = "moving_empty";
+            }
         }
 
         if (effectiveVelocity.y > 0)
         {
             facing = 90;
+            if (attached)
+            {
+                if (facing == anchoredDirection)
+                {
+                    neededAnimation = "moving_pushing";
+                }
+                else
+                {
+                    neededAnimation = "moving_pulling";
+                }
+            }
+            else
+            {
+                neededAnimation = "moving_empty";
+            }
         } else if (effectiveVelocity.y < 0)
         {
             facing = 270;
+            if (attached)
+            {
+                if (facing == anchoredDirection)
+                {
+                    neededAnimation = "moving_pushing";
+                }
+                else
+                {
+                    neededAnimation = "moving_pulling";
+                }
+            }
+            else
+            {
+                neededAnimation = "moving_empty";
+            }
+        }
+        
+        if (effectiveVelocity.x == 0 && effectiveVelocity.y == 0)
+        {
+            if (attached)
+            {
+                neededAnimation = "standing_holding";
+            }
+            else
+            {
+                neededAnimation = "standing_empty";
+            }
         }
 
+        animator.Play(neededAnimation);
+        
         body.velocity = targetVelocity;
-        animator.SetFloat("speed", Mathf.Abs(targetVelocity.magnitude));
 
         var handPos = Vector2FromAngle(facing); 
 		
@@ -78,16 +158,12 @@ public class PlayerMovement : MonoBehaviour
 		
         if (Input.GetKeyDown("space"))
         {
-            var attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
-            animator.SetBool("attached", attached);
+            attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
             if (attached)
             {
-                print("Setting anchor facing to: " + facing);
                 anchoredDirection = facing;
             }
         }
-        
-        animator.SetBool("anchorFacing", anchoredDirection == facing);
     }
 	
     public Vector2 Vector2FromAngle(float a)
