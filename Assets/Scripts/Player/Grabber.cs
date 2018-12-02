@@ -39,7 +39,7 @@ public class Grabber : MonoBehaviour
 		{
 			return;
 		}
-		print("Adding collision with " + other.gameObject);
+//		print("Adding collision with " + other.gameObject);
 		mostRecent = other;
 	}
 
@@ -47,7 +47,7 @@ public class Grabber : MonoBehaviour
 	{
 		if (other == mostRecent)
 		{
-			print("Removing collision with " + other.gameObject);
+//			print("Removing collision with " + other.gameObject);
 			mostRecent = null;
 		}
 	}

@@ -62,15 +62,15 @@ namespace Scoring {
 
 					if (previousFill < 1 && currentFill >= 1) {
 						// flash first star
-						Debug.Log("Flash first star");
+//						Debug.Log("Flash first star");
 						Star1.Flash();
 					} else if (previousFill < 2 && currentFill >= 2) {
 						// flash second star
-						Debug.Log("Flash second star");
+//						Debug.Log("Flash second star");
 						Star2.Flash();
 					} else if (previousFill < 3 && currentFill >= 3) {
 						// flash third star
-						Debug.Log("Flash third star");
+//						Debug.Log("Flash third star");
 						Star3.Flash();
 					}
 
@@ -86,7 +86,7 @@ namespace Scoring {
 					// turn on bonus if true
 					if (bonus) {
 						Bonus.SetFill(1);
-						Debug.Log("Flash bonus");
+//						Debug.Log("Flash bonus");
 						Bonus.Flash();
 					}
 
