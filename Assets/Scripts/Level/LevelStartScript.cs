@@ -55,7 +55,8 @@ public class LevelStartScript : MonoBehaviour
 
 		// TODO: This should be pulled from the tiled map
 		levelB.AddDropZone(dropZone);
-		
+		// TODO: This should be pulled from the tiled map
+		levelB.SetRating(new LevelRating(1, 2, 3));
 		
 		
 	}
