@@ -14,6 +14,8 @@ namespace DropZone {
 		private Material zoneMat;
 		public SpriteRenderer Shadow;
 		private Material shadowMat;
+		public Transform ShadowRotator;
+		public Transform ShadowBottomLeft;
 
 		private CargoBehaviour cargo;
 		private Action<CargoBehaviour> onDrop;
@@ -71,9 +73,9 @@ namespace DropZone {
 		}
 
 		public void RotateCargo(float degrees) {
-			var rot = Shadow.transform.rotation;
-			Shadow.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
-			cargo.transform.rotation = Shadow.transform.rotation;
+			var rot = ShadowRotator.transform.rotation;
+			ShadowRotator.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
+			cargo.transform.rotation = ShadowRotator.transform.rotation;
 			crane.SetCargoSprite(cargo.spriteRenderer);
 		}
 		
@@ -112,7 +114,11 @@ namespace DropZone {
 			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
 			Shadow.transform.localScale = cargo.transform.localScale;
-			Shadow.transform.rotation = cargo.transform.rotation;
+			ShadowRotator.transform.rotation = cargo.transform.rotation;
+			ShadowBottomLeft.transform.localPosition = new Vector3(
+				-cargo.spriteRenderer.sprite.bounds.extents.x,
+				-cargo.spriteRenderer.sprite.bounds.extents.y,
+				0);
 			blurryness = blurrynessStart;
 			SetShadowBlurryness();
 			transparentness = transparentnessStart;

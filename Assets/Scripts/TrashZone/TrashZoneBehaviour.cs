@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
 using Cargo;
-using ScriptableObjects;
+using SuperTiled2Unity;
 using UnityEngine;
-using Utils;
 
 namespace TrashZone {
 	public class TrashZoneBehaviour : MonoBehaviour {
@@ -37,8 +35,14 @@ namespace TrashZone {
 		public void CheckAndTakeOutTrash(Transform cargo) {
 			if (myBox.OverlapPoint(cargo.position)) {
 				//TODO animate killing cargo
-				Destroy(cargo.gameObject);
+				DestroySuperObject(cargo);
 			}
+		}
+		
+		private void DestroySuperObject(Transform cargo) {
+			var superObj = cargo.gameObject.GetComponentInAncestor<SuperObject>();
+			if (superObj == null) throw new Exception("Couldn't find super object to destroy");
+			Destroy(superObj.gameObject);
 		}
 	}
 }
