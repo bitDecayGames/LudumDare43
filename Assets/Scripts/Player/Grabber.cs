@@ -18,17 +18,18 @@ public class Grabber : MonoBehaviour
 		
 	}
 
-	public void Activate(GameObject go)
+	public bool Activate(GameObject go)
 	{
 		if (go.GetComponent<FixedJoint2D>() != null)
 		{
 			go.GetComponent<FixedJoint2D>().connectedBody.bodyType = RigidbodyType2D.Static;
 			Destroy(go.GetComponent<FixedJoint2D>());
+
 			var trashZone = FindObjectOfType<TrashZoneBehaviour>();
 			if (trashZone != null) {
 				trashZone.CheckAndTakeOutTrash(go.GetComponent<FixedJoint2D>().connectedBody.transform);
 			}
-			return;
+			return false;
 		}
 		
 		if (mostRecent != null)
@@ -36,7 +37,10 @@ public class Grabber : MonoBehaviour
 			mostRecent.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
 			go.AddComponent<FixedJoint2D>();  
 			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.GetComponent<Rigidbody2D>();
+			return true;
 		}
+
+		return false;
 	}
 
 	private void OnTriggerEnter2D(Collider2D other)
