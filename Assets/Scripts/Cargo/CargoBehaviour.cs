@@ -29,7 +29,7 @@ namespace Cargo {
 
         public void KillPlayerIfColliding() {
             // the cargo is in a dangerous state, kill the player if it is currently touching them
-            var meColliders = GetComponents<Collider2D>();
+            var meColliders = GetComponentsInChildren<Collider2D>();
             if (meColliders == null) throw new RuntimeException("Tanner does this");
 
             foreach (Collider2D meCollider in meColliders) {
@@ -46,7 +46,7 @@ namespace Cargo {
 
         public void KillSelfIfCollidingWithAnotherCargo() {
             // check if the cargo has smashed into another cargo, kill this cargo and call LevelBehaviour.Finished()
-            var meColliders = GetComponents<Collider2D>();
+            var meColliders = GetComponentsInChildren<Collider2D>();
             if (meColliders == null) throw new RuntimeException("Tanner does this");
             var contactFilter = new ContactFilter2D();
             contactFilter.SetLayerMask(LayerMask.GetMask("Cargo"));
