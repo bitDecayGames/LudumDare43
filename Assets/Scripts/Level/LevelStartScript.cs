@@ -79,6 +79,11 @@ public class LevelStartScript : MonoBehaviour
 		var items = tiledMap.transform.Find("KeyItems");
 		var centerT = items.Find("center");
 
+		foreach (Collider2D p in centerT.GetComponentsInChildren<Collider2D>())
+		{
+			Destroy(p);
+		}
+
 		var player = GameObject.FindWithTag("Player");
 		var playerScript = player.GetComponentInChildren<PlayerAnimationController>();
 		playerScript.PerspectivePoint = centerT.gameObject;
