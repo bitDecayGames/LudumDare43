@@ -4,6 +4,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5;
+    public float pushSpeedScale = 0.5f;
 
     public Transform playerHands;
     public FacingComponent Facing;
@@ -73,6 +74,10 @@ public class PlayerMovement : MonoBehaviour
         {
             movementVector.Normalize();
             movementVector.Scale(new Vector2(speed, speed));
+            if (IsHoldingAnObject())
+            {
+                movementVector.Scale(new Vector2(pushSpeedScale, pushSpeedScale));
+            }
             targetVelocity = movementVector;
         }
         body.velocity = targetVelocity;
@@ -89,6 +94,11 @@ public class PlayerMovement : MonoBehaviour
     public bool IsHoldingAnObject()
     {
         return attached;
+    }
+
+    public void PlayStepSound()
+    {
+        FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.StepWood);
     }
     
     void OnDestroy() {

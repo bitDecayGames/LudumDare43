@@ -32,6 +32,8 @@ ScriptedImporter:
       (1)
     100050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (5)
+    100052: _MapPrfab/level01/KeyItems
+    100054: _MapPrfab/level01/KeyItems/center
     100094: _MapPrfab/level01/TrashZone
     100096: _MapPrfab/level01/TrashZone/Collision_Default
     100098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon
@@ -100,6 +102,8 @@ ScriptedImporter:
       (1)/Transform
     400050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (5)/Transform
+    400052: _MapPrfab/level01/KeyItems/Transform
+    400054: _MapPrfab/level01/KeyItems/center/Transform
     400094: _MapPrfab/level01/TrashZone/Transform
     400096: _MapPrfab/level01/TrashZone/Collision_Default/Transform
     400098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/Transform
@@ -145,6 +149,7 @@ ScriptedImporter:
     5000012: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/Rigidbody2D
     5000014: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/Rigidbody2D
     5000016: _MapPrfab/level01/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/Rigidbody2D
+    5800000: _MapPrfab/level01/KeyItems/center/CircleCollider2D
     6000000: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/PolygonCollider2D
     6000002: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/PolygonCollider2D
     6000004: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/PolygonCollider2D
@@ -216,6 +221,11 @@ ScriptedImporter:
       (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400040: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400042: _MapPrfab/level01/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400044: _MapPrfab/level01/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400046: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400048: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400050: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400070: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400072: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400074: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent

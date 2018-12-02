@@ -32,6 +32,8 @@ namespace Level {
             ScoreUI.gameObject.SetActive(false);
             // if this is the cause of an error, it means you are missing the CurrentScore prefab in your scene (remember to put it under a Canvas object)
             CurrentScore = GameObject.FindGameObjectWithTag("CurrentScore").GetComponent<Text>();
+            
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientFogHorn);
         }
 
         public LevelBehaviour SetRating(LevelRating rating) {
@@ -58,6 +60,7 @@ namespace Level {
         public void Finished() {
             isFinished = true;
             CurrentScore.gameObject.AddComponent<FadeOutOverTime>().timeToFadeOut = 1f;
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientShipBell);
             StartCoroutine(WaitThenShowScore());
         }
 
