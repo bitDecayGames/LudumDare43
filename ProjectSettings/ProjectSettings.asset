@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: fa7e8c2540deaaa4d8a3dc27b0922f41
+  productGUID: 923328720b6ea734faa35891e3fbcd38
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -446,7 +446,7 @@ PlayerSettings:
   ps4DownloadDataSize: 0
   ps4GarlicHeapSize: 2048
   ps4ProGarlicHeapSize: 2560
-  ps4Passcode: Jq8VJQUEOLJ8jECD92Bxch5N00ZEPdi8
+  ps4Passcode: SCe8nPQHnppZqt456uNhaAAZ7eJqXZMw
   ps4pnSessions: 1
   ps4pnPresence: 1
   ps4pnFriends: 1
@@ -493,7 +493,7 @@ PlayerSettings:
   psp2LiveAreaTrialPath: 
   psp2PatchChangeInfoPath: 
   psp2PatchOriginalPackage: 
-  psp2PackagePassword: nfR9Od6xmldTHodT9cZ93mGppF3l9bgt
+  psp2PackagePassword: ECM9T0ci76RojHkpC99IR3WsIMd3jKuW
   psp2KeystoneFile: 
   psp2MemoryExpansionMode: 0
   psp2DRMType: 0

@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 50230546524768584}
   - component: {fileID: 61330369637970942}
   - component: {fileID: 114859307763294194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: SquareCargo
-  m_TagString: Untagged
+  m_TagString: Cargo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1771221207994526}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2205, y: -0.7479, z: -0.0073}
-  m_LocalScale: {x: 2.0919, y: 2.0919, z: 2.0919}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -99,7 +99,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
+  score: 10
+  isBonus: 0
+  delay: 0
 --- !u!212 &212052429452891538
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -134,7 +136,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 255
   m_Sprite: {fileID: 21300000, guid: 053c5821d70828c428f40943f4bedb9b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
