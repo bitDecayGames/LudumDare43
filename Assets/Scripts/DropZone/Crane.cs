@@ -9,16 +9,20 @@ namespace DropZone {
         public Chain Chain;
         private DropZoneBehaviour dropZone;
         public SpriteRenderer CargoRenderer;
+        public Transform CargoOrigin;
+        public Transform CargoBottomLeft;
         private bool isLeft;
         private Action onDone;
 
         private bool _hasPiece;
+
         public bool HasPiece {
             get { return _hasPiece; }
             private set { _hasPiece = value; }
         }
-        
+
         private bool _isReady = true;
+
         public bool IsReady {
             get { return _isReady; }
             set { _isReady = value; }
@@ -29,6 +33,9 @@ namespace DropZone {
             Chain = GetComponentInChildren<Chain>();
             ArmRotator = Arm.gameObject.GetComponent<RotateOverTime>();
             CargoRenderer = GetSpriteRendererOnlyInChildren(Chain.transform);
+            CargoOrigin = GetTransformFromNextChild(Chain.transform);
+            CargoBottomLeft = GetTransformFromNextChild(CargoOrigin.transform);
+
 
             this.dropZone = dropZone;
             var localPos = new Vector3(0, 0, 0);
@@ -45,14 +52,18 @@ namespace DropZone {
                 CargoRenderer.gameObject.SetActive(true);
                 CargoRenderer.sprite = sr.sprite;
                 CargoRenderer.transform.localScale = sr.transform.localScale;
-                CargoRenderer.transform.rotation = sr.transform.rotation;
+                CargoOrigin.transform.rotation = sr.transform.rotation;
+                CargoBottomLeft.transform.localPosition = new Vector3(
+                    -sr.sprite.bounds.extents.x,
+                    -sr.sprite.bounds.extents.y,
+                    0);
             }
         }
 
         public void GoGetNextPiece(float time, Action onDone) {
             this.onDone = onDone;
             Chain.SetTargetLength(.25f, time * .5f, () => {
-                ArmRotator.SetTargetRotation(90, time *.5f, () => {
+                ArmRotator.SetTargetRotation(90, time * .5f, () => {
                     HasPiece = true;
                     if (onDone != null) onDone();
                 });
@@ -71,12 +82,16 @@ namespace DropZone {
 
         private SpriteRenderer GetSpriteRendererOnlyInChildren(Transform parent) {
             foreach (SpriteRenderer renderer in parent.GetComponentsInChildren<SpriteRenderer>()) {
-                if (renderer != null && renderer.transform.parent == parent) {
+                if (renderer != null && renderer.transform != parent) {
                     return renderer;
                 }
             }
 
             return null;
+        }
+
+        private Transform GetTransformFromNextChild(Transform parent) {
+            return parent.GetChild(0);
         }
     }
 }
