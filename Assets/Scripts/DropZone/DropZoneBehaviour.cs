@@ -38,6 +38,12 @@ namespace DropZone {
 				if (time >= timeTilDrop) {
 					DropCargo();
 				}
+
+				if (Input.GetKeyDown(KeyCode.Q)) {
+					RotateCargo(-90);
+				} else if (Input.GetKeyDown(KeyCode.E)) {
+					RotateCargo(90);
+				}
 			}
 
 			dashOffset += Time.deltaTime * 2;
@@ -52,6 +58,11 @@ namespace DropZone {
 				transparentness += 0.01f;
 				SetShadowTransparentness();
 			}
+		}
+
+		public void RotateCargo(float degrees) {
+			var rot = Shadow.transform.rotation;
+			Shadow.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -74,6 +85,7 @@ namespace DropZone {
 				Shadow.gameObject.SetActive(false);
 				var cargoInst = Instantiate(cargo);
 				cargoInst.transform.position = Shadow.transform.position;
+				cargoInst.transform.rotation = Shadow.transform.rotation;
 				cargoInst.KillPlayerIfColliding();
 				StartCoroutine(WaitThenCheckForCollisions(cargoInst));
 				cargo = null;
