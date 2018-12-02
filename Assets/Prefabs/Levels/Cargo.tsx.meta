@@ -10,11 +10,59 @@ ScriptedImporter:
     11400008: Tile_Cargo_3
     11400010: Tile_Cargo_4
     11400012: Tile_Cargo_5
+    11400014: Tile_Cargo_6
+    11400016: Tile_Cargo_7
+    11400018: Tile_Cargo_8
+    11400020: Tile_Cargo_9
+    11400022: Tile_Cargo_10
+    11400024: Tile_Cargo_11
+    11400026: Tile_Cargo_12
+    11400028: Tile_Cargo_13
+    11400030: Tile_Cargo_14
+    11400032: Tile_Cargo_15
+    11400034: Tile_Cargo_16
+    11400036: Tile_Cargo_17
+    11400038: Tile_Cargo_18
+    11400040: Tile_Cargo_19
+    11400042: Tile_Cargo_20
+    11400044: Tile_Cargo_21
+    11400046: Tile_Cargo_22
+    11400048: Tile_Cargo_23
+    11400050: Tile_Cargo_24
+    11400052: Tile_Cargo_25
+    11400054: Tile_Cargo_26
+    11400056: Tile_Cargo_27
+    11400058: Tile_Cargo_28
+    11400060: Tile_Cargo_29
     21300000: Sprite_Cargo_1
     21300002: Sprite_Cargo_2
     21300004: Sprite_Cargo_3
     21300006: Sprite_Cargo_4
     21300008: Sprite_Cargo_5
+    21300010: Sprite_Cargo_6
+    21300012: Sprite_Cargo_7
+    21300014: Sprite_Cargo_8
+    21300016: Sprite_Cargo_9
+    21300018: Sprite_Cargo_10
+    21300020: Sprite_Cargo_11
+    21300022: Sprite_Cargo_12
+    21300024: Sprite_Cargo_13
+    21300026: Sprite_Cargo_14
+    21300028: Sprite_Cargo_15
+    21300030: Sprite_Cargo_16
+    21300032: Sprite_Cargo_17
+    21300034: Sprite_Cargo_18
+    21300036: Sprite_Cargo_19
+    21300038: Sprite_Cargo_20
+    21300040: Sprite_Cargo_21
+    21300042: Sprite_Cargo_22
+    21300044: Sprite_Cargo_23
+    21300046: Sprite_Cargo_24
+    21300048: Sprite_Cargo_25
+    21300050: Sprite_Cargo_26
+    21300052: Sprite_Cargo_27
+    21300054: Sprite_Cargo_28
+    21300056: Sprite_Cargo_29
   externalObjects: {}
   userData: 
   assetBundleName: 
