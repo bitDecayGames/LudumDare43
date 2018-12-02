@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 50984346885710060}
   - component: {fileID: 61323193850516792}
   - component: {fileID: 114780249167299870}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: PlayerHands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
