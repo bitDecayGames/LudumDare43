@@ -30,6 +30,8 @@ ScriptedImporter:
     100046: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
     100048: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
       (1)
+    100050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)
     100094: _MapPrfab/level01/TrashZone
     100096: _MapPrfab/level01/TrashZone/Collision_Default
     100098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon
@@ -44,8 +46,6 @@ ScriptedImporter:
     100112: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
     100114: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)
-    100116: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
-      (2)
     100126: _MapPrfab/level01/Cargo/Object_8 (TRS)
     100128: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)
     100130: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8
@@ -98,6 +98,8 @@ ScriptedImporter:
     400046: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/Transform
     400048: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
       (1)/Transform
+    400050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/Transform
     400094: _MapPrfab/level01/TrashZone/Transform
     400096: _MapPrfab/level01/TrashZone/Collision_Default/Transform
     400098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/Transform
@@ -112,8 +114,6 @@ ScriptedImporter:
     400112: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/Transform
     400114: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)/Transform
-    400116: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
-      (2)/Transform
     400126: _MapPrfab/level01/Cargo/Object_8 (TRS)/Transform
     400128: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Transform
     400130: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Transform
@@ -166,14 +166,14 @@ ScriptedImporter:
     6000030: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/PolygonCollider2D
     6000032: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
+    6000034: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/PolygonCollider2D
     6000048: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/PolygonCollider2D
     6000050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (4)/PolygonCollider2D
     6000052: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/PolygonCollider2D
     6000054: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
-    6000056: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
-      (2)/PolygonCollider2D
     6000060: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/PolygonCollider2D
     6000062: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
@@ -214,6 +214,8 @@ ScriptedImporter:
     11400036: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400038: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
       (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400040: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400070: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400072: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400074: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -235,8 +237,6 @@ ScriptedImporter:
     11400098: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400100: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400102: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
-      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400110: _MapPrfab/level01/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400112: _MapPrfab/level01/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400114: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
