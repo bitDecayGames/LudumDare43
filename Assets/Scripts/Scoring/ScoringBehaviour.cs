@@ -46,7 +46,7 @@ namespace Scoring {
 			RestartButton.onClick.AddListener(OnRestart);
 			NextButton.onClick.AddListener(OnNext);
 				
-			gameObject.SetActive(false);
+			//gameObject.SetActive(false);
 		}
 
 		void Update() {

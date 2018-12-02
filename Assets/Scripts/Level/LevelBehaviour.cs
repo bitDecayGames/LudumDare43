@@ -29,6 +29,7 @@ namespace Level {
         void Start() {
             // if this is the cause of an error, it means you are missing the Score prefab in your scene (remember to put it under a Canvas object)
             ScoreUI = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<ScoringBehaviour>();
+            ScoreUI.gameObject.SetActive(false);
             // if this is the cause of an error, it means you are missing the CurrentScore prefab in your scene (remember to put it under a Canvas object)
             CurrentScore = GameObject.FindGameObjectWithTag("CurrentScore").GetComponent<Text>();
         }
