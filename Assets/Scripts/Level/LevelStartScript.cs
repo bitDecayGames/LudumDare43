@@ -10,7 +10,7 @@ public class LevelStartScript : MonoBehaviour
 	void Start ()
 	{
 		// TODO: figure out how to set tags on these
-		var cargoT = transform.Find("cargo");
+		var cargoT = transform.parent.Find("cargo");
 		// 'cargo is layer 12'
 		SetLayerRecursively(cargoT.transform, 12);
 		
