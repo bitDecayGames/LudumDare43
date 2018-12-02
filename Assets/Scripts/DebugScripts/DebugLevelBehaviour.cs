@@ -21,15 +21,15 @@ namespace DebugScripts {
             var level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
                 level.SetRating(new LevelRating(10, 30, 60));
-                level.AddToCargoQueue(Factory.ByName("LCargo", 1))
-                    .AddToCargoQueue(Factory.ByName("SquareCargo", 2))
-                    .AddToCargoQueue(Factory.ByName("LineCargo", 2))
-                    .AddToCargoQueue(Factory.ByName("SCargo", 3))
-                    .AddToCargoQueue(Factory.ByName("TCargo", 1))
-                    .AddToCargoQueue(Factory.ByName("LCargo", 3))
-                    .AddToCargoQueue(Factory.ByName("SquareCargo", 10))
-                    .AddToCargoQueue(Factory.ByName("SCargo", 15))
-                    .AddToCargoQueue(Factory.ByName("TCargo", 20));
+                level.AddToCargoQueue(Factory.ByName("LCargo", 1, 5))
+                    .AddToCargoQueue(Factory.ByName("SquareCargo", 2, 5))
+                    .AddToCargoQueue(Factory.ByName("LineCargo", 2, 5))
+                    .AddToCargoQueue(Factory.ByName("SCargo", 3, 5))
+                    .AddToCargoQueue(Factory.ByName("TCargo", 1, 5))
+                    .AddToCargoQueue(Factory.ByName("LCargo", 3, 5))
+                    .AddToCargoQueue(Factory.ByName("SquareCargo", 10, 5))
+                    .AddToCargoQueue(Factory.ByName("SCargo", 15, 5))
+                    .AddToCargoQueue(Factory.ByName("TCargo", 20, 5));
                 level.AddDropZone(DropZoneOne).AddDropZone(DropZoneTwo);
             }
         }

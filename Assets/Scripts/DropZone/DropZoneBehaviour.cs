@@ -55,6 +55,7 @@ namespace DropZone {
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
+			Debug.Log("Setting cargo: " + cargo.name + timeTilDrop);
 			this.cargo = cargo;
 			if (timeTilDrop <= 0) this.timeTilDrop = 1f; // minumum drop tile is 1 second
 			else this.timeTilDrop = timeTilDrop;

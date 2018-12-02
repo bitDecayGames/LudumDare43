@@ -28,6 +28,7 @@ namespace Level {
         }
 
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
+            Debug.Log("Add to cargo queue: " + cargo.name + " " + cargo.delay);
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
             return this;
@@ -39,7 +40,6 @@ namespace Level {
         }
 
         public void Score(CargoBehaviour cargo) {
-            Debug.Log("Score cargo: " + cargo.score);
             scores.Add(cargo);
         }
 
@@ -85,7 +85,6 @@ namespace Level {
 
         private DropZoneBehaviour GetNextDropZone() {
             if (dropZones.Count > 0) {
-                Debug.Log("Trying to get dropzone:" + currentDropZone);
                 var dropZone = dropZones[currentDropZone];
 
                 currentDropZone++;

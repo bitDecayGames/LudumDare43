@@ -17,9 +17,31 @@ namespace ScriptableObjects {
 			return null;
 		}
 
+		/// <summary>
+		/// Don't use this method outside of debugging
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="score"></param>
+		/// <returns></returns>
 		public CargoBehaviour ByName(string name, int score) {
 			var cargo = ByName(name);
 			if (cargo != null) cargo.score = score;
+			return cargo;
+		}
+
+		/// <summary>
+		/// Don't use this method unless you are doing debug work
+		/// </summary>
+		/// <param name="name"></param>
+		/// <param name="score"></param>
+		/// <param name="delay"></param>
+		/// <returns></returns>
+		public CargoBehaviour ByName(string name, int score, float delay) {
+			var cargo = ByName(name);
+			if (cargo != null) {
+				cargo.score = score;
+				cargo.delay = delay;
+			}
 			return cargo;
 		}
 	}
