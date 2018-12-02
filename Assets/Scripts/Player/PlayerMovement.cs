@@ -161,9 +161,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (lastAnimation != neededAnimation)
         {
-            print("Changing animation to " + neededAnimation);
-            print("facing: " + facing);
-            
+            // print("Changing animation to " + neededAnimation);
+            // print("facing: " + facing);
         }
         lastAnimation = neededAnimation;
         animator.Play(neededAnimation);
