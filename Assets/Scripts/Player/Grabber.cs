@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TrashZone;
 
 public class Grabber : MonoBehaviour
 {
@@ -21,15 +22,18 @@ public class Grabber : MonoBehaviour
 	{
 		if (go.GetComponent<FixedJoint2D>() != null)
 		{
-			print("Removing Joint");
 			go.GetComponent<FixedJoint2D>().connectedBody.bodyType = RigidbodyType2D.Static;
 			Destroy(go.GetComponent<FixedJoint2D>());
+
+			var trashZone = FindObjectOfType<TrashZoneBehaviour>();
+			if (trashZone != null) {
+				trashZone.CheckAndTakeOutTrash(go.GetComponent<FixedJoint2D>().connectedBody.transform);
+			}
 			return false;
 		}
 		
 		if (mostRecent != null)
 		{
-			print("Creating Joint");
 			mostRecent.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
 			go.AddComponent<FixedJoint2D>();  
 			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.GetComponent<Rigidbody2D>();
@@ -43,11 +47,9 @@ public class Grabber : MonoBehaviour
 	{
 		if (other.GetComponent<PlayerMovement>() != null )
 		{
-			print("ignoring trigger because it is me");
 			return;
 		}
 		
-		print("Adding trigger");
 		mostRecent = other;
 	}
 
@@ -55,7 +57,6 @@ public class Grabber : MonoBehaviour
 	{
 		if (other == mostRecent)
 		{
-			print("Removing trigger");
 			mostRecent = null;
 		}
 	}

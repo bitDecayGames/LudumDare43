@@ -29,6 +29,25 @@ public class PlayerMovement : MonoBehaviour
         hitbox = GetComponent<CircleCollider2D>();
     }
 
+    private void Update()
+    {
+        var handPos = Vector2FromAngle(facing); 
+		
+        handPos.Scale(new Vector2(hitbox.radius, hitbox.radius));
+        handPos += hitbox.offset;
+
+        playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0);
+        
+        if (Input.GetKeyDown("space"))
+        {
+            attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
+            if (attached)
+            {
+                anchoredDirection = facing;
+            }
+        }
+    }
+
     private void FixedUpdate()
     {
         var effectiveVelocity = new Vector2();
@@ -167,22 +186,6 @@ public class PlayerMovement : MonoBehaviour
         lastAnimation = neededAnimation;
         animator.Play(neededAnimation);
         body.velocity = targetVelocity;
-
-        var handPos = Vector2FromAngle(facing); 
-		
-        handPos.Scale(new Vector2(hitbox.radius, hitbox.radius));
-        handPos += hitbox.offset;
-			
-        playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0); 
-		
-        if (Input.GetKeyDown("space"))
-        {
-            attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
-            if (attached)
-            {
-                anchoredDirection = facing;
-            }
-        }
     }
 	
     public Vector2 Vector2FromAngle(float a)
