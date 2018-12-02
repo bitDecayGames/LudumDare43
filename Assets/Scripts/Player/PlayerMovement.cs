@@ -48,16 +48,32 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        var move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (move.magnitude < 0.1f)
+        Vector2 movementVector = new Vector2();
+        if (!IsHoldingAnObject())
+        {
+            movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));    
+        }
+        else
+        {
+            if (Facing.IsFacingLeft() || Facing.IsFacingRight())
+            {
+                movementVector.x = Input.GetAxisRaw("Horizontal");
+            }
+            else
+            {
+                movementVector.y = Input.GetAxisRaw("Vertical");
+            }
+        }
+        
+        if (movementVector.magnitude < 0.1f)
         {
             targetVelocity = Vector2.zero;
         }
         else
         {
-            move.Normalize();
-            move.Scale(new Vector2(speed, speed));
-            targetVelocity = move;
+            movementVector.Normalize();
+            movementVector.Scale(new Vector2(speed, speed));
+            targetVelocity = movementVector;
         }
         body.velocity = targetVelocity;
     }
@@ -72,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsHoldingAnObject()
     {
-//        return Input.GetKey(KeyCode.LeftShift);
         return attached;
     }
     
