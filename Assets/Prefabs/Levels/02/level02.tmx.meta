@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 9d0496d19d7c07843bc3f25bc732f0b9
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/level02
+    100002: _MapPrfab/level02/Tile Layer 1
+    100004: _MapPrfab/level02/Water
+    400000: _MapPrfab/level02/Transform
+    400002: _MapPrfab/level02/Tile Layer 1/Transform
+    400004: _MapPrfab/level02/Water/Transform
+    2800000: Atlas_Wooden_1
+    11400000: _MapPrfab/level02/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/level02/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/level02/Tile Layer 1/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/level02/Tile Layer 1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/level02/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/level02/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _superAsset
+    11400014: _TilesetScriptObjectInternal_1
+    11400016: Tile_Wooden_1
+    11400018: Tile_Wooden_2
+    11400020: Tile_Wooden_3
+    11400022: Tile_Wooden_4
+    11400024: Tile_Wooden_5
+    11400026: Tile_Wooden_6
+    11400028: Tile_Wooden_7
+    11400030: Tile_Wooden_8
+    11400032: Tile_Wooden_9
+    11400034: Tile_Wooden_10
+    11400036: Tile_Wooden_11
+    11400038: Tile_Wooden_12
+    11400040: Tile_Wooden_13
+    11400042: Tile_Wooden_14
+    11400044: Tile_Wooden_15
+    11400046: Tile_Wooden_16
+    11400048: Tile_Wooden_17
+    11400050: Tile_Wooden_18
+    11400052: Tile_Wooden_19
+    11400054: Tile_Wooden_20
+    11400056: Tile_Wooden_21
+    11400058: Tile_Wooden_22
+    11400060: Tile_Wooden_23
+    11400062: Tile_Wooden_24
+    11400064: Tile_Wooden_25
+    11400066: Tile_Wooden_26
+    11400068: Tile_Wooden_27
+    11400070: Tile_Wooden_28
+    11400072: Tile_Wooden_29
+    11400074: Tile_Wooden_30
+    11400076: Tile_Wooden_31
+    11400078: Tile_Wooden_32
+    11400080: Tile_Wooden_33
+    11400082: Tile_Wooden_34
+    11400084: Tile_Wooden_35
+    11400086: Tile_Wooden_36
+    11400088: Tile_Wooden_37
+    11400090: Tile_Wooden_38
+    11400092: Tile_Wooden_39
+    11400094: Tile_Wooden_40
+    11400096: Tile_Wooden_41
+    11400098: Tile_Wooden_42
+    11400100: Tile_Wooden_43
+    11400102: Tile_Wooden_44
+    11400104: Tile_Wooden_45
+    11400106: Tile_Wooden_46
+    11400108: Tile_Wooden_47
+    11400110: Tile_Wooden_48
+    11400112: Tile_Wooden_49
+    11400114: Tile_Wooden_50
+    11400116: Tile_Wooden_51
+    11400118: Tile_Wooden_52
+    11400120: Tile_Wooden_53
+    11400122: Tile_Wooden_54
+    11400124: Tile_Wooden_55
+    11400126: Tile_Wooden_56
+    11400128: Tile_Wooden_57
+    11400130: Tile_Wooden_58
+    11400132: Tile_Wooden_59
+    11400134: Tile_Wooden_60
+    11400136: Tile_Wooden_61
+    11400138: Tile_Wooden_62
+    11400140: Tile_Wooden_63
+    11400142: Tile_Wooden_64
+    11400144: Tile_Wooden_65
+    11400146: Tile_Wooden_66
+    11400148: Tile_Wooden_67
+    11400150: Tile_Wooden_68
+    11400152: Tile_Wooden_69
+    11400154: Tile_Wooden_70
+    11400156: Tile_Wooden_71
+    11400158: Tile_Wooden_72
+    21300000: Sprite_Wooden_1
+    21300002: Sprite_Wooden_2
+    21300004: Sprite_Wooden_3
+    21300006: Sprite_Wooden_4
+    21300008: Sprite_Wooden_5
+    21300010: Sprite_Wooden_6
+    21300012: Sprite_Wooden_7
+    21300014: Sprite_Wooden_8
+    21300016: Sprite_Wooden_9
+    21300018: Sprite_Wooden_10
+    21300020: Sprite_Wooden_11
+    21300022: Sprite_Wooden_12
+    21300024: Sprite_Wooden_13
+    21300026: Sprite_Wooden_14
+    21300028: Sprite_Wooden_15
+    21300030: Sprite_Wooden_16
+    21300032: Sprite_Wooden_17
+    21300034: Sprite_Wooden_18
+    21300036: Sprite_Wooden_19
+    21300038: Sprite_Wooden_20
+    21300040: Sprite_Wooden_21
+    21300042: Sprite_Wooden_22
+    21300044: Sprite_Wooden_23
+    21300046: Sprite_Wooden_24
+    21300048: Sprite_Wooden_25
+    21300050: Sprite_Wooden_26
+    21300052: Sprite_Wooden_27
+    21300054: Sprite_Wooden_28
+    21300056: Sprite_Wooden_29
+    21300058: Sprite_Wooden_30
+    21300060: Sprite_Wooden_31
+    21300062: Sprite_Wooden_32
+    21300064: Sprite_Wooden_33
+    21300066: Sprite_Wooden_34
+    21300068: Sprite_Wooden_35
+    21300070: Sprite_Wooden_36
+    21300072: Sprite_Wooden_37
+    21300074: Sprite_Wooden_38
+    21300076: Sprite_Wooden_39
+    21300078: Sprite_Wooden_40
+    21300080: Sprite_Wooden_41
+    21300082: Sprite_Wooden_42
+    21300084: Sprite_Wooden_43
+    21300086: Sprite_Wooden_44
+    21300088: Sprite_Wooden_45
+    21300090: Sprite_Wooden_46
+    21300092: Sprite_Wooden_47
+    21300094: Sprite_Wooden_48
+    21300096: Sprite_Wooden_49
+    21300098: Sprite_Wooden_50
+    21300100: Sprite_Wooden_51
+    21300102: Sprite_Wooden_52
+    21300104: Sprite_Wooden_53
+    21300106: Sprite_Wooden_54
+    21300108: Sprite_Wooden_55
+    21300110: Sprite_Wooden_56
+    21300112: Sprite_Wooden_57
+    21300114: Sprite_Wooden_58
+    21300116: Sprite_Wooden_59
+    21300118: Sprite_Wooden_60
+    21300120: Sprite_Wooden_61
+    21300122: Sprite_Wooden_62
+    21300124: Sprite_Wooden_63
+    21300126: Sprite_Wooden_64
+    21300128: Sprite_Wooden_65
+    21300130: Sprite_Wooden_66
+    21300132: Sprite_Wooden_67
+    21300134: Sprite_Wooden_68
+    21300136: Sprite_Wooden_69
+    21300138: Sprite_Wooden_70
+    21300140: Sprite_Wooden_71
+    21300142: Sprite_Wooden_72
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/level02/Grid
+    3664157343022684176: _MapPrfab/level02/Tile Layer 1/TilemapRenderer
+    3664157343022684178: _MapPrfab/level02/Water/TilemapRenderer
+    8195094279510102542: _MapPrfab/level02/Tile Layer 1/Tilemap
+    8195094279510102544: _MapPrfab/level02/Water/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  errors: []
+  warnings:
+  - Tileset 'Wooden' is an embedded tileset. Exported tilesets are preferred.
+  missingSortingLayers: []
+  missingLayers: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  tilesAsObjects: 0
+  importSorting: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets:
+  - {instanceID: 0}

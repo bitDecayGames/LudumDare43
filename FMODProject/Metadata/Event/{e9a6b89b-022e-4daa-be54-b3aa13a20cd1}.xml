@@ -104,6 +104,9 @@
         </relationship>
     </object>
     <object class="EventMixerMaster" id="{d7f4524a-7462-460f-943f-18e60fa82b80}">
+        <relationship name="modulators">
+            <destination>{301b4d75-6a3a-4814-87e2-19e556b588eb}</destination>
+        </relationship>
         <relationship name="effectChain">
             <destination>{072ab395-ddc2-4f0e-8577-3a54c1df90ee}</destination>
         </relationship>
@@ -220,10 +223,10 @@
     </object>
     <object class="TransitionRegion" id="{5dd6db2b-461a-411f-8a9d-7fcb2a22b908}">
         <property name="position">
-            <value>18.612075471698109</value>
+            <value>0</value>
         </property>
         <property name="length">
-            <value>32.135309973045821</value>
+            <value>50.747385444743927</value>
         </property>
         <relationship name="triggerConditions">
             <destination>{15769c1b-5dc1-40c3-bc29-628733a775c9}</destination>
@@ -251,6 +254,20 @@
         <relationship name="markerTrack">
             <destination>{67af4c4d-c332-4797-ba2c-7dd9ab2368d1}</destination>
         </relationship>
+    </object>
+    <object class="ADSRModulator" id="{301b4d75-6a3a-4814-87e2-19e556b588eb}">
+        <property name="nameOfPropertyBeingModulated">
+            <value>volume</value>
+        </property>
+        <property name="initialValue">
+            <value>-80</value>
+        </property>
+        <property name="attackTime">
+            <value>0</value>
+        </property>
+        <property name="releaseTime">
+            <value>3000</value>
+        </property>
     </object>
     <object class="MixerBusEffectChain" id="{072ab395-ddc2-4f0e-8577-3a54c1df90ee}">
         <relationship name="effects">
@@ -321,7 +338,7 @@
     <object class="MixerBusFader" id="{d31856ed-a554-4795-83ce-03721c60dda1}"/>
     <object class="AutomationPoint" id="{74afa85c-1aeb-4c34-9e4a-ba4e7bd33e4e}">
         <property name="position">
-            <value>94.296875400498394</value>
+            <value>92</value>
         </property>
         <property name="value">
             <value>1</value>

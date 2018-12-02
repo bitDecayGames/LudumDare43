@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/SFX/Creak/boat_creak_1.mp3.meta
+guid: 734e74c675581ce468a0a80bb705cc93
+=======
 guid: cd383ec53aa01a547ae7e99a361b9a32
+>>>>>>> 1cf43dacd00ee197c98add608c205f964ab08a82:Assets/SFX/Creak/zapsplat_household_door_gate_heavy_wood_loud_creak_open_or_close_001_25344.mp3.meta
 AudioImporter:
   externalObjects: {}
   serializedVersion: 6
