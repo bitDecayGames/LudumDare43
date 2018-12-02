@@ -142,7 +142,7 @@ namespace Scoring {
 			started = true;
 		}
 
-		private string IntToCurrency(int value) {
+		public static string IntToCurrency(int value) {
 			var str = ReverseString(value + "");
 			var parts = SplitStringInParts(str, 3);
 			var list = new List<string>();

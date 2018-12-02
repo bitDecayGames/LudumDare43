@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{2385d8b4-1285-45d7-907b-67ddf2db7b2b}">
+        <property name="name">
+            <value>StartMainSong</value>
+        </property>
+        <relationship name="folder">
+            <destination>{850859b5-02d9-44bd-88df-e7ca28e759c6}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{f474cb81-2970-4ed8-adab-d83225f37438}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{f474cb81-2970-4ed8-adab-d83225f37438}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

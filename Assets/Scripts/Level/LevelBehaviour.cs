@@ -4,10 +4,14 @@ using Cargo;
 using DropZone;
 using Scoring;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Utils;
 
 namespace Level {
     public class LevelBehaviour : MonoBehaviour {
-        public ScoringBehaviour ScoreUI;
+        private ScoringBehaviour ScoreUI;
+        private Text CurrentScore;
 
         private bool cargoHasBeenAdded;
         private bool isFinished;
@@ -22,13 +26,19 @@ namespace Level {
 
         private List<CargoBehaviour> scores = new List<CargoBehaviour>();
 
+        void Start() {
+            // if this is the cause of an error, it means you are missing the Score prefab in your scene (remember to put it under a Canvas object)
+            ScoreUI = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<ScoringBehaviour>();
+            // if this is the cause of an error, it means you are missing the CurrentScore prefab in your scene (remember to put it under a Canvas object)
+            CurrentScore = GameObject.FindGameObjectWithTag("CurrentScore").GetComponent<Text>();
+        }
+
         public LevelBehaviour SetRating(LevelRating rating) {
             this.rating = rating;
             return this;
         }
 
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
-            Debug.Log("Add to cargo queue: " + cargo.name + " " + cargo.delay);
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
             return this;
@@ -41,25 +51,23 @@ namespace Level {
 
         public void Score(CargoBehaviour cargo) {
             scores.Add(cargo);
+            CurrentScore.text = "$" + ScoringBehaviour.IntToCurrency(CalculateMyScore().score);
         }
 
         public void Finished() {
             isFinished = true;
+            CurrentScore.gameObject.AddComponent<FadeOutOverTime>().timeToFadeOut = 1f;
             StartCoroutine(WaitThenShowScore());
         }
 
         private IEnumerator WaitThenShowScore() {
             yield return new WaitForSeconds(0.1f);
-            var currentScore = 0;
-            var hasBonus = false;
-            scores.ForEach(s => {
-                if (s != null) {
-                    currentScore += s.score;
-                    if (s.isBonus) hasBonus = true;
-                }
-            });
+            var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore(rating.StarRating(currentScore), currentScore, hasBonus, null, null, null); // TODO: MW do something with the actions at the end there
+            ScoreUI.SetScore(rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, null, () => {
+                // TODO: MW this might be bad?
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }, null); // TODO: MW do something with the actions at the end there
         }
 
         void Update() {
@@ -94,6 +102,27 @@ namespace Level {
             }
 
             return null;
+        }
+
+        private MyScore CalculateMyScore() {
+            var currentScore = new MyScore();
+            scores.ForEach(s => {
+                if (s != null) {
+                    currentScore.score += s.score;
+                    if (s.isBonus) currentScore.hasBonus = true;
+                }
+            });
+            return currentScore;
+        }
+
+        private struct MyScore {
+            public int score;
+            public bool hasBonus;
+
+            public MyScore(int score, bool hasBonus) {
+                this.score = score;
+                this.hasBonus = hasBonus;
+            }
         }
     }
 }
