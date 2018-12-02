@@ -24,6 +24,8 @@ GameObject:
   - component: {fileID: 58081828993576836}
   - component: {fileID: 114179248635715834}
   - component: {fileID: 95110765206725596}
+  - component: {fileID: 114027488984691906}
+  - component: {fileID: 114340534867343958}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -175,6 +177,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114027488984691906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727494340102160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65eb5379d3954008bc58f58be5699a5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PerspectivePoint: {fileID: 0}
+  PlayerMovementController: {fileID: 114179248635715834}
+  Animator: {fileID: 95110765206725596}
+  Facing: {fileID: 114340534867343958}
 --- !u!114 &114179248635715834
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -188,8 +205,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0.68
   playerHands: {fileID: 4004254932006744}
-  animator: {fileID: 95110765206725596}
   sprite: {fileID: 212208508408587890}
+--- !u!114 &114340534867343958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1727494340102160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a696aa3182674e93af2351448c580960, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerMovementController: {fileID: 114179248635715834}
+  Facing: {x: -1, y: 0}
 --- !u!114 &114780249167299870
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,15 +265,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 255
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: ff2ae27071aedac4e908ce963266ffa5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 16, y: 24}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212750027723649874

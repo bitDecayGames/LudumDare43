@@ -8,16 +8,6 @@ public class Grabber : MonoBehaviour
 {
 	private Collider2D mostRecent;
 	
-	// Use this for initialization
-	void Start ()
-	{
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	public bool Activate(GameObject go)
 	{
 		if (go.GetComponent<FixedJoint2D>() != null)

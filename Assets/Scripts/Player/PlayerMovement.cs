@@ -15,7 +15,6 @@ public class PlayerMovement : MonoBehaviour
     private bool anchorAligned;
 
     private Rigidbody2D body;
-    public Animator animator;
     private string lastAnimation;
     
     private CircleCollider2D hitbox;
@@ -66,125 +65,6 @@ public class PlayerMovement : MonoBehaviour
             targetVelocity = move;
             effectiveVelocity = move;
         }
-
-        var neededAnimation = "";
-        // set facing
-        if (effectiveVelocity.x < 0)
-        {
-            facing = 180;
-            if (attached)
-            {
-                if (facing == anchoredDirection)
-                {
-                    neededAnimation = "moving_horizontal_push";
-                    sprite.flipX = true;
-                }
-                else
-                {
-                    neededAnimation = "moving_horizontal_pull";
-                    sprite.flipX = false;
-                }
-            }
-            else
-            {
-                neededAnimation = "moving_horizontal_empty";
-                sprite.flipX = true;
-            }
-        }
-        else if (effectiveVelocity.x > 0)
-        {
-            facing = 0;
-
-            if (attached)
-            {
-                if (facing == anchoredDirection)
-                {
-                    neededAnimation = "moving_horizontal_push";
-                    sprite.flipX = false;
-                }
-                else
-                {
-                    neededAnimation = "moving_horizontal_pull";
-                    sprite.flipX = true;
-                }
-            }
-            else
-            {
-                neededAnimation = "moving_horizontal_empty";
-                sprite.flipX = false;
-            }
-        }
-
-        if (effectiveVelocity.y > 0)
-        {
-            facing = 90;
-            
-            if (attached)
-            {
-                if (facing == anchoredDirection)
-                {
-                    neededAnimation = "moving_vertical_push";
-                    sprite.flipY = true;
-                }
-                else
-                {
-                    neededAnimation = "moving_vertical_pull";
-                    sprite.flipY = true;
-                }
-            }
-            else
-            {
-                neededAnimation = "moving_vertical_empty";
-                sprite.flipY = false;
-            }
-        } else if (effectiveVelocity.y < 0)
-        {
-            facing = 270;
-            
-            if (attached)
-            {
-                if (facing == anchoredDirection)
-                {
-                    neededAnimation = "moving_vertical_push";
-                    sprite.flipY = true;
-                }
-                else
-                {
-                    neededAnimation = "moving_vertical_pull";
-                    sprite.flipY = false;
-                }
-            }
-            else
-            {
-                neededAnimation = "moving_vertical_empty";
-                sprite.flipY = true;
-            }
-        }
-        
-        if (effectiveVelocity.x == 0 && effectiveVelocity.y == 0)
-        {
-            var dirstring = "vertical";
-            if (effectiveFacing % 180 == 0)
-            {
-                dirstring = "horizontal";
-            }
-            if (attached)
-            {
-                neededAnimation = "standing_" + dirstring + "_attached";
-            }
-            else
-            {
-                neededAnimation = "standing_" + dirstring + "_empty";
-            }
-        }
-
-        if (lastAnimation != neededAnimation)
-        {
-            // print("Changing animation to " + neededAnimation);
-            // print("facing: " + facing);
-        }
-        lastAnimation = neededAnimation;
-        animator.Play(neededAnimation);
         body.velocity = targetVelocity;
     }
 	
@@ -196,6 +76,11 @@ public class PlayerMovement : MonoBehaviour
         return vec;
     }
 
+    public bool IsHoldingAnObject()
+    {
+        return Input.GetKey(KeyCode.LeftShift);
+    }
+    
     void OnDestroy() {
         // TODO: MW the player has been squished, it should spawn a player animation for squishyness
     }
