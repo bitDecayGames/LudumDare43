@@ -90,6 +90,11 @@ public class PlayerMovement : MonoBehaviour
     {
         return attached;
     }
+
+    public void PlayStepSound()
+    {
+        FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.StepWood);
+    }
     
     void OnDestroy() {
         // TODO: MW the player has been squished, it should spawn a player animation for squishyness

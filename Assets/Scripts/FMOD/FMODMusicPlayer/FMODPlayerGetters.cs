@@ -15,7 +15,7 @@ public partial class FMODMusicPlayer
 
         foreach (FMODMusicPlayer fmodMusicManager in fmodMusicManagers)
         {
-            if (!fmodMusicManager.gameObject.scene.name.Equals(Constants.Scenes.DontDestroyOnLoad))
+            if (!fmodMusicManager.gameObject.scene.name.Equals(Constants.Scenes.DontDestroyOnLoad.ToString()))
             {
                 continue;
             }
