@@ -17,6 +17,12 @@ namespace DropZone {
             get { return _hasPiece; }
             private set { _hasPiece = value; }
         }
+        
+        private bool _isReady = true;
+        public bool IsReady {
+            get { return _isReady; }
+            set { _isReady = value; }
+        }
 
         public void InitializeCrane(DropZoneBehaviour dropZone) {
             Arm = GetComponentInChildren<SpriteRenderer>();
@@ -29,8 +35,7 @@ namespace DropZone {
             localPos.y = .75f;
             localPos.x = -(Arm.size.x - .11f); // TODO: it should be - for the left, and + for the right
             isLeft = localPos.x < 0;
-
-            print("Local pos: " + localPos);
+            
             transform.localPosition = localPos;
         }
 

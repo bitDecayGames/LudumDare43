@@ -42,7 +42,8 @@ namespace Level {
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
-            print("piece added to queue. New Len: " + cargoQueue.Count);
+            cargo.delay = 4; // TODO: THIS IS A DEBUGGING THING, DON'T FORGET TO GET RID OF IT!!!
+            print("DEBUGGING!!!! Kill me!!!!!");
             return this;
         }
 
@@ -82,11 +83,13 @@ namespace Level {
 
         private void DropNextPiece() {
             if (cargoQueue.Count > 0) {
-                currentlyDropping = true;
-                var cargo = cargoQueue.Dequeue();
                 var dropZone = GetNextDropZone();
-                if (dropZone != null) {
-                    dropZone.SetCargo(cargo, cargo.delay, c => { currentlyDropping = false; });
+                if (dropZone.IsCraneReady) {
+                    currentlyDropping = true;
+                    var cargo = cargoQueue.Dequeue();
+                    if (dropZone != null) {
+                        dropZone.SetCargo(cargo, cargo.delay, c => { currentlyDropping = false; });
+                    }
                 }
             } else {
                 Finished(); // finished dropping cargo, level over :D
@@ -97,8 +100,10 @@ namespace Level {
             if (dropZones.Count > 0) {
                 var dropZone = dropZones[currentDropZone];
 
-                currentDropZone++;
-                if (currentDropZone >= dropZones.Count) currentDropZone = 0;
+                if (!dropZone.IsCraneReady) {
+                    currentDropZone++;
+                    if (currentDropZone >= dropZones.Count) currentDropZone = 0;
+                }
 
                 return dropZone;
             }

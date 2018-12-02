@@ -29,6 +29,12 @@ namespace DropZone {
 		private const float transparentnessStart = 0f;
 		private float transparentness = 0;
 
+		
+        
+		public bool IsCraneReady {
+			get { return crane.IsReady; }
+		}
+		
 		void Start() {
 			zoneMat = ZoneOutline.material;
 			shadowMat = Shadow.material;
@@ -77,20 +83,24 @@ namespace DropZone {
 			else this.timeTilDrop = timeTilDrop;
 
 			if (!crane.HasPiece) {
+				crane.IsReady = false;
 				crane.GoGetNextPiece(timeTilDrop * .3f, () => {
 					crane.SetCargoSprite(cargo.spriteRenderer);
 					StartCoroutine(StartShadow(timeTilDrop * .7f * .3f));
 					crane.GoDropPiece(timeTilDrop * .7f, () => {
 						crane.SetCargoSprite(null);
-						crane.GoGetNextPiece(timeTilDrop * .3f, () => { });
+						crane.IsReady = true;
+						crane.GoGetNextPiece(timeTilDrop * .3f, () => {});
 					});
 				});
 			} else {
+				crane.IsReady = false;
 				crane.SetCargoSprite(cargo.spriteRenderer);
 				StartCoroutine(StartShadow(timeTilDrop * .3f));
 				crane.GoDropPiece(timeTilDrop, () => {
 					crane.SetCargoSprite(null);
-					crane.GoGetNextPiece(timeTilDrop * .3f, () => { });
+					crane.IsReady = true;
+					crane.GoGetNextPiece(timeTilDrop * .3f, () => {});
 				});
 			}
 			this.onDrop = onDrop;
