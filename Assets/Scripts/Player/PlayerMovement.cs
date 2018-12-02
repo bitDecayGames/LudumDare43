@@ -16,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D body;
     public Animator animator;
+    private string lastAnimation;
+    
     private CircleCollider2D hitbox;
     public SpriteRenderer sprite;
 
@@ -30,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         var effectiveVelocity = new Vector2();
-
+        var effectiveFacing = facing;
         
         var move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         if (move.magnitude < 0.1f)
@@ -55,98 +57,116 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (facing == anchoredDirection)
                 {
-                    neededAnimation = "moving_pushing";
+                    neededAnimation = "moving_horizontal_push";
                     sprite.flipX = true;
                 }
                 else
                 {
-                    neededAnimation = "moving_pulling";
+                    neededAnimation = "moving_horizontal_pull";
                     sprite.flipX = false;
                 }
             }
             else
             {
-                neededAnimation = "moving_empty";
+                neededAnimation = "moving_horizontal_empty";
                 sprite.flipX = true;
             }
         }
         else if (effectiveVelocity.x > 0)
         {
             facing = 0;
-            // right facing is default and is never flipped
-            sprite.flipX = false;
 
             if (attached)
             {
                 if (facing == anchoredDirection)
                 {
-                    neededAnimation = "moving_pushing";
+                    neededAnimation = "moving_horizontal_push";
                     sprite.flipX = false;
                 }
                 else
                 {
-                    neededAnimation = "moving_pulling";
+                    neededAnimation = "moving_horizontal_pull";
                     sprite.flipX = true;
                 }
             }
             else
             {
-                neededAnimation = "moving_empty";
+                neededAnimation = "moving_horizontal_empty";
+                sprite.flipX = false;
             }
         }
 
         if (effectiveVelocity.y > 0)
         {
             facing = 90;
+            
             if (attached)
             {
                 if (facing == anchoredDirection)
                 {
-                    neededAnimation = "moving_pushing";
+                    neededAnimation = "moving_vertical_push";
+                    sprite.flipY = true;
                 }
                 else
                 {
-                    neededAnimation = "moving_pulling";
+                    neededAnimation = "moving_vertical_pull";
+                    sprite.flipY = true;
                 }
             }
             else
             {
-                neededAnimation = "moving_empty";
+                neededAnimation = "moving_vertical_empty";
+                sprite.flipY = false;
             }
         } else if (effectiveVelocity.y < 0)
         {
             facing = 270;
+            
             if (attached)
             {
                 if (facing == anchoredDirection)
                 {
-                    neededAnimation = "moving_pushing";
+                    neededAnimation = "moving_vertical_push";
+                    sprite.flipY = true;
                 }
                 else
                 {
-                    neededAnimation = "moving_pulling";
+                    neededAnimation = "moving_vertical_pull";
+                    sprite.flipY = false;
                 }
             }
             else
             {
-                neededAnimation = "moving_empty";
+                neededAnimation = "moving_vertical_empty";
+                sprite.flipY = true;
             }
         }
         
         if (effectiveVelocity.x == 0 && effectiveVelocity.y == 0)
         {
+            var dirstring = "vertical";
+            if (effectiveFacing % 180 == 0)
+            {
+                dirstring = "horizontal";
+            }
             if (attached)
             {
-                neededAnimation = "standing_holding";
+                neededAnimation = "standing_" + dirstring + "_attached";
             }
             else
             {
-                neededAnimation = "standing_empty";
+                neededAnimation = "standing_" + dirstring + "_empty";
             }
         }
 
+        if (lastAnimation != neededAnimation)
+        {
+            print("Changing animation to " + neededAnimation);
+            print("facing: " + facing);
+            
+        }
+        lastAnimation = neededAnimation;
         animator.Play(neededAnimation);
-        
         body.velocity = targetVelocity;
 
         var handPos = Vector2FromAngle(facing); 
