@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="5">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="11">
  <tileset firstgid="1" source="../WoodenTiles2.tsx"/>
  <tileset firstgid="81" source="../water.tsx"/>
  <tileset firstgid="105" source="../Cargo.tsx"/>
@@ -316,9 +316,10 @@
 </data>
  </layer>
  <objectgroup id="2" name="Cargo">
-  <object id="1" gid="109" x="607.5" y="225" width="32" height="48"/>
-  <object id="2" gid="107" x="608.5" y="241.5" width="48" height="32"/>
-  <object id="3" gid="106" x="637.5" y="276" width="36" height="52"/>
-  <object id="4" gid="108" x="607.5" y="273.5" width="32" height="32"/>
+  <object id="5" gid="128" x="592" y="243" width="48" height="64"/>
+  <object id="6" gid="117" x="559.5" y="265.5" width="48" height="32"/>
+  <object id="8" gid="112" x="615" y="279" width="48" height="32"/>
+  <object id="9" gid="132" x="591" y="388" width="80" height="32"/>
+  <object id="10" gid="125" x="560" y="353" width="16" height="16"/>
  </objectgroup>
 </map>
