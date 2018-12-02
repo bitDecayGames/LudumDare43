@@ -4,7 +4,6 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/level01
     100002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)
-    100004: _MapPrfab/level01/Water
     100006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)
     100008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)
     100010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)
@@ -74,7 +73,6 @@ ScriptedImporter:
     100162: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1
     400000: _MapPrfab/level01/Transform
     400002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/Transform
-    400004: _MapPrfab/level01/Water/Transform
     400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/Transform
     400008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/Transform
     400010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)/Transform
@@ -202,8 +200,6 @@ ScriptedImporter:
     11400002: _MapPrfab/level01/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400008: _MapPrfab/level01/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400010: _MapPrfab/level01/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400012: _superAsset
     11400014: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400016: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -272,10 +268,8 @@ ScriptedImporter:
     21200018: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/level01/Grid
-    3664157343022684178: _MapPrfab/level01/Water/TilemapRenderer
     3664157343022684180: _MapPrfab/level01/Boat/TilemapRenderer
     3664157343022684182: _MapPrfab/level01/TrashZone/TilemapRenderer
-    8195094279510102544: _MapPrfab/level01/Water/Tilemap
     8195094279510102546: _MapPrfab/level01/Boat/Tilemap
     8195094279510102548: _MapPrfab/level01/TrashZone/Tilemap
   externalObjects: {}
