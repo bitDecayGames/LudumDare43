@@ -42,8 +42,6 @@ namespace Level {
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
-            cargo.delay = 4; // TODO: THIS IS A DEBUGGING THING, DON'T FORGET TO GET RID OF IT!!!
-            print("DEBUGGING!!!! Kill me!!!!!");
             return this;
         }
 

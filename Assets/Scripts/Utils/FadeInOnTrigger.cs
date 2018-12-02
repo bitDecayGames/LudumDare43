@@ -26,7 +26,7 @@ namespace Utils {
         }
 
         public void FadeIn() {
-            Debug.Log("Start fade in");
+//            Debug.Log("Start fade in");
             time = 0;
         }
 

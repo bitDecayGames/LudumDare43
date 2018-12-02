@@ -148,7 +148,6 @@ public partial class PlayerAnimationController
                 }
             }
         }
-        Debug.Log("Playing animation: " + _animationToPlay);
         Animator.Play(_animationToPlay);
     }
 }

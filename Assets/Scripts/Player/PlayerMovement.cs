@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -8,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
 
     public Transform playerHands;
-    private int facing;
+    public FacingComponent Facing;
 
     private bool attached;
     private int anchoredDirection;
@@ -30,40 +28,52 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        var handPos = Vector2FromAngle(facing); 
+        var handPos = Facing.DirectionVector;
 		
         handPos.Scale(new Vector2(hitbox.radius, hitbox.radius));
         handPos += hitbox.offset;
 
-        playerHands.GetComponent<Transform>().localPosition = new Vector3(handPos.x, handPos.y, 0);
+        var PlayerHandsTransform = playerHands.GetComponent<Transform>();
+        
+        PlayerHandsTransform.localPosition = new Vector3(handPos.x, handPos.y, 0);
+        PlayerHandsTransform.eulerAngles = new Vector3(PlayerHandsTransform.rotation.x,
+            PlayerHandsTransform.rotation.y,
+            Facing.GetFacingRotationDegrees());
         
         if (Input.GetKeyDown("space"))
         {
             attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
-            if (attached)
-            {
-                anchoredDirection = facing;
-            }
         }
     }
 
     private void FixedUpdate()
     {
-        var effectiveVelocity = new Vector2();
-        var effectiveFacing = facing;
-        
-        var move = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        if (move.magnitude < 0.1f)
+        Vector2 movementVector = new Vector2();
+        if (!IsHoldingAnObject())
         {
-            effectiveVelocity = body.velocity;
+            movementVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));    
+        }
+        else
+        {
+            if (Facing.IsFacingLeft() || Facing.IsFacingRight())
+            {
+                movementVector.x = Input.GetAxisRaw("Horizontal");
+            }
+            else
+            {
+                movementVector.y = Input.GetAxisRaw("Vertical");
+            }
+        }
+        
+        if (movementVector.magnitude < 0.1f)
+        {
             targetVelocity = Vector2.zero;
         }
         else
         {
-            move.Normalize();
-            move.Scale(new Vector2(speed, speed));
-            targetVelocity = move;
-            effectiveVelocity = move;
+            movementVector.Normalize();
+            movementVector.Scale(new Vector2(speed, speed));
+            targetVelocity = movementVector;
         }
         body.velocity = targetVelocity;
     }
@@ -78,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsHoldingAnObject()
     {
-        return Input.GetKey(KeyCode.LeftShift);
+        return attached;
     }
     
     void OnDestroy() {

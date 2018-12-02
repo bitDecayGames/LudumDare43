@@ -35,7 +35,6 @@ namespace DropZone {
             localPos.y = .75f;
             localPos.x = -(Arm.size.x - .11f); // TODO: it should be - for the left, and + for the right
             isLeft = localPos.x < 0;
-            
             transform.localPosition = localPos;
         }
 
