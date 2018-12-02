@@ -36,7 +36,7 @@ public class Grabber : MonoBehaviour
 		{
 			mostRecent.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
 			go.AddComponent<FixedJoint2D>();  
-			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.GetComponent<Rigidbody2D>();
+			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.attachedRigidbody;
 			return true;
 		}
 
@@ -49,7 +49,7 @@ public class Grabber : MonoBehaviour
 		{
 			return;
 		}
-		
+		print("Adding collision with " + other.gameObject);
 		mostRecent = other;
 	}
 
@@ -57,6 +57,7 @@ public class Grabber : MonoBehaviour
 	{
 		if (other == mostRecent)
 		{
+			print("Removing collision with " + other.gameObject);
 			mostRecent = null;
 		}
 	}

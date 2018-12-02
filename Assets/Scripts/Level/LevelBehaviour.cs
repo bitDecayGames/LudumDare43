@@ -42,6 +42,7 @@ namespace Level {
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
+            print("piece added to queue. New Len: " + cargoQueue.Count);
             return this;
         }
 
