@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{5fe8850d-34be-4a89-bc67-bb228d792627}">
+        <property name="assetPath">
+            <value>slide-wood.mp3</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>10.422857142857143</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{eb1653ed-b132-4243-9cee-880d041b0dfa}</destination>
+        </relationship>
+    </object>
+</objects>
