@@ -20,11 +20,6 @@ public class FMODSoundEffectsPlayer : MonoBehaviour
 	private bool _waitingForSoundToFinish;
 	private Delegates.SignalDoneCallback _callback;
 
-	private void Awake()
-	{
-		RuntimeManager.LoadBank("SFX", true);
-	}
-
 	private void Update()
 	{
 		if (_waitingForSoundToFinish)
