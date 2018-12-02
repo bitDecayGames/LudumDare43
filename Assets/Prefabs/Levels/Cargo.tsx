@@ -56,8 +56,9 @@
   </properties>
   <image width="32" height="48" source="../../Images/Pieces/t.png"/>
   <objectgroup draworder="index">
-   <object id="12" x="0" y="-0.0909091" width="16" height="48.0909"/>
-   <object id="13" x="12.3636" y="16" width="19.5455" height="16"/>
+   <object id="14" x="0" y="2.36364">
+    <polygon points="0,0 2.18182,-2.27273 13,-2.36364 15.8182,0.545455 15.8182,13.7273 29.3636,13.7273 31.9091,15.6364 31.8182,27.8182 29.9091,29.5455 15.9091,29.5455 15.8182,43.6364 13.7273,45.5455 1.81818,45.6364 0,43.6364"/>
+   </object>
   </objectgroup>
  </tile>
 </tileset>

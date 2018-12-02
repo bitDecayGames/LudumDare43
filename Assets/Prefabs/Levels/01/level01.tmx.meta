@@ -3,249 +3,201 @@ guid: 6105cf5074d89fd4c976cf0ed50798bd
 ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/level01
-    100002: _MapPrfab/level01/Tile Layer 1
+    100002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)
     100004: _MapPrfab/level01/Water
-    100006: _MapPrfab/level01/Object Layer 1
+    100006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)
+    100008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)
+    100010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)
+    100026: _MapPrfab/level01/Boat
+    100028: _MapPrfab/level01/Boat/Collision_Default
+    100030: _MapPrfab/level01/Boat/Collision_Default/Polygon
+    100032: _MapPrfab/level01/Boat/Collision_Default/Polygon (1)
+    100034: _MapPrfab/level01/Boat/Collision_Default/Polygon (2)
+    100036: _MapPrfab/level01/Boat/Collision_Default/Polygon (3)
+    100038: _MapPrfab/level01/Boat/Collision_Default/Polygon (4)
+    100040: _MapPrfab/level01/Boat/Collision_Default/Polygon (5)
+    100042: _MapPrfab/level01/Boat/Collision_Default/Polygon (6)
+    100044: _MapPrfab/level01/Cargo
+    100046: _MapPrfab/level01/Cargo/Object_1 (TRS)
+    100048: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)
+    100050: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1
+    100052: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14
+    100054: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+    100056: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (1)
+    100058: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (2)
+    100060: _MapPrfab/level01/Cargo/Object_2 (TRS)
+    100062: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)
+    100064: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2
+    100066: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1
+    100068: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+    100070: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (1)
+    100072: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (2)
+    100074: _MapPrfab/level01/Cargo/Object_3 (TRS)
+    100076: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)
+    100078: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3
+    100080: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1
+    100082: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon
+    100084: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon
+      (1)
+    100086: _MapPrfab/level01/Cargo/Object_4 (TRS)
+    100088: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)
+    100090: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4
+    100092: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/Object_1
+    100094: _MapPrfab/level01/TrashZone
+    100096: _MapPrfab/level01/TrashZone/Collision_Default
+    100098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon
     400000: _MapPrfab/level01/Transform
-    400002: _MapPrfab/level01/Tile Layer 1/Transform
+    400002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/Transform
     400004: _MapPrfab/level01/Water/Transform
-    400006: _MapPrfab/level01/Object Layer 1/Transform
-    2800000: Atlas_Wooden_1
-    2800002: Atlas_water_1
+    400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/Transform
+    400008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/Transform
+    400010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)/Transform
+    400026: _MapPrfab/level01/Boat/Transform
+    400028: _MapPrfab/level01/Boat/Collision_Default/Transform
+    400030: _MapPrfab/level01/Boat/Collision_Default/Polygon/Transform
+    400032: _MapPrfab/level01/Boat/Collision_Default/Polygon (1)/Transform
+    400034: _MapPrfab/level01/Boat/Collision_Default/Polygon (2)/Transform
+    400036: _MapPrfab/level01/Boat/Collision_Default/Polygon (3)/Transform
+    400038: _MapPrfab/level01/Boat/Collision_Default/Polygon (4)/Transform
+    400040: _MapPrfab/level01/Boat/Collision_Default/Polygon (5)/Transform
+    400042: _MapPrfab/level01/Boat/Collision_Default/Polygon (6)/Transform
+    400044: _MapPrfab/level01/Cargo/Transform
+    400046: _MapPrfab/level01/Cargo/Object_1 (TRS)/Transform
+    400048: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Transform
+    400050: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Transform
+    400052: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/Transform
+    400054: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon/Transform
+    400056: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (1)/Transform
+    400058: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (2)/Transform
+    400060: _MapPrfab/level01/Cargo/Object_2 (TRS)/Transform
+    400062: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Transform
+    400064: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Transform
+    400066: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/Transform
+    400068: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon/Transform
+    400070: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (1)/Transform
+    400072: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (2)/Transform
+    400074: _MapPrfab/level01/Cargo/Object_3 (TRS)/Transform
+    400076: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Transform
+    400078: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Transform
+    400080: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/Transform
+    400082: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon/Transform
+    400084: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon
+      (1)/Transform
+    400086: _MapPrfab/level01/Cargo/Object_4 (TRS)/Transform
+    400088: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Transform
+    400090: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/Transform
+    400092: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/Object_1/Transform
+    400094: _MapPrfab/level01/TrashZone/Transform
+    400096: _MapPrfab/level01/TrashZone/Collision_Default/Transform
+    400098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/Transform
+    5000002: _MapPrfab/level01/Boat/Collision_Default/Rigidbody2D
+    5000004: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/Rigidbody2D
+    5000006: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/Rigidbody2D
+    5000008: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/Rigidbody2D
+    5000010: _MapPrfab/level01/TrashZone/Collision_Default/Rigidbody2D
+    6000000: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/PolygonCollider2D
+    6000002: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/PolygonCollider2D
+    6000004: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/PolygonCollider2D
+    6000006: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)/PolygonCollider2D
+    6000016: _MapPrfab/level01/Boat/Collision_Default/Polygon/PolygonCollider2D
+    6000018: _MapPrfab/level01/Boat/Collision_Default/Polygon (1)/PolygonCollider2D
+    6000020: _MapPrfab/level01/Boat/Collision_Default/Polygon (2)/PolygonCollider2D
+    6000022: _MapPrfab/level01/Boat/Collision_Default/Polygon (3)/PolygonCollider2D
+    6000024: _MapPrfab/level01/Boat/Collision_Default/Polygon (4)/PolygonCollider2D
+    6000026: _MapPrfab/level01/Boat/Collision_Default/Polygon (5)/PolygonCollider2D
+    6000028: _MapPrfab/level01/Boat/Collision_Default/Polygon (6)/PolygonCollider2D
+    6000030: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon/PolygonCollider2D
+    6000032: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000034: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (2)/PolygonCollider2D
+    6000036: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon/PolygonCollider2D
+    6000038: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000040: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (2)/PolygonCollider2D
+    6000042: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon/PolygonCollider2D
+    6000044: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000046: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/Object_1/PolygonCollider2D
+    6000048: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/PolygonCollider2D
+    6600002: _MapPrfab/level01/Boat/Collision_Default/CompositeCollider2D
+    6600004: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/CompositeCollider2D
+    6600006: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/CompositeCollider2D
+    6600008: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/CompositeCollider2D
+    6600010: _MapPrfab/level01/TrashZone/Collision_Default/CompositeCollider2D
     11400000: _MapPrfab/level01/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/level01/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400004: _MapPrfab/level01/Tile Layer 1/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
-    11400006: _MapPrfab/level01/Tile Layer 1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400008: _MapPrfab/level01/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400010: _MapPrfab/level01/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400012: _superAsset
-    11400014: _TilesetScriptObjectInternal_1
-    11400016: Tile_Wooden_1
-    11400018: Tile_Wooden_2
-    11400020: Tile_Wooden_3
-    11400022: Tile_Wooden_4
-    11400024: Tile_Wooden_5
-    11400026: Tile_Wooden_6
-    11400028: Tile_Wooden_7
-    11400030: Tile_Wooden_8
-    11400032: Tile_Wooden_9
-    11400034: Tile_Wooden_10
-    11400036: Tile_Wooden_11
-    11400038: Tile_Wooden_12
-    11400040: Tile_Wooden_13
-    11400042: Tile_Wooden_14
-    11400044: Tile_Wooden_15
-    11400046: Tile_Wooden_16
-    11400048: Tile_Wooden_17
-    11400050: Tile_Wooden_18
-    11400052: Tile_Wooden_19
-    11400054: Tile_Wooden_20
-    11400056: Tile_Wooden_21
-    11400058: Tile_Wooden_22
-    11400060: Tile_Wooden_23
-    11400062: Tile_Wooden_24
-    11400064: Tile_Wooden_25
-    11400066: Tile_Wooden_26
-    11400068: Tile_Wooden_27
-    11400070: Tile_Wooden_28
-    11400072: Tile_Wooden_29
-    11400074: Tile_Wooden_30
-    11400076: Tile_Wooden_31
-    11400078: Tile_Wooden_32
-    11400080: Tile_Wooden_33
-    11400082: Tile_Wooden_34
-    11400084: Tile_Wooden_35
-    11400086: Tile_Wooden_36
-    11400088: Tile_Wooden_37
-    11400090: Tile_Wooden_38
-    11400092: Tile_Wooden_39
-    11400094: Tile_Wooden_40
-    11400096: Tile_Wooden_41
-    11400098: Tile_Wooden_42
-    11400100: Tile_Wooden_43
-    11400102: Tile_Wooden_44
-    11400104: Tile_Wooden_45
-    11400106: Tile_Wooden_46
-    11400108: Tile_Wooden_47
-    11400110: Tile_Wooden_48
-    11400112: Tile_Wooden_49
-    11400114: Tile_Wooden_50
-    11400116: Tile_Wooden_51
-    11400118: Tile_Wooden_52
-    11400120: Tile_Wooden_53
-    11400122: Tile_Wooden_54
-    11400124: Tile_Wooden_55
-    11400126: Tile_Wooden_56
-    11400128: Tile_Wooden_57
-    11400130: Tile_Wooden_58
-    11400132: Tile_Wooden_59
-    11400134: Tile_Wooden_60
-    11400136: Tile_Wooden_61
-    11400138: Tile_Wooden_62
-    11400140: Tile_Wooden_63
-    11400142: Tile_Wooden_64
-    11400144: _MapPrfab/level01/Object Layer 1/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
-    11400146: _MapPrfab/level01/Object Layer 1/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400148: Tile_Wooden_65
-    11400150: Tile_Wooden_66
-    11400152: Tile_Wooden_67
-    11400154: Tile_Wooden_68
-    11400156: Tile_Wooden_69
-    11400158: Tile_Wooden_70
-    11400160: Tile_Wooden_71
-    11400162: Tile_Wooden_72
-    11400164: Tile_Wooden_73
-    11400166: Tile_Wooden_74
-    11400168: Tile_Wooden_75
-    11400170: Tile_Wooden_76
-    11400172: Tile_Wooden_77
-    11400174: Tile_Wooden_78
-    11400176: Tile_Wooden_79
-    11400178: Tile_Wooden_80
-    11400180: _TilesetScriptObjectInternal_2
-    11400182: Tile_water_1
-    11400184: Tile_water_2
-    11400186: Tile_water_3
-    11400188: Tile_water_4
-    11400190: Tile_water_5
-    11400192: Tile_water_6
-    11400194: Tile_water_7
-    11400196: Tile_water_8
-    11400198: Tile_water_9
-    11400200: Tile_water_10
-    11400202: Tile_water_11
-    11400204: Tile_water_12
-    11400206: Tile_water_13
-    11400208: Tile_water_14
-    11400210: Tile_water_15
-    11400212: Tile_water_16
-    11400214: Tile_water_17
-    11400216: Tile_water_18
-    11400218: Tile_water_19
-    11400220: Tile_water_20
-    11400222: Tile_water_21
-    11400224: Tile_water_22
-    11400226: Tile_water_23
-    11400228: Tile_water_24
-    21300000: Sprite_Wooden_1
-    21300002: Sprite_Wooden_2
-    21300004: Sprite_Wooden_3
-    21300006: Sprite_Wooden_4
-    21300008: Sprite_Wooden_5
-    21300010: Sprite_Wooden_6
-    21300012: Sprite_Wooden_7
-    21300014: Sprite_Wooden_8
-    21300016: Sprite_Wooden_9
-    21300018: Sprite_Wooden_10
-    21300020: Sprite_Wooden_11
-    21300022: Sprite_Wooden_12
-    21300024: Sprite_Wooden_13
-    21300026: Sprite_Wooden_14
-    21300028: Sprite_Wooden_15
-    21300030: Sprite_Wooden_16
-    21300032: Sprite_Wooden_17
-    21300034: Sprite_Wooden_18
-    21300036: Sprite_Wooden_19
-    21300038: Sprite_Wooden_20
-    21300040: Sprite_Wooden_21
-    21300042: Sprite_Wooden_22
-    21300044: Sprite_Wooden_23
-    21300046: Sprite_Wooden_24
-    21300048: Sprite_Wooden_25
-    21300050: Sprite_Wooden_26
-    21300052: Sprite_Wooden_27
-    21300054: Sprite_Wooden_28
-    21300056: Sprite_Wooden_29
-    21300058: Sprite_Wooden_30
-    21300060: Sprite_Wooden_31
-    21300062: Sprite_Wooden_32
-    21300064: Sprite_Wooden_33
-    21300066: Sprite_Wooden_34
-    21300068: Sprite_Wooden_35
-    21300070: Sprite_Wooden_36
-    21300072: Sprite_Wooden_37
-    21300074: Sprite_Wooden_38
-    21300076: Sprite_Wooden_39
-    21300078: Sprite_Wooden_40
-    21300080: Sprite_Wooden_41
-    21300082: Sprite_Wooden_42
-    21300084: Sprite_Wooden_43
-    21300086: Sprite_Wooden_44
-    21300088: Sprite_Wooden_45
-    21300090: Sprite_Wooden_46
-    21300092: Sprite_Wooden_47
-    21300094: Sprite_Wooden_48
-    21300096: Sprite_Wooden_49
-    21300098: Sprite_Wooden_50
-    21300100: Sprite_Wooden_51
-    21300102: Sprite_Wooden_52
-    21300104: Sprite_Wooden_53
-    21300106: Sprite_Wooden_54
-    21300108: Sprite_Wooden_55
-    21300110: Sprite_Wooden_56
-    21300112: Sprite_Wooden_57
-    21300114: Sprite_Wooden_58
-    21300116: Sprite_Wooden_59
-    21300118: Sprite_Wooden_60
-    21300120: Sprite_Wooden_61
-    21300122: Sprite_Wooden_62
-    21300124: Sprite_Wooden_63
-    21300126: Sprite_Wooden_64
-    21300128: Sprite_Wooden_65
-    21300130: Sprite_Wooden_66
-    21300132: Sprite_Wooden_67
-    21300134: Sprite_Wooden_68
-    21300136: Sprite_Wooden_69
-    21300138: Sprite_Wooden_70
-    21300140: Sprite_Wooden_71
-    21300142: Sprite_Wooden_72
-    21300144: Sprite_Wooden_73
-    21300146: Sprite_Wooden_74
-    21300148: Sprite_Wooden_75
-    21300150: Sprite_Wooden_76
-    21300152: Sprite_Wooden_77
-    21300154: Sprite_Wooden_78
-    21300156: Sprite_Wooden_79
-    21300158: Sprite_Wooden_80
-    21300160: Sprite_water_1
-    21300162: Sprite_water_2
-    21300164: Sprite_water_3
-    21300166: Sprite_water_4
-    21300168: Sprite_water_5
-    21300170: Sprite_water_6
-    21300172: Sprite_water_7
-    21300174: Sprite_water_8
-    21300176: Sprite_water_9
-    21300178: Sprite_water_10
-    21300180: Sprite_water_11
-    21300182: Sprite_water_12
-    21300184: Sprite_water_13
-    21300186: Sprite_water_14
-    21300188: Sprite_water_15
-    21300190: Sprite_water_16
-    21300192: Sprite_water_17
-    21300194: Sprite_water_18
-    21300196: Sprite_water_19
-    21300198: Sprite_water_20
-    21300200: Sprite_water_21
-    21300202: Sprite_water_22
-    21300204: Sprite_water_23
-    21300206: Sprite_water_24
+    11400014: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400016: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400018: _MapPrfab/level01/Boat/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400020: _MapPrfab/level01/Boat/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400022: _MapPrfab/level01/Boat/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400024: _MapPrfab/level01/Boat/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400026: _MapPrfab/level01/Boat/Collision_Default/Polygon (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400028: _MapPrfab/level01/Boat/Collision_Default/Polygon (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/level01/Boat/Collision_Default/Polygon (6)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400032: _MapPrfab/level01/Cargo/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400034: _MapPrfab/level01/Cargo/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400036: _MapPrfab/level01/Cargo/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400038: _MapPrfab/level01/Cargo/Object_1 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400040: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400042: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400044: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/Object_14/ConvexPolygon
+      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400046: _MapPrfab/level01/Cargo/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400048: _MapPrfab/level01/Cargo/Object_2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400050: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400052: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400054: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/Object_1/ConvexPolygon
+      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400056: _MapPrfab/level01/Cargo/Object_3 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400058: _MapPrfab/level01/Cargo/Object_3 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400060: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400062: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400064: _MapPrfab/level01/Cargo/Object_4 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400066: _MapPrfab/level01/Cargo/Object_4 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400068: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/Object_1/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400070: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400072: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400074: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400076: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400078: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    21200000: _MapPrfab/level01/Cargo/Object_1 (TRS)/Object_1 (CF)/Object_1/SpriteRenderer
+    21200002: _MapPrfab/level01/Cargo/Object_2 (TRS)/Object_2 (CF)/Object_2/SpriteRenderer
+    21200004: _MapPrfab/level01/Cargo/Object_3 (TRS)/Object_3 (CF)/Object_3/SpriteRenderer
+    21200006: _MapPrfab/level01/Cargo/Object_4 (TRS)/Object_4 (CF)/Object_4/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/level01/Grid
-    3664157343022684176: _MapPrfab/level01/Tile Layer 1/TilemapRenderer
     3664157343022684178: _MapPrfab/level01/Water/TilemapRenderer
-    8195094279510102542: _MapPrfab/level01/Tile Layer 1/Tilemap
+    3664157343022684180: _MapPrfab/level01/Boat/TilemapRenderer
+    3664157343022684182: _MapPrfab/level01/TrashZone/TilemapRenderer
     8195094279510102544: _MapPrfab/level01/Water/Tilemap
+    8195094279510102546: _MapPrfab/level01/Boat/Tilemap
+    8195094279510102548: _MapPrfab/level01/TrashZone/Tilemap
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
   errors: []
-  warnings:
-  - Tileset 'Wooden' is an embedded tileset. Exported tilesets are preferred.
-  - Tileset 'water' is an embedded tileset. Exported tilesets are preferred.
+  warnings: []
   missingSortingLayers: []
   missingLayers: []
   pixelsPerUnit: 100
@@ -254,6 +206,4 @@ ScriptedImporter:
   importSorting: 0
   isIsometric: 0
   customImporterClassName: 
-  internalTilesets:
-  - {instanceID: 0}
-  - {instanceID: 0}
+  internalTilesets: []

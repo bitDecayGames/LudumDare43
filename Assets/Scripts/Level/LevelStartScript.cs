@@ -10,13 +10,15 @@ public class LevelStartScript : MonoBehaviour
 {
 
 	public DropZoneBehaviour dropZone;
+
+	private GameObject mapObj;
 	
 	// Use this for initialization
 	void Start ()
 	{
 		var levelB = GetComponent<LevelBehaviour>();
 		// TODO: figure out how to set tags on these
-		var mapObj = GameObject.Find("level");
+		mapObj = GameObject.Find("level");
 		var cargoT = mapObj.transform.Find("Cargo");
 		// 'cargo is layer 11'
 		SetLayerRecursively(cargoT.transform, 11, "Cargo");
@@ -28,6 +30,12 @@ public class LevelStartScript : MonoBehaviour
 		for (int i = 0; i < cargoT.childCount; i++)
 		{
 			var cargoPiece = cargoT.GetChild(i);
+			var childBod = cargoPiece.GetComponentInChildren<Rigidbody2D>();
+
+			var rbod = cargoPiece.gameObject.AddComponent<Rigidbody2D>();
+			rbod.bodyType = RigidbodyType2D.Dynamic;
+			rbod.gameObject.AddComponent<FixedJoint2D>().connectedBody = childBod;
+				
 			var cargoProps = cargoPiece.GetComponent<SuperCustomProperties>();
 			var cargoBehavior = cargoPiece.gameObject.AddComponent<CargoBehaviour>();
 			foreach (CustomProperty p in cargoProps.m_Properties)
@@ -47,8 +55,30 @@ public class LevelStartScript : MonoBehaviour
 
 		// TODO: This should be pulled from the tiled map
 		levelB.AddDropZone(dropZone);
+		
+		
+		
 	}
 	
+	private int frameDelay = 100;
+
+	private void FixedUpdate()
+	{
+		if (frameDelay > 0)
+		{
+			frameDelay--;
+			if (frameDelay <= 0)
+			{
+				foreach (CompositeCollider2D c2d in mapObj.GetComponentsInChildren<CompositeCollider2D>())
+				{
+					c2d.generationType = CompositeCollider2D.GenerationType.Synchronous;
+					c2d.GenerateGeometry();
+				}
+			}
+			}
+		}
+	
+
 	void SetLayerRecursively(Transform t, int layer, string tag)
 	{
 		t.gameObject.layer = layer;
