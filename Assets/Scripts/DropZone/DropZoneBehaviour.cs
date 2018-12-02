@@ -67,17 +67,42 @@ namespace DropZone {
 		public void RotateCargo(float degrees) {
 			var rot = Shadow.transform.rotation;
 			Shadow.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
+			cargo.transform.rotation = Shadow.transform.rotation;
+			crane.SetCargoSprite(cargo.spriteRenderer);
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
 			this.cargo = cargo;
 			if (timeTilDrop <= 0) this.timeTilDrop = 1f; // minumum drop tile is 1 second
 			else this.timeTilDrop = timeTilDrop;
+
+			if (!crane.HasPiece) {
+				crane.GoGetNextPiece(timeTilDrop * .3f, () => {
+					crane.SetCargoSprite(cargo.spriteRenderer);
+					StartCoroutine(StartShadow(timeTilDrop * .7f * .3f));
+					crane.GoDropPiece(timeTilDrop * .7f, () => {
+						crane.SetCargoSprite(null);
+						crane.GoGetNextPiece(timeTilDrop * .3f, () => { });
+					});
+				});
+			} else {
+				crane.SetCargoSprite(cargo.spriteRenderer);
+				StartCoroutine(StartShadow(timeTilDrop * .3f));
+				crane.GoDropPiece(timeTilDrop, () => {
+					crane.SetCargoSprite(null);
+					crane.GoGetNextPiece(timeTilDrop * .3f, () => { });
+				});
+			}
 			this.onDrop = onDrop;
 			time = 0;
+		}
+
+		private IEnumerator StartShadow(float delay) {
+			yield return new WaitForSeconds(delay);
 			Shadow.gameObject.SetActive(true);
 			Shadow.sprite = cargo.spriteRenderer.sprite;
 			Shadow.transform.localScale = cargo.transform.localScale;
+			Shadow.transform.rotation = cargo.transform.rotation;
 			blurryness = blurrynessStart;
 			SetShadowBlurryness();
 			transparentness = transparentnessStart;
