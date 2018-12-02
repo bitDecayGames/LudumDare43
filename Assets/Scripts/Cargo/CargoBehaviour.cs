@@ -28,26 +28,41 @@ namespace Cargo {
         }
 
         public void KillPlayerIfColliding() {
-            // TODO: MW the cargo is in a dangerous state, kill the player if it is currently touching them
+            // the cargo is in a dangerous state, kill the player if it is currently touching them
+            var meColliders = GetComponents<Collider2D>();
+            if (meColliders == null) throw new RuntimeException("Tanner does this");
+
+            foreach (Collider2D meCollider in meColliders) {
+                var player = GameObject.FindWithTag("Player");
+                if (player != null && meCollider.OverlapPoint(player.transform.position)) {
+                    Destroy(player.gameObject);
+                    var level = FindObjectOfType<LevelBehaviour>();
+                    if (level != null) {
+                        level.Finished();
+                    }
+                }
+            }
         }
 
         public void KillSelfIfCollidingWithAnotherCargo() {
-            // TODO: MW check if the cargo has smashed into another cargo, kill this cargo and call LevelBehaviour.Finished()
-            var meCollider = GetComponent<Collider2D>();
-            if (meCollider == null) throw new RuntimeException("Tanner does this");
+            // check if the cargo has smashed into another cargo, kill this cargo and call LevelBehaviour.Finished()
+            var meColliders = GetComponents<Collider2D>();
+            if (meColliders == null) throw new RuntimeException("Tanner does this");
             var contactFilter = new ContactFilter2D();
             contactFilter.SetLayerMask(LayerMask.GetMask("Cargo"));
-            var results = new Collider2D[3];
-            var count = meCollider.OverlapCollider(contactFilter, results);
-            if (count > 0) {
-                foreach (Collider2D otherCollider in results) {
-                    if (otherCollider != null && otherCollider.gameObject != gameObject && otherCollider.CompareTag("Cargo")) {
-                        DestroyOnBoat();
-                        var level = FindObjectOfType<LevelBehaviour>();
-                        if (level != null) {
-                            Debug.Log("Hey! We collided with something!");
-                            level.Finished();
-                            return;
+            
+            foreach (Collider2D meCollider in meColliders) {
+                var results = new Collider2D[2];
+                var count = meCollider.OverlapCollider(contactFilter, results);
+                if (count > 0) {
+                    foreach (Collider2D otherCollider in results) {
+                        if (otherCollider != null && otherCollider.gameObject != gameObject && otherCollider.CompareTag("Cargo")) {
+                            DestroyOnBoat();
+                            var level = FindObjectOfType<LevelBehaviour>();
+                            if (level != null) {
+                                level.Finished();
+                                return;
+                            }
                         }
                     }
                 }

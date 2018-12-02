@@ -4,6 +4,7 @@ using Cargo;
 using DropZone;
 using Scoring;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Level {
     public class LevelBehaviour : MonoBehaviour {
@@ -28,7 +29,6 @@ namespace Level {
         }
 
         public LevelBehaviour AddToCargoQueue(CargoBehaviour cargo) {
-            Debug.Log("Add to cargo queue: " + cargo.name + " " + cargo.delay);
             cargoHasBeenAdded = true;
             cargoQueue.Enqueue(cargo);
             return this;
@@ -59,7 +59,10 @@ namespace Level {
                 }
             });
             scores.Clear();
-            ScoreUI.SetScore(rating.StarRating(currentScore), currentScore, hasBonus, null, null, null); // TODO: MW do something with the actions at the end there
+            ScoreUI.SetScore(rating.StarRating(currentScore), currentScore, hasBonus, null, () => {
+                // TODO: MW this might be bad?
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }, null); // TODO: MW do something with the actions at the end there
         }
 
         void Update() {

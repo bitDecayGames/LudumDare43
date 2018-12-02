@@ -21,10 +21,10 @@ GameObject:
   - component: {fileID: 4858461186200622}
   - component: {fileID: 212344476521254262}
   - component: {fileID: 50256448909221010}
+  - component: {fileID: 66184402670157496}
   - component: {fileID: 61747421200053296}
   - component: {fileID: 61895565881554344}
   - component: {fileID: 114425983236918426}
-  - component: {fileID: 66184402670157496}
   m_Layer: 11
   m_Name: LCargo
   m_TagString: Cargo
@@ -121,7 +121,7 @@ CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056799389585464}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd0c8236b9634d44a9eef57025cd1828, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: 3
+  score: 1
   isBonus: 0
   delay: 5
 --- !u!212 &212344476521254262

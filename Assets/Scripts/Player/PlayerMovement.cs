@@ -58,4 +58,8 @@ public class PlayerMovement : MonoBehaviour
         vec.Normalize();
         return vec;
     }
+
+    void OnDestroy() {
+        // TODO: MW the player has been squished, it should spawn a player animation for squishyness
+    }
 }
