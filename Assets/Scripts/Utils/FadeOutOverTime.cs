@@ -6,14 +6,14 @@ namespace Utils {
         public float timeToFadeOut;
         private float time;
 
-        private Image img;
+        private MaskableGraphic img;
 
         void Start() {
-            img = GetComponent<Image>();
+            img = GetComponent<MaskableGraphic>();
         }
         
         void Update() {
-            if (time < timeToFadeOut) {
+            if (img != null && time < timeToFadeOut) {
                 time += Time.deltaTime;
                 var c = img.color;
                 c.a = Mathf.Clamp(1 - time / timeToFadeOut, 0, 1);

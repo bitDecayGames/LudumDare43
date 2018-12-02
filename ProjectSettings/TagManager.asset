@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Cargo
+  - CurrentScore
+  - ScoreBoard
   layers:
   - Default
   - TransparentFX
