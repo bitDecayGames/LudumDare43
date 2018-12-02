@@ -65,7 +65,11 @@ namespace Level {
             yield return new WaitForSeconds(0.1f);
             var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore(rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, null, () => {
+            ScoreUI
+                .SetScore(
+                    rating.StarRating(currentScore.score), 
+                    currentScore.score, 
+                    currentScore.hasBonus, null, () => {
                 // TODO: MW this might be bad?
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }, null); // TODO: MW do something with the actions at the end there

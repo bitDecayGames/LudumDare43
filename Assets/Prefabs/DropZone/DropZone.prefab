@@ -173,6 +173,8 @@ MonoBehaviour:
     type: 2}
   ZoneOutline: {fileID: 212756570284386378}
   Shadow: {fileID: 212126553583281482}
+  ShadowRotator: {fileID: 4224634605047934}
+  ShadowBottomLeft: {fileID: 4801432780264940}
 --- !u!212 &212126553583281482
 SpriteRenderer:
   m_ObjectHideFlags: 1
