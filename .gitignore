@@ -46,4 +46,5 @@ sysinfo.txt
 # FMOD
 fmod.log
 fmod_editor.log
+Assets/FMODStudioCache.asset
 

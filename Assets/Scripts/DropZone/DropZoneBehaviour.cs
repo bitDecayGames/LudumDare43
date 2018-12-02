@@ -8,6 +8,8 @@ using Utils;
 namespace DropZone {
 	public class DropZoneBehaviour : MonoBehaviour {
 
+		public Crane CranePrefab;
+		private Crane crane;
 		public SpriteRenderer ZoneOutline;
 		private Material zoneMat;
 		public SpriteRenderer Shadow;
@@ -30,6 +32,8 @@ namespace DropZone {
 		void Start() {
 			zoneMat = ZoneOutline.material;
 			shadowMat = Shadow.material;
+			crane = Instantiate(CranePrefab, transform);
+			crane.InitializeCrane(this);
 		}
 		
 		void Update() {

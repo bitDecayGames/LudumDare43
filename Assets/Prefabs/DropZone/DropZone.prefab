@@ -111,6 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a874f1d9f2f94d1192823295bb90758, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CranePrefab: {fileID: 114582163258212414, guid: a9ee1471614cc4f939d7bcd794129c18,
+    type: 2}
   ZoneOutline: {fileID: 212756570284386378}
   Shadow: {fileID: 212126553583281482}
 --- !u!212 &212126553583281482
