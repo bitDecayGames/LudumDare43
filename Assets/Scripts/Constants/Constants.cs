@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class Constants
 {
-    public enum Scene
+    public enum Scenes
     {
+        DontDestroyOnLoad,
         Level1,
     }
 }
