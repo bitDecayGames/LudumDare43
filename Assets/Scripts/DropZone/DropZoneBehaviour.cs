@@ -112,7 +112,12 @@ namespace DropZone {
 		public void DropCargo() {
 			if (cargo != null) {
 				Shadow.gameObject.SetActive(false);
-				var cargoInst = Instantiate(cargo);
+				var cargoInst = cargo;
+				cargoInst.gameObject.SetActive(true);
+				foreach (CompositeCollider2D c2d in cargoInst.GetComponentsInChildren<CompositeCollider2D>())
+				{
+					c2d.GenerateGeometry();
+				}
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
 				cargoInst.KillPlayerIfColliding();

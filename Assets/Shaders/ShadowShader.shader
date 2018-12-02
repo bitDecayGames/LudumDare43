@@ -97,11 +97,18 @@ Shader "Custom/ShadowShader" {
             fixed4 frag(v2f IN) : SV_Target
             {
                 fixed4 c = tex2D(_MainTex, IN.texcoord) * IN.color;
+                float originalA = c.a;
+
                 c.r = 0;
                 c.g = 0;
                 c.b = 0;
                 c = blur(c, IN.texcoord);
                 c.rgb *= c.a;
+                
+                if (originalA < 0.1f) {
+                    // TODO: This is making the shadow sharper than we want
+                    c.a = 0;
+                }
                 return c;
             }
         ENDCG
