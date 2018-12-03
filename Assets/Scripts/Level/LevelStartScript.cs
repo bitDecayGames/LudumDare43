@@ -67,6 +67,7 @@ public class LevelStartScript : MonoBehaviour {
 
         for (int i = 0; i < cargoT.childCount; i++)
         {
+            var isRat = false;
             var innate = false;
             var cargoPiece = cargoT.GetChild(i);
             var childBod = cargoPiece.GetComponentInChildren<Rigidbody2D>();
@@ -79,6 +80,13 @@ public class LevelStartScript : MonoBehaviour {
             var cargoBehavior = cargoPiece.gameObject.AddComponent<CargoBehaviour>();
             foreach (CustomProperty p in cargoProps.m_Properties)
             {
+                if (p.m_Name == "special")
+                {
+                    if (p.m_Value == "rat")
+                    {
+                        isRat = true;
+                    }
+                }
                 if (p.m_Name == "delay")
                 {
                     cargoBehavior.delay = float.Parse(p.m_Value);
@@ -123,7 +131,6 @@ public class LevelStartScript : MonoBehaviour {
                 }
             }
 
-
             var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
 
             try
@@ -147,6 +154,12 @@ public class LevelStartScript : MonoBehaviour {
                 // we just leave these alone. They start on the deck
                 cargoBehavior.SetValueTip(moneyPrefab);
             } else {
+                if (isRat)
+                {
+                    // tell crane about rat
+                    cargoPiece.gameObject.AddComponent<RatMarker>();
+                }
+                
                 cargoPiece.gameObject.SetActive(false);
                 level.AddToCargoQueue(cargoBehavior);
             }
