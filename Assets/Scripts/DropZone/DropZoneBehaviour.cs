@@ -53,10 +53,13 @@ namespace DropZone {
 					DropCargo();
 				}
 
-				if (Input.GetKeyDown(KeyCode.Q)) {
-					RotateCargo(-90);
-				} else if (Input.GetKeyDown(KeyCode.E)) {
+				else if (Input.GetKeyDown(KeyCode.Q))
+				{
+					FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceCounterClockwise);
 					RotateCargo(90);
+				} if (Input.GetKeyDown(KeyCode.E)) {
+					FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceClockwise);
+					RotateCargo(-90);
 				}
 			}
 
