@@ -2815,6 +2815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropZone: {fileID: 1746722365}
+  CenterPrefab: {fileID: 114707348139202678, guid: b5ce15fa0e08c45858e621bdca5a42ef,
+    type: 2}
 --- !u!60 &537943774 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000024, guid: 6105cf5074d89fd4c976cf0ed50798bd,
@@ -3241,6 +3243,48 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000002, guid: 6105cf5074d89fd4c976cf0ed50798bd,
     type: 3}
   m_PrefabInternal: {fileID: 50399299}
+--- !u!1001 &1724402787
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.459999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -2.738773
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.032666154
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4752471924327686, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 164825cb5053c4d42bb0b1bd0dd88f72, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!114 &1746722365 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 114580977197033318, guid: 03b5a9b20adc84b1f9eebc0b04c7acc5,

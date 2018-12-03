@@ -28,7 +28,6 @@ public class LevelStartScript : MonoBehaviour {
 
         // TODO: This should be pulled from the tiled map
         levelB.SetRating(new LevelRating(1, 2, 3));
-        if (CenterPrefab == null) throw new Exception("You must add the Prefabs/TrashZone/CenterMe prefab to this LevelStartScript component");
     }
 
     private void SetupTrash(GameObject tiledMap, LevelBehaviour level) {
@@ -66,8 +65,13 @@ public class LevelStartScript : MonoBehaviour {
             cargoPiece.gameObject.SetActive(false);
 
             var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
-            var centerer = Instantiate(CenterPrefab, cargoProps.transform);
-            centerer.Center(renderererer);
+
+            try {
+                var centerer = Instantiate(CenterPrefab, cargoProps.transform);
+                centerer.Center(renderererer);
+            } catch (Exception e) {
+                throw new Exception("You need to add the Prefabs/TrashZone/CenterMe prefab to the LevelStartScript");
+            }
 
             level.AddToCargoQueue(cargoBehavior);
         }
