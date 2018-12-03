@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using Cargo;
+using Scoring;
 using ScriptableObjects;
 using UnityEngine;
 using Utils;
@@ -16,6 +17,7 @@ namespace DropZone {
 		private Material shadowMat;
 		public Transform ShadowRotator;
 		public Transform ShadowBottomLeft;
+		public MoneyIndicator MoneyIndicatorPrefab;
 
 		private CargoBehaviour cargo;
 		private Action<CargoBehaviour> onDrop;
@@ -73,10 +75,12 @@ namespace DropZone {
 		}
 
 		public void RotateCargo(float degrees) {
-			var rot = ShadowRotator.transform.rotation;
-			ShadowRotator.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
-			cargo.transform.rotation = ShadowRotator.transform.rotation;
-			crane.SetCargoSprite(cargo.spriteRenderer);
+			if (crane.HasPiece) {
+				var rot = ShadowRotator.transform.rotation;
+				ShadowRotator.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
+				cargo.transform.rotation = ShadowRotator.transform.rotation;
+				crane.SetCargoSprite(cargo.spriteRenderer);
+			}
 		}
 		
 		public void SetCargo(CargoBehaviour cargo, float timeTilDrop, Action<CargoBehaviour> onDrop) {
@@ -136,6 +140,9 @@ namespace DropZone {
 				}
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
+				var money = Instantiate(MoneyIndicatorPrefab, cargoInst.transform.GetChild(0));
+				money.SetText("$" + cargoInst.score);
+				money.transform.localPosition = new Vector3(0, 0, 0);
 				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ImpactWood);
 				cargoInst.KillPlayerIfColliding();
 				StartCoroutine(WaitThenCheckForCollisions(cargoInst));
