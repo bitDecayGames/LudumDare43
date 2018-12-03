@@ -50,9 +50,11 @@ namespace Cargo {
                 }
             }
 
-            if (GetComponent<Infected>() != null)
+            if (GetComponentInChildren<Infected>() != null)
             {
                 score = -50;
+                transform.GetComponentInChildren<MoneyIndicator>().SetText("$" + ScoringBehaviour.IntToCurrency(score));
+                transform.GetComponentInChildren<MoneyIndicator>().Text.color = Color.red;
             }
         }
 

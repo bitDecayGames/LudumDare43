@@ -34,7 +34,9 @@ namespace TrashZone {
 
 		public void CheckAndTakeOutTrash(Transform cargo) {
 			print("Check and take out trash! " + cargo.position);
-			if (myBox.OverlapPoint(cargo.position)) {
+			if (myBox.OverlapPoint(cargo.position))
+			{
+				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientItemFallingOffShip);
 				var superObj = cargo.gameObject.GetComponentInAncestor<SuperObject>();
 				superObj.GetComponent<CargoBehaviour>().DestroyInWater();
 			}

@@ -18,6 +18,7 @@ public class Sfx : MonoBehaviour
     public static string AmbientRotatePieceClockwise = "Ambient/RotatePieceClockwise";
     public static string AmbientRotatePieceCounterClockwise = "Ambient/RotatePieceCounterClockwise";
     public static string AmbientCratePoinsoned = "Ambient/CratePoisoned";
+    public static string AmbientItemFallingOffShip = "Ambient/ItemFallingOffShip";
     public static string ImpactMetal = "Impact/Metal";
     public static string ImpactMetal2 = "Impact/Metal2";
     public static string ImpactMetalBarrel = "Impact/MetalBarrel";
