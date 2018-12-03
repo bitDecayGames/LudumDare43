@@ -3,6 +3,7 @@ using Boo.Lang.Runtime;
 using Cargo;
 using DropZone;
 using Level;
+using Scoring;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
@@ -21,6 +22,9 @@ public class LevelStartScript : MonoBehaviour {
     public AccelTooltipController accelTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
+    public GameObject RatPrefab;
+
+    public MoneyIndicator moneyPrefab;
 
     // Use this for initialization
     void Start() {
@@ -109,6 +113,14 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     innate = Boolean.Parse(p.m_Value);
                 }
+
+                if (p.m_Name == "infectable")
+                {
+                    if (Boolean.Parse(p.m_Value))
+                    {
+                        cargoBehavior.gameObject.AddComponent<Infectable>();
+                    }
+                }
             }
 
 
@@ -133,6 +145,7 @@ public class LevelStartScript : MonoBehaviour {
             if (innate)
             {
                 // we just leave these alone. They start on the deck
+                cargoBehavior.SetValueTip(moneyPrefab);
             } else {
                 cargoPiece.gameObject.SetActive(false);
                 level.AddToCargoQueue(cargoBehavior);
@@ -230,6 +243,13 @@ public class LevelStartScript : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Instantiate(RatPrefab);
+        }
+    }
 
     void SetLayerRecursively(Transform t, int layer, string tag) {
         t.gameObject.layer = layer;

@@ -34,6 +34,14 @@ ScriptedImporter:
     11400056: Tile_Cargo_27
     11400058: Tile_Cargo_28
     11400060: Tile_Cargo_29
+    11400062: Tile_Cargo_30
+    11400064: Tile_Cargo_31
+    11400066: Tile_Cargo_32
+    11400068: Tile_Cargo_33
+    11400070: Tile_Cargo_34
+    11400072: Tile_Cargo_35
+    11400074: Tile_Cargo_36
+    11400076: Tile_Cargo_37
     21300000: Sprite_Cargo_1
     21300002: Sprite_Cargo_2
     21300004: Sprite_Cargo_3
@@ -63,6 +71,14 @@ ScriptedImporter:
     21300052: Sprite_Cargo_27
     21300054: Sprite_Cargo_28
     21300056: Sprite_Cargo_29
+    21300058: Sprite_Cargo_30
+    21300060: Sprite_Cargo_31
+    21300062: Sprite_Cargo_32
+    21300064: Sprite_Cargo_33
+    21300066: Sprite_Cargo_34
+    21300068: Sprite_Cargo_35
+    21300070: Sprite_Cargo_36
+    21300072: Sprite_Cargo_37
   externalObjects: {}
   userData: 
   assetBundleName: 
