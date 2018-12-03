@@ -16,16 +16,36 @@ public class LevelStartScript : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		var levelB = GetComponent<LevelBehaviour>();
-		// TODO: figure out how to set tags on these
 		mapObj = GameObject.Find("level");
-		var cargoT = mapObj.transform.Find("Cargo");
-		// 'cargo is layer 11'
-		SetLayerRecursively(cargoT.transform, 11, "Cargo");
+		var levelB = GetComponent<LevelBehaviour>();
+
+		SetupTrash(mapObj, levelB);
 		
-		var trashT = mapObj.transform.Find("TrashZone");
+		SetupCargo(mapObj, levelB);
+
+		SetupPerspectivePoint(mapObj);
+
+		// TODO: This should be pulled from the tiled map
+		levelB.AddDropZone(dropZone);
+		// TODO: This should be pulled from the tiled map
+		levelB.SetRating(new LevelRating(1, 2, 3));
+		
+		
+	}
+
+	private void SetupTrash(GameObject tiledMap, LevelBehaviour level)
+	{
+		var trashT = tiledMap.transform.Find("TrashZone");
 		// 'player collidable is layer 10'
 		SetLayerRecursively(trashT.transform, 10, "Untagged");
+	}
+
+	private void SetupCargo(GameObject tiledMap, LevelBehaviour level)
+	{
+		var t = tiledMap.transform;
+		var cargoT = t.Find("Cargo");
+		// 'cargo is layer 11'
+		SetLayerRecursively(cargoT.transform, 11, "Cargo");
 		
 		for (int i = 0; i < cargoT.childCount; i++)
 		{
@@ -50,15 +70,23 @@ public class LevelStartScript : MonoBehaviour
 				}
 			}
 			cargoPiece.gameObject.SetActive(false);
-			levelB.AddToCargoQueue(cargoBehavior);
+			level.AddToCargoQueue(cargoBehavior);
+		}
+	}
+
+	private void SetupPerspectivePoint(GameObject tiledMap)
+	{
+		var items = tiledMap.transform.Find("KeyItems");
+		var centerT = items.Find("center");
+
+		foreach (Collider2D p in centerT.GetComponentsInChildren<Collider2D>())
+		{
+			Destroy(p);
 		}
 
-		// TODO: This should be pulled from the tiled map
-		levelB.AddDropZone(dropZone);
-		// TODO: This should be pulled from the tiled map
-		levelB.SetRating(new LevelRating(1, 2, 3));
-		
-		
+		var player = GameObject.FindWithTag("Player");
+		var playerScript = player.GetComponentInChildren<PlayerAnimationController>();
+		playerScript.PerspectivePoint = centerT.gameObject;
 	}
 	
 	private int frameDelay = 100;

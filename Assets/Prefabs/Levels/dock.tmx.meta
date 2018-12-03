@@ -1,0 +1,39 @@
+fileFormatVersion: 2
+guid: 1ac365ceb51a3694b8051988114e194a
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/dock
+    100002: _MapPrfab/dock/Dock
+    100004: _MapPrfab/dock/Water
+    400000: _MapPrfab/dock/Transform
+    400002: _MapPrfab/dock/Dock/Transform
+    400004: _MapPrfab/dock/Water/Transform
+    11400000: _MapPrfab/dock/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/dock/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/dock/Dock/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/dock/Dock/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/dock/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400010: _MapPrfab/dock/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400012: _superAsset
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/dock/Grid
+    3664157343022684176: _MapPrfab/dock/Dock/TilemapRenderer
+    3664157343022684178: _MapPrfab/dock/Water/TilemapRenderer
+    8195094279510102542: _MapPrfab/dock/Dock/Tilemap
+    8195094279510102544: _MapPrfab/dock/Water/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  tilesAsObjects: 0
+  importSorting: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
