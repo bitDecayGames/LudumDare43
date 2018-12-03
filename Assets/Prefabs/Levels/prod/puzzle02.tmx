@@ -76,11 +76,11 @@
     <property name="innate" type="bool" value="true"/>
    </properties>
   </object>
+  <object id="27" gid="224" x="98.1818" y="193.091" width="48" height="32"/>
   <object id="22" gid="224" x="127.818" y="80.7273" width="48" height="32" rotation="90"/>
   <object id="23" gid="224" x="96" y="112.364" width="48" height="32" rotation="90"/>
   <object id="24" gid="224" x="206.727" y="113.091" width="48" height="32" rotation="180"/>
   <object id="25" gid="224" x="164.909" y="177.636" width="48" height="32"/>
   <object id="26" gid="224" x="163.273" y="161.455" width="48" height="32" rotation="-90"/>
-  <object id="27" gid="224" x="98.1818" y="193.091" width="48" height="32"/>
  </objectgroup>
 </map>

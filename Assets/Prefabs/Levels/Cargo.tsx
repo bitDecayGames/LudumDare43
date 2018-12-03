@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="33" columns="0">
+<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="37" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <properties>
@@ -480,7 +480,7 @@
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Temple Roof"/>
    <property name="innate" type="bool" value="false"/>
-   <property name="material" value="wood"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="48" source="../../Images/Pieces/25.png"/>
@@ -540,5 +540,53 @@
     <polygon points="0.9375,1 2.4375,-0.9375 5.25,-0.875 6.875,0.8125 6.9375,4.3125 5.9375,5.375 6.9375,6.5 7,12.4375 5.875,13.4375 2.0625,13.3125 0.9375,12.25"/>
    </object>
   </objectgroup>
+ </tile>
+ <tile id="33">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Sakura Gi"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="48" height="48" source="../../Images/Pieces/29.png"/>
+ </tile>
+ <tile id="34">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Chrimmus Tree"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="48" height="48" source="../../Images/Pieces/30.png"/>
+ </tile>
+ <tile id="35">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Pyramid"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="stone"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="32" height="32" source="../../Images/Pieces/31.png"/>
+ </tile>
+ <tile id="36">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Ancient Bones"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="stone"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="48" height="32" source="../../Images/Pieces/32.png"/>
  </tile>
 </tileset>
