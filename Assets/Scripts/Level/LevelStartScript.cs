@@ -26,9 +26,6 @@ public class LevelStartScript : MonoBehaviour
 		SetupDropzone(mapObj, levelB);
 
 		SetupPerspectivePoint(mapObj);
-
-		// TODO: This should be pulled from the tiled map
-		levelB.SetRating(new LevelRating(1, 2, 3));
 	}
 
 	private void SetupTrash(GameObject tiledMap, LevelBehaviour level)
@@ -70,6 +67,26 @@ public class LevelStartScript : MonoBehaviour
 			cargoPiece.gameObject.SetActive(false);
 			level.AddToCargoQueue(cargoBehavior);
 		}
+		var props = cargoT.GetComponent<SuperCustomProperties>();
+		var star1Score = 0;
+		var star2Score = 0;
+		var star3Score = 0;
+		foreach (CustomProperty p in props.m_Properties)
+		{
+			if (p.m_Name == "star1")
+			{
+				star1Score = int.Parse(p.m_Value);
+			}
+			if (p.m_Name == "star2")
+			{
+				star2Score = int.Parse(p.m_Value);
+			}
+			if (p.m_Name == "star3")
+			{
+				star3Score = int.Parse(p.m_Value);
+			}
+		}
+		level.SetRating(new LevelRating(star1Score, star2Score, star3Score));
 	}
 
 	private void SetupPerspectivePoint(GameObject tiledMap)
