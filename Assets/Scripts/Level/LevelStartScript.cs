@@ -104,7 +104,8 @@ public class LevelStartScript : MonoBehaviour {
 
             if (isTutorial)
             {
-                Instantiate(grabTip, cargoPiece.GetChild(0));
+                var tip = Instantiate(grabTip, cargoPiece.GetChild(0));
+                tip.transform.localPosition = new Vector3(0, 0, 0);
             }
 
             level.AddToCargoQueue(cargoBehavior);
