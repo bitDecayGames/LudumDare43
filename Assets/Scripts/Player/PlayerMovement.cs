@@ -1,4 +1,5 @@
 ﻿using System;
+using FMOD.Studio;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
@@ -21,6 +22,9 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 targetVelocity;
 
+    private bool _playingSlideSound;
+    private EventInstance _slidingSound;
+    
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
@@ -68,10 +72,28 @@ public class PlayerMovement : MonoBehaviour
         
         if (movementVector.magnitude < 0.1f)
         {
+            if (_playingSlideSound)
+            {
+                _slidingSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                _playingSlideSound = false;
+            }
+            
             targetVelocity = Vector2.zero;
         }
         else
         {
+            if (!_playingSlideSound && IsHoldingAnObject())
+            {
+                _slidingSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.SlideWood);
+                _playingSlideSound = true;
+            }
+
+            if (body.velocity.magnitude < .1f)
+            {
+                _slidingSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                _playingSlideSound = false;
+            }
+            
             movementVector.Normalize();
             movementVector.Scale(new Vector2(speed, speed));
             if (IsHoldingAnObject())

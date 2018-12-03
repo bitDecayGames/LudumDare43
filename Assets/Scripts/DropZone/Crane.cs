@@ -1,4 +1,5 @@
 using System;
+using FMOD.Studio;
 using UnityEngine;
 using Utils;
 
@@ -14,6 +15,8 @@ namespace DropZone {
         private bool isLeft;
         private Action onDone;
 
+        private EventInstance chainSound;
+        
         private bool _hasPiece;
         public bool HasPiece {
             get { return _hasPiece; }
@@ -59,21 +62,36 @@ namespace DropZone {
 
         public void GoGetNextPiece(float time, Action onDone) {
             this.onDone = onDone;
-            Chain.SetTargetLength(.25f, time * .5f, () => {
+            Chain.SetTargetLength(.25f, time * .5f, 
+            () => {
                 ArmRotator.SetTargetRotation(90, time *.5f, () => {
                     HasPiece = true;
                     if (onDone != null) onDone();
                 });
+                chainSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+            },
+            () => {
+                chainSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene()
+                    .PlaySoundEffect(Sfx.AmbientChainMove);
             });
         }
 
         public void GoDropPiece(float time, Action onDone) {
             this.onDone = onDone;
-            ArmRotator.SetTargetRotation(isLeft ? 0 : 180, time * 0.3f, () => {
-                Chain.SetTargetLength(.75f, time * 0.7f, () => {
-                    HasPiece = false;
-                    if (onDone != null) onDone();
-                });
+            ArmRotator.SetTargetRotation(isLeft ? 0 : 180, time * 0.3f, () =>
+            {
+                Chain.SetTargetLength(.75f, time * 0.7f,
+                    () =>
+                    {
+                        HasPiece = false;
+                        chainSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                        if (onDone != null) onDone();
+                    },
+                    () =>
+                    {
+                        chainSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene()
+                            .PlaySoundEffect(Sfx.AmbientChainMove);
+                    });
             });
         }
 

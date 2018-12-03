@@ -1,0 +1,296 @@
+fileFormatVersion: 2
+guid: ca317baeb893bd64fb34791789004f9c
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: _MapPrfab/buoyTest
+    100002: _MapPrfab/buoyTest/Boat
+    100004: _MapPrfab/buoyTest/Boat/Collision_Default
+    100006: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon
+    100008: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (1)
+    100010: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (2)
+    100012: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (3)
+    100014: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (4)
+    100016: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (5)
+    100018: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (6)
+    100020: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (7)
+    100022: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (8)
+    100024: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (9)
+    100026: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (10)
+    100028: _MapPrfab/buoyTest/Cargo
+    100030: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)
+    100032: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)
+    100034: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5
+    100036: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1
+    100038: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+    100040: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (1)
+    100042: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (2)
+    100044: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (3)
+    100046: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (4)
+    100048: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)
+    100050: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)
+    100052: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)
+    100054: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6
+    100056: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1
+    100058: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
+    100060: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
+      (1)
+    100062: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)
+    100064: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)
+    100066: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8
+    100068: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1
+    100070: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
+    100072: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
+      (1)
+    100074: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)
+    100076: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)
+    100078: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9
+    100080: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1
+    100082: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+    100084: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (1)
+    100086: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (2)
+    100088: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (3)
+    100090: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (4)
+    100092: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)
+    100094: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)
+    100096: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10
+    100098: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1
+    100100: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
+    100102: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
+      (1)
+    100104: _MapPrfab/buoyTest/KeyItems
+    100106: _MapPrfab/buoyTest/KeyItems/center
+    100108: _MapPrfab/buoyTest/TrashZone
+    100110: _MapPrfab/buoyTest/TrashZone/Collision_Default
+    100112: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon
+    100114: _MapPrfab/buoyTest/Water
+    400000: _MapPrfab/buoyTest/Transform
+    400002: _MapPrfab/buoyTest/Boat/Transform
+    400004: _MapPrfab/buoyTest/Boat/Collision_Default/Transform
+    400006: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon/Transform
+    400008: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (1)/Transform
+    400010: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (2)/Transform
+    400012: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (3)/Transform
+    400014: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (4)/Transform
+    400016: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (5)/Transform
+    400018: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (6)/Transform
+    400020: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (7)/Transform
+    400022: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (8)/Transform
+    400024: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (9)/Transform
+    400026: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (10)/Transform
+    400028: _MapPrfab/buoyTest/Cargo/Transform
+    400030: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Transform
+    400032: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Transform
+    400034: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Transform
+    400036: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/Transform
+    400038: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon/Transform
+    400040: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (1)/Transform
+    400042: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (2)/Transform
+    400044: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (3)/Transform
+    400046: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (4)/Transform
+    400048: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/Transform
+    400050: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Transform
+    400052: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Transform
+    400054: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Transform
+    400056: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/Transform
+    400058: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/Transform
+    400060: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
+      (1)/Transform
+    400062: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Transform
+    400064: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Transform
+    400066: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Transform
+    400068: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/Transform
+    400070: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/Transform
+    400072: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
+      (1)/Transform
+    400074: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Transform
+    400076: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Transform
+    400078: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Transform
+    400080: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/Transform
+    400082: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon/Transform
+    400084: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (1)/Transform
+    400086: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (2)/Transform
+    400088: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (3)/Transform
+    400090: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (4)/Transform
+    400092: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Transform
+    400094: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Transform
+    400096: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Transform
+    400098: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/Transform
+    400100: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/Transform
+    400102: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
+      (1)/Transform
+    400104: _MapPrfab/buoyTest/KeyItems/Transform
+    400106: _MapPrfab/buoyTest/KeyItems/center/Transform
+    400108: _MapPrfab/buoyTest/TrashZone/Transform
+    400110: _MapPrfab/buoyTest/TrashZone/Collision_Default/Transform
+    400112: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon/Transform
+    400114: _MapPrfab/buoyTest/Water/Transform
+    5000000: _MapPrfab/buoyTest/Boat/Collision_Default/Rigidbody2D
+    5000002: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/Rigidbody2D
+    5000004: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/Rigidbody2D
+    5000006: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/Rigidbody2D
+    5000008: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/Rigidbody2D
+    5000010: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/Rigidbody2D
+    5000012: _MapPrfab/buoyTest/TrashZone/Collision_Default/Rigidbody2D
+    5800000: _MapPrfab/buoyTest/KeyItems/center/CircleCollider2D
+    6000000: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon/PolygonCollider2D
+    6000002: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (1)/PolygonCollider2D
+    6000004: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (2)/PolygonCollider2D
+    6000006: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (3)/PolygonCollider2D
+    6000008: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (4)/PolygonCollider2D
+    6000010: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (5)/PolygonCollider2D
+    6000012: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (6)/PolygonCollider2D
+    6000014: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (7)/PolygonCollider2D
+    6000016: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (8)/PolygonCollider2D
+    6000018: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (9)/PolygonCollider2D
+    6000020: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (10)/PolygonCollider2D
+    6000022: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon/PolygonCollider2D
+    6000024: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000026: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (2)/PolygonCollider2D
+    6000028: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (3)/PolygonCollider2D
+    6000030: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (4)/PolygonCollider2D
+    6000032: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/PolygonCollider2D
+    6000034: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/PolygonCollider2D
+    6000036: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000038: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/PolygonCollider2D
+    6000040: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000042: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon/PolygonCollider2D
+    6000044: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000046: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (2)/PolygonCollider2D
+    6000048: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (3)/PolygonCollider2D
+    6000050: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (4)/PolygonCollider2D
+    6000052: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/PolygonCollider2D
+    6000054: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
+      (1)/PolygonCollider2D
+    6000056: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon/PolygonCollider2D
+    6600000: _MapPrfab/buoyTest/Boat/Collision_Default/CompositeCollider2D
+    6600002: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/CompositeCollider2D
+    6600004: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/CompositeCollider2D
+    6600006: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/CompositeCollider2D
+    6600008: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/CompositeCollider2D
+    6600010: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/CompositeCollider2D
+    6600012: _MapPrfab/buoyTest/TrashZone/Collision_Default/CompositeCollider2D
+    11400000: _MapPrfab/buoyTest/MonoBehaviour-SuperTiled2Unity.SuperMap
+    11400002: _MapPrfab/buoyTest/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400004: _MapPrfab/buoyTest/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400006: _MapPrfab/buoyTest/Boat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400008: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400010: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400012: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400014: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400016: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400018: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400020: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (6)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400022: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (7)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400024: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (8)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400026: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (9)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400028: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (10)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400030: _MapPrfab/buoyTest/Cargo/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400032: _MapPrfab/buoyTest/Cargo/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400034: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400036: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400038: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400040: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400042: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400044: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400046: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400048: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
+      (5)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400050: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400052: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400054: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400056: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400058: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400060: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400062: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400064: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400066: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400068: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400070: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400072: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400074: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400076: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (3)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400078: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
+      (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400080: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400082: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400084: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400086: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
+      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400088: _MapPrfab/buoyTest/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
+    11400090: _MapPrfab/buoyTest/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400092: _MapPrfab/buoyTest/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400094: _MapPrfab/buoyTest/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400096: _MapPrfab/buoyTest/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400098: _MapPrfab/buoyTest/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400100: _MapPrfab/buoyTest/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400102: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400104: _MapPrfab/buoyTest/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
+    11400106: _MapPrfab/buoyTest/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400108: _superAsset
+    21200000: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/SpriteRenderer
+    21200002: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/SpriteRenderer
+    21200004: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
+    21200006: _MapPrfab/buoyTest/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/SpriteRenderer
+    21200008: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/SpriteRenderer
+    100100000: _MapPrfab
+    2569400265252428796: _MapPrfab/buoyTest/Grid
+    3664157343022684176: _MapPrfab/buoyTest/Boat/TilemapRenderer
+    3664157343022684178: _MapPrfab/buoyTest/TrashZone/TilemapRenderer
+    3664157343022684180: _MapPrfab/buoyTest/Water/TilemapRenderer
+    8195094279510102542: _MapPrfab/buoyTest/Boat/Tilemap
+    8195094279510102544: _MapPrfab/buoyTest/TrashZone/Tilemap
+    8195094279510102546: _MapPrfab/buoyTest/Water/Tilemap
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 1fa25d03934ea624a82bf2fcee6f0873, type: 3}
+  errors: []
+  warnings: []
+  missingSortingLayers: []
+  missingLayers: []
+  pixelsPerUnit: 100
+  edgesPerEllipse: 32
+  tilesAsObjects: 0
+  importSorting: 0
+  isIsometric: 0
+  customImporterClassName: 
+  internalTilesets: []
