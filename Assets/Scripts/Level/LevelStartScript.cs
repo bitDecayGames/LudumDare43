@@ -15,6 +15,7 @@ public class LevelStartScript : MonoBehaviour {
 
     private bool isTutorial;
 
+    public bool SplashHasHappened; 
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;

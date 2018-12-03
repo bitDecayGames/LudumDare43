@@ -6,10 +6,12 @@ public class BirdController : MonoBehaviour
 {
     private Animator _animator;
 
+    private LevelStartScript _levelStartScript;
+    
     private static float TakeOffSpeed = .25f;
     private static float FlySpeed = .50f;
     
-    private static int ChooseAnimationTimeGateDelayMs = 10000;
+    private static int ChooseAnimationTimeGateDelayMs = 8000;
     private TimeGate _chooseAnimationTimeGate;
 
     private float _currentSpeed;
@@ -37,8 +39,15 @@ public class BirdController : MonoBehaviour
 
     private void Start()
     {
-        _animator.Play(_animationStates.Idle.ToString());
-        _chooseAnimationTimeGate = TimeGateManager.Instance.GetNewTimeGate(ChooseAnimationTimeGateDelayMs);
+        var variance = Random.Range(.7f, 1f);
+        _chooseAnimationTimeGate = TimeGateManager.Instance.GetNewTimeGate(ChooseAnimationTimeGateDelayMs * variance);
+        var levelStartScript = Camera.main.GetComponent<LevelStartScript>();
+        if (levelStartScript == null)
+        {
+            throw new Exception("Unable to find LevelStartScript");
+        }
+
+        _levelStartScript = levelStartScript;
     }
 
     private void Update()
@@ -47,19 +56,15 @@ public class BirdController : MonoBehaviour
         {
             _splashHasHappened = true;
         }
-
-        if (HasSplashHappened() && !_escaping)
+        
+        if (!_escaping && _levelStartScript.SplashHasHappened)
         {
             _escaping = true;
             _animator.Play(_animationStates.Takeoff.ToString());
             _directionToFly = Random.Range(0, 361);
             _currentSpeed = TakeOffSpeed;
-            if (_directionToFly > 90 && _directionToFly < 180)
-            {
-                GetComponent<SpriteRenderer>().flipX = true;
-            }
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientBirdFlap);
         }
-        
 
         if (!_escaping)
         {
@@ -81,18 +86,19 @@ public class BirdController : MonoBehaviour
         }
         else
         {
-            transform.Translate(Vector2FromAngle(_directionToFly) * _currentSpeed * Time.deltaTime);
+            var flyVector = Vector2FromAngle(_directionToFly);
+            if (flyVector.x < 0)
+            {
+                GetComponent<SpriteRenderer>().flipX = true;
+            }
+                
+            transform.Translate(flyVector * _currentSpeed * Time.deltaTime);
         }
     }
 
     public void GoFullSpeed()
     {
         _currentSpeed = FlySpeed;
-    }
-    
-    private bool HasSplashHappened()
-    {
-        return _splashHasHappened;
     }
 
     public Vector2 Vector2FromAngle(float a)
