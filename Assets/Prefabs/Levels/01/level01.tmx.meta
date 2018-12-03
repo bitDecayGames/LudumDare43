@@ -33,6 +33,7 @@ ScriptedImporter:
       (5)
     100052: _MapPrfab/level01/KeyItems
     100054: _MapPrfab/level01/KeyItems/center
+    100056: _MapPrfab/level01/KeyItems/drop_zone0
     100094: _MapPrfab/level01/TrashZone
     100096: _MapPrfab/level01/TrashZone/Collision_Default
     100098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon
@@ -102,6 +103,7 @@ ScriptedImporter:
       (5)/Transform
     400052: _MapPrfab/level01/KeyItems/Transform
     400054: _MapPrfab/level01/KeyItems/center/Transform
+    400056: _MapPrfab/level01/KeyItems/drop_zone0/Transform
     400094: _MapPrfab/level01/TrashZone/Transform
     400096: _MapPrfab/level01/TrashZone/Collision_Default/Transform
     400098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/Transform
@@ -189,6 +191,7 @@ ScriptedImporter:
       (3)/PolygonCollider2D
     6000072: _MapPrfab/level01/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
       (4)/PolygonCollider2D
+    6100002: _MapPrfab/level01/KeyItems/drop_zone0/BoxCollider2D
     6600000: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/CompositeCollider2D
     6600002: _MapPrfab/level01/Boat/Collision_Default/CompositeCollider2D
     6600004: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/CompositeCollider2D
@@ -222,6 +225,9 @@ ScriptedImporter:
     11400046: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400048: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400050: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400054: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400056: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400058: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400070: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400072: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400074: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent

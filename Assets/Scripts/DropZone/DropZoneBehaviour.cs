@@ -36,7 +36,7 @@ namespace DropZone {
 		
         
 		public bool IsCraneReady {
-			get { return crane.IsReady; }
+			get { return crane != null && crane.IsReady; }
 		}
 		
 		void Start() {
@@ -143,6 +143,7 @@ namespace DropZone {
 				var money = Instantiate(MoneyIndicatorPrefab, cargoInst.transform.GetChild(0));
 				money.SetText("$" + cargoInst.score);
 				money.transform.localPosition = new Vector3(0, 0, 0);
+				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ImpactWood);
 				cargoInst.KillPlayerIfColliding();
 				StartCoroutine(WaitThenCheckForCollisions(cargoInst));
 				cargo = null;
