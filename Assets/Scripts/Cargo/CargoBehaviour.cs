@@ -79,7 +79,10 @@ namespace Cargo {
 
         public void DestroyInWater() {
             // TODO: MW spawn the splash animator
-            Destroy(gameObject);
+            var spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+            Destroy(spriteRenderer);
+            
+            // Destroy(gameObject);
         }
 
         public void DestroyOnBoat() {
