@@ -140,15 +140,19 @@ namespace Scoring {
 			StartCoroutine(WaitThenStart(timeToFlyIn)); 
 		}
 
-		private void OnLevelSelect() {
+		private void OnLevelSelect()
+		{
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onLevelSelect != null) onLevelSelect();
 		}
 
 		private void OnRestart() {
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onRestart != null) onRestart();
 		}
 
 		private void OnNext() {
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onNext != null) onNext();
 		}
 

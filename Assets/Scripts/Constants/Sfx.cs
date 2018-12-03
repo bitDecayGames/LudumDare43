@@ -18,6 +18,7 @@ public class Sfx : MonoBehaviour
     public static string ImpactWood2 = "Impact/Wood2";
     public static string MenuMove = "Menu/MenuMove";
     public static string MenuSelect = "Menu/Select";
+    public static string MenuSelect2 = "Menu/Select2";
     public static string StepWood = "Step/Wood";
     public static string VoiceGrunt = "Voice/Grunt";
     public static string SlideStone = "Slide/Stone";
