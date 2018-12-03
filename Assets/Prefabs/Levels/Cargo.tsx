@@ -64,6 +64,7 @@
  <tile id="5">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/1.png"/>
@@ -76,6 +77,7 @@
  <tile id="6">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/2.png"/>
@@ -88,6 +90,7 @@
  <tile id="7">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/3.png"/>
@@ -100,6 +103,7 @@
  <tile id="8">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/4.png"/>
@@ -112,6 +116,7 @@
  <tile id="9">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/5.png"/>
@@ -124,6 +129,7 @@
  <tile id="10">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/6.png"/>
@@ -136,6 +142,7 @@
  <tile id="11">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/7.png"/>
@@ -148,6 +155,7 @@
  <tile id="12">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/8.png"/>
@@ -160,6 +168,7 @@
  <tile id="13">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="64" source="../../Images/Pieces/9.png"/>
@@ -172,6 +181,7 @@
  <tile id="14">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="64" source="../../Images/Pieces/10.png"/>
@@ -184,6 +194,7 @@
  <tile id="15">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/11.png"/>
@@ -196,6 +207,7 @@
  <tile id="16">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/12.png"/>
@@ -208,6 +220,7 @@
  <tile id="17">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/13.png"/>
@@ -220,6 +233,7 @@
  <tile id="18">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="32" source="../../Images/Pieces/14.png"/>
@@ -232,6 +246,7 @@
  <tile id="19">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="32" source="../../Images/Pieces/15.png"/>
@@ -244,6 +259,7 @@
  <tile id="20">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="16" source="../../Images/Pieces/16.png"/>
@@ -256,6 +272,7 @@
  <tile id="21">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="16" source="../../Images/Pieces/17.png"/>
@@ -268,6 +285,7 @@
  <tile id="22">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="16" source="../../Images/Pieces/18.png"/>
@@ -280,6 +298,7 @@
  <tile id="23">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="64" source="../../Images/Pieces/19.png"/>
@@ -292,6 +311,7 @@
  <tile id="24">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="48" source="../../Images/Pieces/20.png"/>
@@ -304,6 +324,7 @@
  <tile id="25">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="112" source="../../Images/Pieces/21.png"/>
@@ -316,6 +337,7 @@
  <tile id="26">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="32" source="../../Images/Pieces/22.png"/>
@@ -328,6 +350,7 @@
  <tile id="27">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="80" height="32" source="../../Images/Pieces/23.png"/>
@@ -340,6 +363,7 @@
  <tile id="28">
   <properties>
    <property name="delay" type="float" value="20"/>
+   <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/24.png"/>
