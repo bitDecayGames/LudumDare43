@@ -13,10 +13,29 @@ public class LevelStartScript : MonoBehaviour {
 
     private GameObject mapObj;
 
+    private bool isTutorial;
+
+    public GrabTooltipController grabTip;
+    public MoveTooltipController moveTip;
+    public AccelTooltipController accelTip;
+
     // Use this for initialization
     void Start() {
         mapObj = GameObject.Find("level");
         var levelB = GetComponent<LevelBehaviour>();
+        
+        var items = mapObj.transform.Find("KeyItems");
+        var props = items.GetComponent<SuperCustomProperties>();
+        var star1Score = 0;
+        var star2Score = 0;
+        var star3Score = 0;
+        foreach (CustomProperty p in props.m_Properties)
+        {
+            if (p.m_Name == "tutorial")
+            {
+                isTutorial = bool.Parse(p.m_Value);
+            }
+        }
 
         SetupTrash(mapObj, levelB);
 
@@ -61,6 +80,11 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     cargoBehavior.score = int.Parse(p.m_Value);
                 }
+
+                if (p.m_Name == "material")
+                {
+                    cargoBehavior.material = p.m_Value;
+                }
             }
 
             cargoPiece.gameObject.SetActive(false);
@@ -75,6 +99,11 @@ public class LevelStartScript : MonoBehaviour {
             catch (Exception e)
             {
                 throw new Exception("You need to add the Prefabs/TrashZone/CenterMe prefab to the LevelStartScript");
+            }
+
+            if (isTutorial)
+            {
+                Instantiate(grabTip, cargoPiece);
             }
 
             level.AddToCargoQueue(cargoBehavior);
@@ -116,9 +145,6 @@ public class LevelStartScript : MonoBehaviour {
     }
 
     private void SetupDropzone(GameObject tiledMap, LevelBehaviour level) {
-        // TODO: This should be pulled from the tiled map
-
-
         var items = tiledMap.transform.Find("KeyItems");
         var dropzoneNum = 0;
 
@@ -132,6 +158,14 @@ public class LevelStartScript : MonoBehaviour {
             newZone.transform.position = zoneBox.transform.position + vec3;
 
             newZone.ZoneOutline.transform.localScale = new Vector3(fullSize.x * 6, fullSize.y * 6, 0);
+
+
+            if (isTutorial)
+            {
+                // add tool tips to correct things
+                print("setting crane tool tip");
+                 newZone.craneTip = accelTip;
+            }
 
             level.AddDropZone(newZone);
             // TODO: Set drop zone size properly

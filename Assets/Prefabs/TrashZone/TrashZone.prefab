@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 114618892810476850}
   - component: {fileID: 50017074567095520}
   - component: {fileID: 61825126465430530}
+  - component: {fileID: 114708612246052766}
   m_Layer: 0
   m_Name: TrashZone
   m_TagString: Untagged
@@ -65,8 +66,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1414463799484454}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 1.604, z: 0}
-  m_LocalScale: {x: 4, y: 1, z: 1}
+  m_LocalPosition: {x: 1.291, y: 1.601, z: 0}
+  m_LocalScale: {x: -4, y: 1, z: 1}
   m_Children:
   - {fileID: 4501240889229974}
   m_Father: {fileID: 0}
@@ -129,6 +130,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TrashZoneShader: {fileID: 212999588086461630}
+--- !u!114 &114708612246052766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1414463799484454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b824f06b55a775a47a10cfdf1633c22f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 0}
+  spriteRenderer: {fileID: 0}
 --- !u!212 &212999588086461630
 SpriteRenderer:
   m_ObjectHideFlags: 1

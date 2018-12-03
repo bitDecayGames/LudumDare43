@@ -27,6 +27,9 @@ namespace Level {
 
         private List<CargoBehaviour> scores = new List<CargoBehaviour>();
 
+        private string finishReasonText = "Finished!";
+        private string bonusText = "Finished!";
+
         void Start() {
             // if this is the cause of an error, it means you are missing the Score prefab in your scene (remember to put it under a Canvas object)
             ScoreUI = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<ScoringBehaviour>();
@@ -58,6 +61,14 @@ namespace Level {
             CurrentScore.text = "$" + ScoringBehaviour.IntToCurrency(CalculateMyScore().score);
         }
 
+        public void SetFinishReasonText(string text) {
+            if (!string.IsNullOrEmpty(text)) finishReasonText = text;
+        }
+
+        public void SetBonusText(string text) {
+            if (!string.IsNullOrEmpty(text)) bonusText = text;
+        }
+
         public void Finished() {
             isFinished = true;
             CurrentScore.gameObject.AddComponent<FadeOutOverTime>().timeToFadeOut = 1f;
@@ -69,8 +80,10 @@ namespace Level {
             yield return new WaitForSeconds(0.1f);
             var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore("Finished!", rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, "Bonus!", () => {
-                // TODO: MW go to the level select
+            ScoreUI.SetScore(finishReasonText, rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, bonusText, () => {
+                ScoreUI.Fader.Fade(2, () => { 
+                    // TODO: MW go to the level select
+                });
             }, () => {
                 ScoreUI.Fader.Fade(2, () => {
                     // restart this level
@@ -102,6 +115,7 @@ namespace Level {
                     }
                 }
             } else {
+                SetFinishReasonText("Shipment Complete!");
                 Finished(); // finished dropping cargo, level over :D
             }
         }
@@ -126,7 +140,10 @@ namespace Level {
             scores.ForEach(s => {
                 if (s != null) {
                     currentScore.score += s.score;
-                    if (s.isBonus) currentScore.hasBonus = true;
+                    if (s.isBonus) {
+                        currentScore.hasBonus = true;
+                        SetBonusText(s.bonusDescription);
+                    }
                 }
             });
             return currentScore;

@@ -19,6 +19,11 @@ namespace Cargo {
         public int score = 1;
         public bool isBonus;
         public float delay;
+        public string name;
+        public string description;
+        public string bonusDescription;
+
+        public string material;
 
         void Start() {
             var level = FindObjectOfType<LevelBehaviour>();
@@ -39,6 +44,7 @@ namespace Cargo {
                     Destroy(player.gameObject);
                     var level = FindObjectOfType<LevelBehaviour>();
                     if (level != null) {
+                        level.SetFinishReasonText("You Got Squished!");
                         level.Finished();
                     }
                 }
@@ -61,6 +67,7 @@ namespace Cargo {
                             DestroyOnBoat();
                             var level = FindObjectOfType<LevelBehaviour>();
                             if (level != null) {
+                                level.SetFinishReasonText("You Broke The Crane!");
                                 level.Finished();
                                 return;
                             }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="13">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="19">
  <tileset firstgid="1" source="../WoodenTiles2.tsx"/>
  <tileset firstgid="81" source="../water.tsx"/>
  <tileset firstgid="105" source="../Cargo.tsx"/>
@@ -321,20 +321,23 @@
    <property name="star2" type="int" value="8"/>
    <property name="star3" type="int" value="10"/>
   </properties>
-  <object id="5" gid="128" x="592" y="243" width="48" height="64"/>
-  <object id="6" gid="117" x="559.5" y="265.5" width="48" height="32"/>
-  <object id="8" gid="112" x="615" y="279" width="48" height="32"/>
-  <object id="9" gid="132" x="591" y="388" width="80" height="32"/>
-  <object id="10" gid="125" x="560" y="353" width="16" height="16"/>
+  <object id="14" gid="126" x="607.333" y="208.333" width="16" height="16"/>
+  <object id="15" gid="125" x="592" y="224.667" width="16" height="16"/>
+  <object id="16" gid="116" x="608" y="225" width="48" height="32"/>
+  <object id="17" gid="127" x="579.333" y="256.333" width="48" height="16"/>
+  <object id="18" gid="122" x="640" y="256.333" width="32" height="32"/>
  </objectgroup>
  <objectgroup id="5" name="KeyItems">
-  <object id="11" name="center" x="616" y="303.5">
-   <ellipse/>
-  </object>
-  <object id="12" name="drop_zone0" x="592.667" y="304.333" width="48" height="48">
+  <properties>
+   <property name="tutorial" type="bool" value="true"/>
+  </properties>
+  <object id="12" name="drop_zone0" x="592.333" y="282" width="48" height="48">
    <properties>
     <property name="craneleft" type="bool" value="true"/>
    </properties>
+  </object>
+  <object id="13" name="center" x="616.333" y="303.667">
+   <point/>
   </object>
  </objectgroup>
 </map>
