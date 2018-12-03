@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
                 _playingSlideSound = true;
             }
 
-            if (body.velocity.magnitude < .1f)
+            if (body.velocity.magnitude < .1f || !IsHoldingAnObject())
             {
                 _slidingSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
                 _playingSlideSound = false;

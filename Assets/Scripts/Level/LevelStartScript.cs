@@ -3,6 +3,7 @@ using Boo.Lang.Runtime;
 using Cargo;
 using DropZone;
 using Level;
+using Scoring;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
@@ -21,6 +22,9 @@ public class LevelStartScript : MonoBehaviour {
     public AccelTooltipController accelTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
+    public GameObject RatPrefab;
+
+    public MoneyIndicator moneyPrefab;
 
     // Use this for initialization
     void Start() {
@@ -63,6 +67,7 @@ public class LevelStartScript : MonoBehaviour {
 
         for (int i = 0; i < cargoT.childCount; i++)
         {
+            var innate = false;
             var cargoPiece = cargoT.GetChild(i);
             var childBod = cargoPiece.GetComponentInChildren<Rigidbody2D>();
 
@@ -103,9 +108,21 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     cargoBehavior.description = p.m_Value;
                 }
+
+                if (p.m_Name == "innate")
+                {
+                    innate = Boolean.Parse(p.m_Value);
+                }
+
+                if (p.m_Name == "infectable")
+                {
+                    if (Boolean.Parse(p.m_Value))
+                    {
+                        cargoBehavior.gameObject.AddComponent<Infectable>();
+                    }
+                }
             }
 
-            cargoPiece.gameObject.SetActive(false);
 
             var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
 
@@ -125,7 +142,14 @@ public class LevelStartScript : MonoBehaviour {
                 tip.transform.localPosition = new Vector3(0, 0, 0);
             }
 
-            level.AddToCargoQueue(cargoBehavior);
+            if (innate)
+            {
+                // we just leave these alone. They start on the deck
+                cargoBehavior.SetValueTip(moneyPrefab);
+            } else {
+                cargoPiece.gameObject.SetActive(false);
+                level.AddToCargoQueue(cargoBehavior);
+            }
         }
         
         var props = cargoT.GetComponent<SuperCustomProperties>();
@@ -187,7 +211,6 @@ public class LevelStartScript : MonoBehaviour {
             if (isTutorial)
             {
                 // add tool tips to correct things
-                print("setting crane tool tip");
                 newZone.craneTip = accelTip;
                 newZone.rotateTip = rotateTip;
             }
@@ -219,6 +242,13 @@ public class LevelStartScript : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Instantiate(RatPrefab);
+        }
+    }
 
     void SetLayerRecursively(Transform t, int layer, string tag) {
         t.gameObject.layer = layer;

@@ -7,7 +7,6 @@ namespace WorldMap {
         private List<WorldMapButton> buttons = new List<WorldMapButton>();
 
         public void Register(WorldMapButton button) {
-            print("registered button");
             buttons.Add(button);
         }
 

@@ -17,6 +17,8 @@ public class Sfx : MonoBehaviour
     public static string AmbientSplash = "Ambient/Splash";
     public static string AmbientRotatePieceClockwise = "Ambient/RotatePieceClockwise";
     public static string AmbientRotatePieceCounterClockwise = "Ambient/RotatePieceCounterClockwise";
+    public static string AmbientCratePoinsoned = "Ambient/CratePoisoned";
+    public static string AmbientItemFallingOffShip = "Ambient/ItemFallingOffShip";
     public static string ImpactMetal = "Impact/Metal";
     public static string ImpactMetal2 = "Impact/Metal2";
     public static string ImpactMetalBarrel = "Impact/MetalBarrel";
@@ -28,6 +30,7 @@ public class Sfx : MonoBehaviour
     public static string MenuSelect2 = "Menu/Select2";
     public static string StepWood = "Step/Wood";
     public static string VoiceGrunt = "Voice/Grunt";
+    public static string VoiceRatSqueak = "Voice/RatSqueak";
     public static string SlideStone = "Slide/Stone";
     public static string SlideWood = "Slide/Wood";
     public static string ScoreScreenStarOne = "ScoreScreen/StarOne";
