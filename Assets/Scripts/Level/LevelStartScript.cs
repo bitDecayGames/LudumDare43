@@ -22,6 +22,7 @@ public class LevelStartScript : MonoBehaviour {
     public AccelTooltipController accelTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
+    public GameObject RatPrefab;
 
     public MoneyIndicator moneyPrefab;
 
@@ -234,6 +235,13 @@ public class LevelStartScript : MonoBehaviour {
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            Instantiate(RatPrefab);
+        }
+    }
 
     void SetLayerRecursively(Transform t, int layer, string tag) {
         t.gameObject.layer = layer;

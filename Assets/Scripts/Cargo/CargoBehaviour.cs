@@ -49,6 +49,11 @@ namespace Cargo {
                     SplashAndDie();
                 }
             }
+
+            if (GetComponent<Infected>() != null)
+            {
+                score = -50;
+            }
         }
 
         public void SetValueTip(MoneyIndicator prefab)
