@@ -175,6 +175,8 @@ MonoBehaviour:
   Shadow: {fileID: 212126553583281482}
   ShadowRotator: {fileID: 4402575800943414}
   ShadowBottomLeft: {fileID: 4864444529784864}
+  MoneyIndicatorPrefab: {fileID: 114240006939122708, guid: 3a2d1a5d74bf04a69ae5ef3a624e06ad,
+    type: 2}
 --- !u!212 &212126553583281482
 SpriteRenderer:
   m_ObjectHideFlags: 1

@@ -33,6 +33,7 @@ namespace TrashZone {
 		}
 
 		public void CheckAndTakeOutTrash(Transform cargo) {
+			print("Check and take out trash! " + cargo.position);
 			if (myBox.OverlapPoint(cargo.position)) {
 				//TODO animate killing cargo
 				DestroySuperObject(cargo);
