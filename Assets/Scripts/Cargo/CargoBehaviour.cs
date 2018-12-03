@@ -1,5 +1,6 @@
 using Boo.Lang.Runtime;
 using Level;
+using Particles;
 using UnityEngine;
 using Utils;
 using TrashZone;
@@ -58,6 +59,7 @@ namespace Cargo {
                 var player = GameObject.FindWithTag("Player");
                 if (player != null && meCollider.OverlapPoint(player.transform.position)) {
                     FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.VoiceGrunt);
+                    EmitBloodSpatter(player.transform.position);
                     Destroy(player.gameObject);
                     var level = FindObjectOfType<LevelBehaviour>();
                     if (level != null) {
@@ -81,6 +83,7 @@ namespace Cargo {
                 if (count > 0) {
                     foreach (Collider2D otherCollider in results) {
                         if (otherCollider != null && otherCollider.gameObject != gameObject && otherCollider.CompareTag("Cargo")) {
+                            EmitBrokenCargo(transform.GetChild(0).transform.position);
                             DestroyOnBoat();
                             var level = FindObjectOfType<LevelBehaviour>();
                             if (level != null) {
@@ -92,6 +95,7 @@ namespace Cargo {
                     }
                 }
             }
+            EmitPoofs(transform.GetChild(0).transform.position);
         }
 
         public void DestroyInWater() {
@@ -117,6 +121,36 @@ namespace Cargo {
             var splashAnimationGameObj = Instantiate(splash);
             splashAnimationGameObj.transform.position = transform.GetChild(0).transform.position;
             Destroy(gameObject);
+        }
+
+        private void EmitBloodSpatter(Vector3 position) {
+            var emitterObj = GameObject.FindWithTag("BloodEmitter");
+            if (emitterObj != null) {
+                var emitter = emitterObj.GetComponent<MyParticleEmitter>();
+                if (emitter != null) {
+                    emitter.EmitParticles(position, ParticleConstants.NUMBER_OF_BLOOD_PARTICLES);
+                }
+            }
+        }
+
+        private void EmitBrokenCargo(Vector3 position) {
+            var emitterObj = GameObject.FindWithTag("WoodEmitter");
+            if (emitterObj != null) {
+                var emitter = emitterObj.GetComponent<MyParticleEmitter>();
+                if (emitter != null) {
+                    emitter.EmitParticles(position, ParticleConstants.NUMBER_OF_WOOD_PARTICLES);
+                }
+            }
+        }
+
+        private void EmitPoofs(Vector3 position) {
+            var emitterObj = GameObject.FindWithTag("PoofEmitter");
+            if (emitterObj != null) {
+                var emitter = emitterObj.GetComponent<MyParticleEmitter>();
+                if (emitter != null) {
+                    emitter.EmitParticles(position, ParticleConstants.NUMBER_OF_POOF_PARTICLES);
+                }
+            }
         }
     }
 }
