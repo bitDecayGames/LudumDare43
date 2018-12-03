@@ -1,9 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cargo;
 using DropZone;
 using FMOD.Studio;
 using Scoring;
+using Transitions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -91,7 +93,10 @@ namespace Level {
                 });
             }, () => {
                 ScoreUI.Fader.Fade(2, () => {
-                    // TODO: MW go to the next scene                    
+                    // go to the next scene
+                    var nextLevel = FindObjectOfType<NextLevel>();
+                    if (nextLevel == null) throw new Exception("Could not find NextLevel component, need to add to MainCamera");
+                    nextLevel.GoToNextLevel();
                 });
             });
         }
