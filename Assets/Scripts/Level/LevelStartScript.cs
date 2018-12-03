@@ -18,6 +18,7 @@ public class LevelStartScript : MonoBehaviour {
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
+    public RotateTooltipController rotateTip;
 
     // Use this for initialization
     void Start() {
@@ -164,7 +165,8 @@ public class LevelStartScript : MonoBehaviour {
             {
                 // add tool tips to correct things
                 print("setting crane tool tip");
-                 newZone.craneTip = accelTip;
+                newZone.craneTip = accelTip;
+                newZone.rotateTip = rotateTip;
             }
 
             level.AddDropZone(newZone);

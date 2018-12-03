@@ -1766,6 +1766,8 @@ MonoBehaviour:
   grabTip: {fileID: 114584995163685540, guid: 5840c9e5809b91543ba471ff1f2ab355, type: 2}
   moveTip: {fileID: 0}
   accelTip: {fileID: 114718523059504424, guid: cdc54300e90d4bc459fc4cde2a088e49, type: 2}
+  rotateTip: {fileID: 114562626472526920, guid: dff5eda2b3b4e544f9747e65aa61d239,
+    type: 2}
 --- !u!1001 &548417189
 Prefab:
   m_ObjectHideFlags: 0
@@ -1977,6 +1979,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224267246039117928, guid: 01470fe449f6344ca9b5173e10857667,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.799988
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01470fe449f6344ca9b5173e10857667, type: 2}
@@ -2255,6 +2262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1436393594}
   - component: {fileID: 1436393595}
+  - component: {fileID: 1436393596}
   m_Layer: 0
   m_Name: TrashTip
   m_TagString: Untagged
@@ -2310,7 +2318,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c4ab07d1b379f5b40a806b8e8c051ac5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 43ba80c9ce7ae5648b5befb07818599a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2321,6 +2329,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1436393596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1436393593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d924012aeddc4089a6b69a6f18e91ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!60 &1780557019 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000004, guid: 51982864bcc36c44cb2331082ab7b194,
