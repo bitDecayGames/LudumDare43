@@ -179,7 +179,7 @@ namespace Cargo {
             if (moneyEmitterObj != null) {
                 var moneyEmitter = moneyEmitterObj.GetComponent<MyParticleEmitter>();
                 if (moneyEmitter != null) {
-                    return ((MoneyParticle) moneyEmitter.EmitParticle(position)).SetText("$" + ScoringBehaviour.IntToCurrency(score));
+                    return ((MoneyParticle) moneyEmitter.EmitParticle(position)).SetText("$" + ScoringBehaviour.IntToCurrency(Mathf.Abs(score)));
                 }
             }
 
