@@ -88,9 +88,7 @@ namespace Level {
             ScoreUI.SetScore(finishReasonText, starRating, currentScore.score, currentScore.hasBonus, bonusText, () => {
                 ScoreUI.Fader.Fade(2, () => { 
                     // go to the level select
-                    ScoreUI.Fader.Fade(2, () => {
-                        SceneManager.LoadScene("WorldMap");
-                    });    
+                    SceneManager.LoadScene("WorldMap");
                 });
             }, () => {
                 ScoreUI.Fader.Fade(2, () => {
