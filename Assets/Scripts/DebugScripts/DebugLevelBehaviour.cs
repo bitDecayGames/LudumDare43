@@ -12,7 +12,7 @@ namespace DebugScripts {
         public DropZoneBehaviour DropZoneTwo;
 
         void Start() {
-            StartCoroutine(WaitThenTest());
+            //StartCoroutine(WaitThenTest());
         }
 
         private IEnumerator WaitThenTest() {

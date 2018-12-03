@@ -48,7 +48,7 @@ namespace DropZone {
 		
 		void Update() {
 			if (time < timeTilDrop) {
-				time += Time.deltaTime;
+				time += GetDeltaTime();
 				if (time >= timeTilDrop) {
 					DropCargo();
 				}
@@ -63,7 +63,7 @@ namespace DropZone {
 				}
 			}
 
-			dashOffset += Time.deltaTime * 2;
+			dashOffset += GetDeltaTime() * 2;
 			SetOutlineOffset();
 
 			if (blurryness > blurrynessTarget) {
@@ -181,6 +181,12 @@ namespace DropZone {
 			if (shadowMat != null) {
 				shadowMat.SetFloat("_Transparentness", transparentness);
 			}
+		}
+		
+		private float GetDeltaTime() {
+			var deltaTime = Time.deltaTime;
+			if (Input.GetKey(MustGoFaster.Key)) return deltaTime * MustGoFaster.SpeedMultiplier;
+			return deltaTime;
 		}
 	}
 }

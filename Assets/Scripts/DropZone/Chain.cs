@@ -42,7 +42,7 @@ namespace DropZone {
                 if (time < timeToLength) {
                     var len = time / timeToLength * (targetLength - length) + length;
                     SetLength(len);
-                    time += Time.deltaTime;
+                    time += GetDeltaTime();
                 } else {
                     lengthening = false;
                     SetLength(targetLength);
@@ -69,6 +69,12 @@ namespace DropZone {
             pos.x = Origin.position.x;
             pos.y = Origin.position.y - GetLength();
             transform.position = pos;
+        }
+
+        private float GetDeltaTime() {
+            var deltaTime = Time.deltaTime;
+            if (Input.GetKey(MustGoFaster.Key)) return deltaTime * MustGoFaster.SpeedMultiplier;
+            return deltaTime;
         }
     }
 }

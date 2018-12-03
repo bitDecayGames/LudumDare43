@@ -316,6 +316,11 @@
 </data>
  </layer>
  <objectgroup id="2" name="Cargo">
+  <properties>
+   <property name="star1" type="int" value="5"/>
+   <property name="star2" type="int" value="8"/>
+   <property name="star3" type="int" value="10"/>
+  </properties>
   <object id="5" gid="128" x="592" y="243" width="48" height="64"/>
   <object id="6" gid="117" x="559.5" y="265.5" width="48" height="32"/>
   <object id="8" gid="112" x="615" y="279" width="48" height="32"/>
