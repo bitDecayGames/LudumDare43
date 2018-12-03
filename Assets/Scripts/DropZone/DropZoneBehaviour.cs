@@ -154,7 +154,8 @@ namespace DropZone {
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
 				var money = Instantiate(MoneyIndicatorPrefab, cargoInst.transform.GetChild(0));
-				money.SetText("$" + cargoInst.score);
+				if (cargoInst.isBonus) money.SetText("BONUS");
+				else money.SetText("$" + ScoringBehaviour.IntToCurrency(cargoInst.score));
 				money.transform.localPosition = new Vector3(0, 0, 0);
 				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ImpactWood);
 				cargoInst.KillPlayerIfColliding();
