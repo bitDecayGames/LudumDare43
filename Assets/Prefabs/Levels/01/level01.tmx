@@ -331,7 +331,7 @@
   <object id="11" name="center" x="616" y="303.5">
    <ellipse/>
   </object>
-  <object id="12" name="drop_zone0" x="608" y="320" width="48" height="48">
+  <object id="12" name="drop_zone0" x="592.667" y="304.333" width="48" height="48">
    <properties>
     <property name="craneleft" type="bool" value="true"/>
    </properties>
