@@ -19,6 +19,7 @@ public class LevelStartScript : MonoBehaviour {
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
     public RotateTooltipController rotateTip;
+    public GameObject SplashAnimation;
 
     // Use this for initialization
     void Start() {

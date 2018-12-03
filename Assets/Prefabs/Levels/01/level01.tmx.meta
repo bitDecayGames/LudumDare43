@@ -4,6 +4,7 @@ ScriptedImporter:
   fileIDToRecycleName:
     100000: _MapPrfab/level01
     100002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)
+    100004: _MapPrfab/level01/Boat/Collision_Default/Polygon (11)
     100006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)
     100008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)
     100010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)
@@ -34,6 +35,19 @@ ScriptedImporter:
     100052: _MapPrfab/level01/KeyItems
     100054: _MapPrfab/level01/KeyItems/center
     100056: _MapPrfab/level01/KeyItems/drop_zone0
+    100058: _MapPrfab/level01/Boat/Collision_Default/Polygon (12)
+    100060: _MapPrfab/level01/Boat/Collision_Default/Polygon (13)
+    100062: _MapPrfab/level01/Boat/Collision_Default/Polygon (14)
+    100064: _MapPrfab/level01/Boat/Collision_Default/Polygon (15)
+    100066: _MapPrfab/level01/Boat/Collision_Default/Polygon (16)
+    100068: _MapPrfab/level01/Boat/Collision_Default/Polygon (17)
+    100070: _MapPrfab/level01/Boat/Collision_Default/Polygon (18)
+    100072: _MapPrfab/level01/Boat/Collision_Default/Polygon (19)
+    100074: _MapPrfab/level01/Boat/Collision_Default/Polygon (20)
+    100076: _MapPrfab/level01/Boat/Collision_Default/Polygon (21)
+    100078: _MapPrfab/level01/Boat/Collision_Default/Polygon (22)
+    100080: _MapPrfab/level01/Boat/Collision_Default/Polygon (23)
+    100082: _MapPrfab/level01/Boat/Collision_Default/Polygon (24)
     100094: _MapPrfab/level01/TrashZone
     100096: _MapPrfab/level01/TrashZone/Collision_Default
     100098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon
@@ -74,6 +88,7 @@ ScriptedImporter:
     100162: _MapPrfab/level01/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1
     400000: _MapPrfab/level01/Transform
     400002: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/Transform
+    400004: _MapPrfab/level01/Boat/Collision_Default/Polygon (11)/Transform
     400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/Transform
     400008: _MapPrfab/level01/Boat/Collision_Default/Polygon (9)/Transform
     400010: _MapPrfab/level01/Boat/Collision_Default/Polygon (10)/Transform
@@ -104,6 +119,19 @@ ScriptedImporter:
     400052: _MapPrfab/level01/KeyItems/Transform
     400054: _MapPrfab/level01/KeyItems/center/Transform
     400056: _MapPrfab/level01/KeyItems/drop_zone0/Transform
+    400058: _MapPrfab/level01/Boat/Collision_Default/Polygon (12)/Transform
+    400060: _MapPrfab/level01/Boat/Collision_Default/Polygon (13)/Transform
+    400062: _MapPrfab/level01/Boat/Collision_Default/Polygon (14)/Transform
+    400064: _MapPrfab/level01/Boat/Collision_Default/Polygon (15)/Transform
+    400066: _MapPrfab/level01/Boat/Collision_Default/Polygon (16)/Transform
+    400068: _MapPrfab/level01/Boat/Collision_Default/Polygon (17)/Transform
+    400070: _MapPrfab/level01/Boat/Collision_Default/Polygon (18)/Transform
+    400072: _MapPrfab/level01/Boat/Collision_Default/Polygon (19)/Transform
+    400074: _MapPrfab/level01/Boat/Collision_Default/Polygon (20)/Transform
+    400076: _MapPrfab/level01/Boat/Collision_Default/Polygon (21)/Transform
+    400078: _MapPrfab/level01/Boat/Collision_Default/Polygon (22)/Transform
+    400080: _MapPrfab/level01/Boat/Collision_Default/Polygon (23)/Transform
+    400082: _MapPrfab/level01/Boat/Collision_Default/Polygon (24)/Transform
     400094: _MapPrfab/level01/TrashZone/Transform
     400096: _MapPrfab/level01/TrashZone/Collision_Default/Transform
     400098: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/Transform
@@ -173,12 +201,20 @@ ScriptedImporter:
       (1)/PolygonCollider2D
     6000034: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (5)/PolygonCollider2D
+    6000036: _MapPrfab/level01/Boat/Collision_Default/Polygon (11)/PolygonCollider2D
+    6000038: _MapPrfab/level01/Boat/Collision_Default/Polygon (12)/PolygonCollider2D
+    6000040: _MapPrfab/level01/Boat/Collision_Default/Polygon (13)/PolygonCollider2D
+    6000042: _MapPrfab/level01/Boat/Collision_Default/Polygon (14)/PolygonCollider2D
+    6000044: _MapPrfab/level01/Boat/Collision_Default/Polygon (15)/PolygonCollider2D
+    6000046: _MapPrfab/level01/Boat/Collision_Default/Polygon (16)/PolygonCollider2D
     6000048: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/PolygonCollider2D
     6000050: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/ConvexPolygon
       (4)/PolygonCollider2D
     6000052: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/PolygonCollider2D
     6000054: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
+    6000056: _MapPrfab/level01/Boat/Collision_Default/Polygon (17)/PolygonCollider2D
+    6000058: _MapPrfab/level01/Boat/Collision_Default/Polygon (18)/PolygonCollider2D
     6000060: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/PolygonCollider2D
     6000062: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
@@ -191,6 +227,12 @@ ScriptedImporter:
       (3)/PolygonCollider2D
     6000072: _MapPrfab/level01/Cargo/Object_9 (TRS)/Object_9 (CF)/Object_9/Object_1/ConvexPolygon
       (4)/PolygonCollider2D
+    6000074: _MapPrfab/level01/Boat/Collision_Default/Polygon (19)/PolygonCollider2D
+    6000076: _MapPrfab/level01/Boat/Collision_Default/Polygon (20)/PolygonCollider2D
+    6000078: _MapPrfab/level01/Boat/Collision_Default/Polygon (21)/PolygonCollider2D
+    6000080: _MapPrfab/level01/Boat/Collision_Default/Polygon (22)/PolygonCollider2D
+    6000082: _MapPrfab/level01/Boat/Collision_Default/Polygon (23)/PolygonCollider2D
+    6000084: _MapPrfab/level01/Boat/Collision_Default/Polygon (24)/PolygonCollider2D
     6100002: _MapPrfab/level01/KeyItems/drop_zone0/BoxCollider2D
     6600000: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/CompositeCollider2D
     6600002: _MapPrfab/level01/Boat/Collision_Default/CompositeCollider2D
@@ -203,6 +245,8 @@ ScriptedImporter:
     11400002: _MapPrfab/level01/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/level01/Boat/Collision_Default/Polygon (7)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400006: _MapPrfab/level01/Boat/Collision_Default/Polygon (8)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400008: _MapPrfab/level01/Boat/Collision_Default/Polygon (11)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400010: _MapPrfab/level01/Boat/Collision_Default/Polygon (12)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400012: _superAsset
     11400014: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400016: _MapPrfab/level01/Boat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
@@ -225,9 +269,15 @@ ScriptedImporter:
     11400046: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400048: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400050: _MapPrfab/level01/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400052: _MapPrfab/level01/Boat/Collision_Default/Polygon (13)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400054: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400056: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400058: _MapPrfab/level01/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400060: _MapPrfab/level01/Boat/Collision_Default/Polygon (14)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400062: _MapPrfab/level01/Boat/Collision_Default/Polygon (15)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400064: _MapPrfab/level01/Boat/Collision_Default/Polygon (16)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400066: _MapPrfab/level01/Boat/Collision_Default/Polygon (17)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400068: _MapPrfab/level01/Boat/Collision_Default/Polygon (18)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400070: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400072: _MapPrfab/level01/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400074: _MapPrfab/level01/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -249,6 +299,10 @@ ScriptedImporter:
     11400098: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400100: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/ConvexPolygon
       (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400102: _MapPrfab/level01/Boat/Collision_Default/Polygon (19)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400104: _MapPrfab/level01/Boat/Collision_Default/Polygon (20)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400106: _MapPrfab/level01/Boat/Collision_Default/Polygon (21)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400108: _MapPrfab/level01/Boat/Collision_Default/Polygon (22)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400110: _MapPrfab/level01/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400112: _MapPrfab/level01/Cargo/Object_8 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400114: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
@@ -267,6 +321,8 @@ ScriptedImporter:
       (4)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400132: _MapPrfab/level01/Cargo/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400134: _MapPrfab/level01/Cargo/Object_10 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400136: _MapPrfab/level01/Boat/Collision_Default/Polygon (23)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400138: _MapPrfab/level01/Boat/Collision_Default/Polygon (24)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     21200008: _MapPrfab/level01/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/SpriteRenderer
     21200010: _MapPrfab/level01/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/SpriteRenderer
     21200014: _MapPrfab/level01/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer

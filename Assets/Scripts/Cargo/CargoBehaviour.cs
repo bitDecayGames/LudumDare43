@@ -1,6 +1,7 @@
 using Boo.Lang.Runtime;
 using Level;
 using UnityEngine;
+using Utils;
 
 namespace Cargo {
     public class CargoBehaviour : MonoBehaviour {
@@ -78,7 +79,9 @@ namespace Cargo {
         }
 
         public void DestroyInWater() {
-            // TODO: MW spawn the splash animator
+            var splash = Camera.main.GetComponent<LevelStartScript>().SplashAnimation;
+            var splashAnimationGameObj = Instantiate(splash);
+            splashAnimationGameObj.transform.position = GetComponentInChildren<GetMeToCenter>().transform.position;
             Destroy(gameObject);
         }
 
