@@ -13,7 +13,7 @@ public class MenuInputListener : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             FMODMusicPlayer.GetDontDestroyOnLoadReference().SetParameter(ParametersListEnum.Parameters.StartMainSong, 1);
-            SceneManager.LoadScene(Constants.Scenes.Level1.ToString());
+            SceneManager.LoadScene(Constants.Scenes.WorldMap.ToString());
         }
     }
 }

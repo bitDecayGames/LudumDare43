@@ -7,6 +7,9 @@ TagManager:
   - Cargo
   - CurrentScore
   - ScoreBoard
+  - BloodEmitter
+  - WoodEmitter
+  - PoofEmitter
   layers:
   - Default
   - TransparentFX

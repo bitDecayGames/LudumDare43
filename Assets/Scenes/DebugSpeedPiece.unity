@@ -2752,6 +2752,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2766,6 +2767,18 @@ AudioListener:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95101f29a9744c9a80be6707509e610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextLevelName: DebugCrane
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -2844,10 +2857,12 @@ MonoBehaviour:
   dropZone: {fileID: 114580977197033318, guid: 03b5a9b20adc84b1f9eebc0b04c7acc5, type: 2}
   CenterPrefab: {fileID: 114707348139202678, guid: b5ce15fa0e08c45858e621bdca5a42ef,
     type: 2}
+  SplashHasHappened: 0
   grabTip: {fileID: 0}
   moveTip: {fileID: 0}
   accelTip: {fileID: 0}
   rotateTip: {fileID: 0}
+  SplashAnimation: {fileID: 0}
 --- !u!60 &537943774 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000024, guid: 6105cf5074d89fd4c976cf0ed50798bd,
@@ -3269,6 +3284,48 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000020, guid: 6105cf5074d89fd4c976cf0ed50798bd,
     type: 3}
   m_PrefabInternal: {fileID: 50399299}
+--- !u!1001 &1569642528
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.94901824
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.63758916
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 19.461082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4057512778747374, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b00b4bf186a2d4d1b8daa32ccefdc759, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!60 &1636866236 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000002, guid: 6105cf5074d89fd4c976cf0ed50798bd,
