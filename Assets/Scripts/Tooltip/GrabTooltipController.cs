@@ -35,6 +35,12 @@ public class GrabTooltipController : MonoBehaviour
 			return;
 		}
 
+		if (player == null) 
+		{
+			// we might have been crushed.
+			return;
+		}
+
 		var jointFound = false;
 		foreach (var joint in player.GetComponentsInChildren<FixedJoint2D>())
 		{
