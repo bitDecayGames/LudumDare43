@@ -86,6 +86,21 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     cargoBehavior.material = p.m_Value;
                 }
+
+                if (p.m_Name == "bonus")
+                {
+                    cargoBehavior.isBonus = Boolean.Parse(p.m_Value);
+                }
+               
+                if (p.m_Name == "bonus_description")
+                {
+                    cargoBehavior.bonusDescription = p.m_Value;
+                }
+                
+                if (p.m_Name == "description")
+                {
+                    cargoBehavior.description = p.m_Value;
+                }
             }
 
             cargoPiece.gameObject.SetActive(false);

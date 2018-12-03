@@ -63,7 +63,10 @@
  </tile>
  <tile id="5">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Cannon Supplies"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -76,7 +79,10 @@
  </tile>
  <tile id="6">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Golden Tigers"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -89,7 +95,10 @@
  </tile>
  <tile id="7">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Miniature Piano"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -102,7 +111,10 @@
  </tile>
  <tile id="8">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Jade Statue"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -115,7 +127,10 @@
  </tile>
  <tile id="9">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Machining Parts"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -128,7 +143,10 @@
  </tile>
  <tile id="10">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Textiles"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -141,7 +159,10 @@
  </tile>
  <tile id="11">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Bundle of Rum"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -154,7 +175,10 @@
  </tile>
  <tile id="12">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Cannon"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -167,7 +191,10 @@
  </tile>
  <tile id="13">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Persian Rug"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -180,20 +207,26 @@
  </tile>
  <tile id="14">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Timbers"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="16" height="64" source="../../Images/Pieces/10.png"/>
   <objectgroup draworder="index">
    <object id="1" x="-0.181818" y="2.72727">
-    <polygon points="1.18182,0.0909087 3.36364,-1.63637 12.9091,-1.54546 15,0.181818 15.091,58.4545 13.2728,60.3636 3.18182,60.1818 1.18182,58.6364"/>
+    <polygon points="1.18182,0.0909087 3.36364,-1.63637 6.63607,-1.6052 7.81951,-0.230294 8.90859,-1.58356 12.9091,-1.54546 15,0.181818 15.091,58.4545 13.2728,60.3636 3.18182,60.1818 1.18182,58.6364"/>
    </object>
   </objectgroup>
  </tile>
  <tile id="15">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value=""/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -206,7 +239,10 @@
  </tile>
  <tile id="16">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value=""/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -219,7 +255,10 @@
  </tile>
  <tile id="17">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value=""/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -232,7 +271,10 @@
  </tile>
  <tile id="18">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value=""/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -245,7 +287,10 @@
  </tile>
  <tile id="19">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value=""/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -258,7 +303,10 @@
  </tile>
  <tile id="20">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Gunpowder"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -271,7 +319,10 @@
  </tile>
  <tile id="21">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Loot Crate"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -284,7 +335,10 @@
  </tile>
  <tile id="22">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Strongbox"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -297,7 +351,10 @@
  </tile>
  <tile id="23">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Statue"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -310,7 +367,10 @@
  </tile>
  <tile id="24">
   <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Steam Engine"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -323,7 +383,10 @@
  </tile>
  <tile id="25">
   <properties>
+   <property name="bonus" type="bool" value="true"/>
+   <property name="bonus_description" value="The Obelisk"/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Mysterious Statue"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -336,7 +399,10 @@
  </tile>
  <tile id="26">
   <properties>
+   <property name="bonus" type="bool" value="true"/>
+   <property name="bonus_description" value="San Holo"/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Strange Object"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -349,7 +415,10 @@
  </tile>
  <tile id="27">
   <properties>
+   <property name="bonus" type="bool" value="true"/>
+   <property name="bonus_description" value="Arc of the Covenant"/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Fancy Box"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -362,7 +431,10 @@
  </tile>
  <tile id="28">
   <properties>
+   <property name="bonus" type="bool" value="true"/>
+   <property name="bonus_description" value="Kang Kong's Banana"/>
    <property name="delay" type="float" value="20"/>
+   <property name="description" value="Large Fruit"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -373,7 +445,7 @@
      <property name="delay" type="float" value="10"/>
      <property name="score" type="float" value="5"/>
     </properties>
-    <polygon points="0,0 2.81818,0 13.5455,4.45455 28.6364,4.72727 37.7273,-6.81818 38,-14.3636 39.5455,-15.9091 42.4545,-15.8182 44.2727,-14.0909 44.1818,6.45455 35,16 11.2727,16.2727 -3.81818,5.18182 -3.81818,1.09091"/>
+    <polygon points="0,0 2.63636,0.545455 13.2728,5.18182 29.6364,5.18182 36.3637,-0.181816 40,-12 40.4546,-14.5455 42.4545,-15.4546 43.6363,-13.6364 43,5.63637 34.9091,15.0909 11.1818,15.3636 -2.63636,5 -2.63636,0.909092"/>
    </object>
   </objectgroup>
  </tile>
