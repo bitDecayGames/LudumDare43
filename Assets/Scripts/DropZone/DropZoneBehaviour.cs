@@ -34,7 +34,7 @@ namespace DropZone {
 		
         
 		public bool IsCraneReady {
-			get { return crane.IsReady; }
+			get { return crane != null && crane.IsReady; }
 		}
 		
 		void Start() {
