@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Utils;
 using Random = UnityEngine.Random;
 
 public class RatController : MonoBehaviour
@@ -24,7 +25,7 @@ public class RatController : MonoBehaviour
         
         var indexOfCrateToInfect = Random.Range(0, infectableComponents.Length);
         var crateToInfect = infectableComponents[indexOfCrateToInfect].gameObject;
-        TargetCargo = crateToInfect;
+        TargetCargo = crateToInfect.GetComponentInChildren<GetMeToCenter>().gameObject;
 
         var spawnPoint = GameObject.Find("RatSpawn");
         if (spawnPoint == null)
