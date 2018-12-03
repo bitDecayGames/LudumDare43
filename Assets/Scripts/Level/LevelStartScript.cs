@@ -15,6 +15,7 @@ public class LevelStartScript : MonoBehaviour {
 
     private bool isTutorial;
 
+    public bool SplashHasHappened; 
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
@@ -86,6 +87,21 @@ public class LevelStartScript : MonoBehaviour {
                 if (p.m_Name == "material")
                 {
                     cargoBehavior.material = p.m_Value;
+                }
+
+                if (p.m_Name == "bonus")
+                {
+                    cargoBehavior.isBonus = Boolean.Parse(p.m_Value);
+                }
+               
+                if (p.m_Name == "bonus_description")
+                {
+                    cargoBehavior.bonusDescription = p.m_Value;
+                }
+                
+                if (p.m_Name == "description")
+                {
+                    cargoBehavior.description = p.m_Value;
                 }
             }
 
