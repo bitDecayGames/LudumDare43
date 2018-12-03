@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
         {
             attached = playerHands.GetComponent<Grabber>().Activate(gameObject);
         }
+        
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientBirdFlap);
+        }
     }
 
     private void FixedUpdate()

@@ -136,6 +136,7 @@ namespace DropZone {
 				}
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
+				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ImpactWood);
 				cargoInst.KillPlayerIfColliding();
 				StartCoroutine(WaitThenCheckForCollisions(cargoInst));
 				cargo = null;
