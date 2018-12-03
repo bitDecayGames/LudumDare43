@@ -20,6 +20,8 @@ public class LevelStartScript : MonoBehaviour {
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
+    public PoisonedCrateTooltipController crateTip;
+    public TrashZoneTooltipController trashZoneTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
     public GameObject RatPrefab;
