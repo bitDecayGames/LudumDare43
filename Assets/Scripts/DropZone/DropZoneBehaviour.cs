@@ -34,6 +34,7 @@ namespace DropZone {
 		private float transparentness = 0;
 
 		public AccelTooltipController craneTip;
+		public RotateTooltipController rotateTip;
         
 		public bool IsCraneReady {
 			get { return crane != null && crane.IsReady; }
@@ -45,8 +46,12 @@ namespace DropZone {
 			crane = Instantiate(CranePrefab, transform);
 			if (craneTip != null)
 			{
-				print("instantiating crane tool tip");
 				Instantiate(craneTip, crane.transform);
+			}
+
+			if (rotateTip != null)
+			{
+				Instantiate(rotateTip, crane.Chain.transform);
 			}
 			crane.InitializeCrane(this);
 		}

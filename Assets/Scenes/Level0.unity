@@ -1766,6 +1766,8 @@ MonoBehaviour:
   grabTip: {fileID: 114584995163685540, guid: 5840c9e5809b91543ba471ff1f2ab355, type: 2}
   moveTip: {fileID: 0}
   accelTip: {fileID: 114718523059504424, guid: cdc54300e90d4bc459fc4cde2a088e49, type: 2}
+  rotateTip: {fileID: 114562626472526920, guid: dff5eda2b3b4e544f9747e65aa61d239,
+    type: 2}
 --- !u!1001 &548417189
 Prefab:
   m_ObjectHideFlags: 0
@@ -1977,6 +1979,11 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224267246039117928, guid: 01470fe449f6344ca9b5173e10857667,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -19.800003
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01470fe449f6344ca9b5173e10857667, type: 2}
