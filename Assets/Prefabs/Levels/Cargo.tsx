@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="29" columns="0">
+<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="33" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <properties>
@@ -470,6 +470,74 @@
      <property name="score" type="float" value="5"/>
     </properties>
     <polygon points="0,0 2.63636,0.545455 13.2728,5.18182 29.6364,5.18182 36.3637,-0.181816 40,-12 40.4546,-14.5455 42.4545,-15.4546 43.6363,-13.6364 43,5.63637 34.9091,15.0909 11.1818,15.3636 -2.63636,5 -2.63636,0.909092"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="29">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Temple Roof"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="32" height="48" source="../../Images/Pieces/25.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="1.0625" y="1.0625">
+    <polygon points="0,1.75 -0.0606383,44.5 1.375,45.875 28.5,45.8125 29.875,44.6875 29.875,1.0625 28.8125,-0.0625 12.6874,-0.0994841 11.4999,1.14865 10.5626,-0.104358 1.5625,-0.125"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="30">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Fromage Grande"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="32" height="32" source="../../Images/Pieces/26.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="4.0625" y="4" width="24" height="24">
+    <ellipse/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="31">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Sausages"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="48" height="32" source="../../Images/Pieces/27.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0.9375" y="5.1875">
+    <polygon points="0,0 0.0625,5.25 5.25,11 16.1875,11.125 16.25,20.8125 20,25.625 41.875,25.75 46.0625,20.6875 46.0625,16.6875 41,10.5625 30,10.6875 30,0.625 25.9375,-4.1875 4.125,-4.125"/>
+   </object>
+  </objectgroup>
+ </tile>
+ <tile id="32">
+  <properties>
+   <property name="bonus" type="bool" value="false"/>
+   <property name="bonus_description" value=""/>
+   <property name="delay" type="float" value="20"/>
+   <property name="description" value="Rat Trap"/>
+   <property name="innate" type="bool" value="false"/>
+   <property name="material" value="wood"/>
+   <property name="score" type="float" value="2"/>
+  </properties>
+  <image width="16" height="16" source="../../Images/Pieces/28.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="0.0625" y="1.9375">
+    <polygon points="0.9375,1 2.4375,-0.9375 5.25,-0.875 6.875,0.8125 6.9375,4.3125 5.9375,5.375 6.9375,6.5 7,12.4375 5.875,13.4375 2.0625,13.3125 0.9375,12.25"/>
    </object>
   </objectgroup>
  </tile>
