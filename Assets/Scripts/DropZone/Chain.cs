@@ -19,6 +19,7 @@ namespace DropZone {
         private float timeToLength;
         private float time;
         private Action onDone;
+        private Action onStart;
 
         void Start() {
             SetLength(GetLength());
@@ -52,7 +53,9 @@ namespace DropZone {
             }
         }
 
-        public void SetTargetLength(float length, float timeToLength, Action onDone) {
+        public void SetTargetLength(float length, float timeToLength, Action onDone, Action onStart)
+        {
+            onStart();
             lengthening = true;
             targetLength = length;
             this.length = GetLength();

@@ -35,6 +35,7 @@ namespace Cargo {
             foreach (Collider2D meCollider in meColliders) {
                 var player = GameObject.FindWithTag("Player");
                 if (player != null && meCollider.OverlapPoint(player.transform.position)) {
+                    FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.VoiceGrunt);
                     Destroy(player.gameObject);
                     var level = FindObjectOfType<LevelBehaviour>();
                     if (level != null) {
