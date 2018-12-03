@@ -35,15 +35,9 @@ namespace TrashZone {
 		public void CheckAndTakeOutTrash(Transform cargo) {
 			print("Check and take out trash! " + cargo.position);
 			if (myBox.OverlapPoint(cargo.position)) {
-				//TODO animate killing cargo
-				DestroySuperObject(cargo);
+				var superObj = cargo.gameObject.GetComponentInAncestor<SuperObject>();
+				superObj.GetComponent<CargoBehaviour>().DestroyInWater();
 			}
-		}
-		
-		private void DestroySuperObject(Transform cargo) {
-			var superObj = cargo.gameObject.GetComponentInAncestor<SuperObject>();
-			if (superObj == null) throw new Exception("Couldn't find super object to destroy");
-			Destroy(superObj.gameObject);
 		}
 	}
 }
