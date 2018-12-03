@@ -25,9 +25,6 @@ public class LevelStartScript : MonoBehaviour {
         SetupDropzone(mapObj, levelB);
 
         SetupPerspectivePoint(mapObj);
-
-        // TODO: This should be pulled from the tiled map
-        levelB.SetRating(new LevelRating(1, 2, 3));
     }
 
     private void SetupTrash(GameObject tiledMap, LevelBehaviour level) {
@@ -42,7 +39,8 @@ public class LevelStartScript : MonoBehaviour {
         // 'cargo is layer 11'
         SetLayerRecursively(cargoT.transform, 11, "Cargo");
 
-        for (int i = 0; i < cargoT.childCount; i++) {
+        for (int i = 0; i < cargoT.childCount; i++)
+        {
             var cargoPiece = cargoT.GetChild(i);
             var childBod = cargoPiece.GetComponentInChildren<Rigidbody2D>();
 
@@ -52,12 +50,15 @@ public class LevelStartScript : MonoBehaviour {
 
             var cargoProps = cargoPiece.GetComponent<SuperCustomProperties>();
             var cargoBehavior = cargoPiece.gameObject.AddComponent<CargoBehaviour>();
-            foreach (CustomProperty p in cargoProps.m_Properties) {
-                if (p.m_Name == "delay") {
+            foreach (CustomProperty p in cargoProps.m_Properties)
+            {
+                if (p.m_Name == "delay")
+                {
                     cargoBehavior.delay = float.Parse(p.m_Value);
                 }
 
-                if (p.m_Name == "score") {
+                if (p.m_Name == "score")
+                {
                     cargoBehavior.score = int.Parse(p.m_Value);
                 }
             }
@@ -66,15 +67,39 @@ public class LevelStartScript : MonoBehaviour {
 
             var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
 
-            try {
+            try
+            {
                 var centerer = Instantiate(CenterPrefab, cargoProps.transform);
                 centerer.Center(renderererer);
-            } catch (Exception e) {
+            }
+            catch (Exception e)
+            {
                 throw new Exception("You need to add the Prefabs/TrashZone/CenterMe prefab to the LevelStartScript");
             }
 
             level.AddToCargoQueue(cargoBehavior);
         }
+        
+        var props = cargoT.GetComponent<SuperCustomProperties>();
+        var star1Score = 0;
+        var star2Score = 0;
+        var star3Score = 0;
+        foreach (CustomProperty p in props.m_Properties)
+        {
+            if (p.m_Name == "star1")
+            {
+                star1Score = int.Parse(p.m_Value);
+            }
+            if (p.m_Name == "star2")
+            {
+                star2Score = int.Parse(p.m_Value);
+            }
+            if (p.m_Name == "star3")
+            {
+                star3Score = int.Parse(p.m_Value);
+            }
+        }
+        level.SetRating(new LevelRating(star1Score, star2Score, star3Score));
     }
 
     private void SetupPerspectivePoint(GameObject tiledMap) {
