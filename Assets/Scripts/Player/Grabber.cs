@@ -16,12 +16,9 @@ public class Grabber : MonoBehaviour
 
 			var trashZone = FindObjectOfType<TrashZoneBehaviour>();
 			if (trashZone != null) {
-				print("Got the trash zone");
 				var superObject = theCargo.GetComponentInParent<SuperObject>();
-				print("Tried to find the super object: " + (superObject != null));
 				if (superObject != null) {
 					var centeredCargo = superObject.GetComponentInChildren<GetMeToCenter>();
-					print("Tried to find the centered cargo: " + (centeredCargo != null));
 					if (centeredCargo != null) trashZone.CheckAndTakeOutTrash(centeredCargo.transform);
 				}
 			}

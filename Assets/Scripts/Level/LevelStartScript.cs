@@ -211,7 +211,6 @@ public class LevelStartScript : MonoBehaviour {
             if (isTutorial)
             {
                 // add tool tips to correct things
-                print("setting crane tool tip");
                 newZone.craneTip = accelTip;
                 newZone.rotateTip = rotateTip;
             }
