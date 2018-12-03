@@ -13,10 +13,28 @@ public class LevelStartScript : MonoBehaviour {
 
     private GameObject mapObj;
 
+    private bool isTutorial = false;
+
+    public GrabTooltipController grabTip;
+    public MoveTooltipController moveTip;
+
     // Use this for initialization
     void Start() {
         mapObj = GameObject.Find("level");
         var levelB = GetComponent<LevelBehaviour>();
+        
+        var items = mapObj.transform.Find("KeyItems");
+        var props = items.GetComponent<SuperCustomProperties>();
+        var star1Score = 0;
+        var star2Score = 0;
+        var star3Score = 0;
+        foreach (CustomProperty p in props.m_Properties)
+        {
+            if (p.m_Name == "tutorial")
+            {
+                isTutorial = bool.Parse(p.m_Value);
+            }
+        }
 
         SetupTrash(mapObj, levelB);
 
@@ -75,6 +93,11 @@ public class LevelStartScript : MonoBehaviour {
             catch (Exception e)
             {
                 throw new Exception("You need to add the Prefabs/TrashZone/CenterMe prefab to the LevelStartScript");
+            }
+
+            if (isTutorial)
+            {
+                Instantiate(grabTip, cargoPiece);
             }
 
             level.AddToCargoQueue(cargoBehavior);
