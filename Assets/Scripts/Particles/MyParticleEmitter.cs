@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using Random = System.Random;
 
@@ -11,7 +12,7 @@ namespace Particles {
         
         private Random rnd = new Random();
 
-        public void EmitParticle(Vector3 position) {
+        public MyParticle EmitParticle(Vector3 position) {
             var velocity = new Vector3();
             var xMod = rnd.Next(-1, 2);
             velocity.x = (float) rnd.NextDouble() * xMod;
@@ -25,11 +26,14 @@ namespace Particles {
             position.z = 0;
             particle.transform.position = position;
             particle.Emitted(velocity, RandRange(MaxLife, MinLife));
+            return particle;
         }
 
-        public void EmitParticles(Vector3 position, int count) {
+        public List<MyParticle> EmitParticles(Vector3 position, int count) {
             if (count > 50) count = 50;
-            for (int i = 0; i < count; i++) EmitParticle(position);
+            List<MyParticle> particles = new List<MyParticle>();
+            for (int i = 0; i < count; i++) particles.Add(EmitParticle(position));
+            return particles;
         }
 
         private float RandRange(float max, float min) {

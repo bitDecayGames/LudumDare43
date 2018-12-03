@@ -3,7 +3,7 @@ using Utils;
 
 namespace Particles {
     public class MyParticle : MonoBehaviour {
-        public SpriteFadeOutOverTime Fader;
+        public AbstractFadeOutOverTime Fader;
         public KillAfterTime Killer;
         public float Resistance = 0.97f;
         protected Vector3 velocity;

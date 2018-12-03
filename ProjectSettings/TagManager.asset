@@ -10,6 +10,7 @@ TagManager:
   - BloodEmitter
   - WoodEmitter
   - PoofEmitter
+  - MoneyEmitter
   layers:
   - Default
   - TransparentFX
