@@ -69,7 +69,7 @@ namespace Level {
             yield return new WaitForSeconds(0.1f);
             var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore(rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, () => {
+            ScoreUI.SetScore("Finished!", rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, "Bonus!", () => {
                 // TODO: MW go to the level select
             }, () => {
                 ScoreUI.Fader.Fade(2, () => {
