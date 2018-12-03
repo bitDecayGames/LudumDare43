@@ -50,9 +50,11 @@ namespace Cargo {
                 }
             }
 
-            if (GetComponent<Infected>() != null)
+            if (GetComponentInChildren<Infected>() != null)
             {
                 score = -50;
+                transform.GetComponentInChildren<MoneyIndicator>().SetText("$" + ScoringBehaviour.IntToCurrency(score));
+                transform.GetComponentInChildren<MoneyIndicator>().Text.color = Color.red;
             }
         }
 
@@ -97,7 +99,9 @@ namespace Cargo {
                 if (count > 0) {
                     foreach (Collider2D otherCollider in results) {
                         if (otherCollider != null && otherCollider.gameObject != gameObject && otherCollider.CompareTag("Cargo")) {
-                            EmitBrokenCargo(transform.GetChild(0).transform.position);
+                            var childPos =transform.GetChild(0).transform.position;
+                            EmitBrokenCargo(childPos);
+                            EmitBadMoney(childPos);
                             DestroyOnBoat();
                             var level = FindObjectOfType<LevelBehaviour>();
                             if (level != null) {
@@ -109,7 +113,10 @@ namespace Cargo {
                     }
                 }
             }
-            EmitPoofs(transform.GetChild(0).transform.position);
+
+            var pos = transform.GetChild(0).transform.position;
+            EmitPoofs(pos);
+            EmitGoodMoney(pos);
         }
 
         public void DestroyInWater() {
@@ -164,6 +171,32 @@ namespace Cargo {
                 if (emitter != null) {
                     emitter.EmitParticles(position, ParticleConstants.NUMBER_OF_POOF_PARTICLES);
                 }
+            }
+        }
+
+        private MoneyParticle EmitMoney(Vector3 position) {
+            var moneyEmitterObj = GameObject.FindWithTag("MoneyEmitter");
+            if (moneyEmitterObj != null) {
+                var moneyEmitter = moneyEmitterObj.GetComponent<MyParticleEmitter>();
+                if (moneyEmitter != null) {
+                    return ((MoneyParticle) moneyEmitter.EmitParticle(position)).SetText("$" + ScoringBehaviour.IntToCurrency(Mathf.Abs(score)));
+                }
+            }
+
+            return null;
+        }
+
+        public void EmitGoodMoney(Vector3 position) {
+            var mon = EmitMoney(position);
+            if (mon != null) mon.Green();
+        }
+
+        public void EmitBadMoney(Vector3 position) {
+            var mon = EmitMoney(position);
+            if (mon != null) {
+                // this check for when you destroy an infected object, it should be green
+                if (score > 0) mon.Red();
+                else mon.Green();
             }
         }
     }

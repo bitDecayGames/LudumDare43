@@ -2,10 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 namespace Utils {
-    public class SpriteFadeOutOverTime : MonoBehaviour {
-        public float timeToFadeOut;
-        private float time;
-
+    public class SpriteFadeOutOverTime : AbstractFadeOutOverTime {
         private SpriteRenderer img;
 
         void Start() {
@@ -13,12 +10,19 @@ namespace Utils {
         }
         
         void Update() {
-            if (img != null && time < timeToFadeOut) {
-                time += Time.deltaTime;
-                var c = img.color;
-                c.a = Mathf.Clamp(1 - time / timeToFadeOut, 0, 1);
-                img.color = c;
-            }
+            _Update();
+        }
+
+        public override bool IsReady() {
+            return img != null;
+        }
+
+        public override Color GetColor() {
+            return img.color;
+        }
+
+        public override void SetColor(Color color) {
+            img.color = color;
         }
     }
 }
