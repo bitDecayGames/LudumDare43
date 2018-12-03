@@ -63,7 +63,7 @@ public class BirdController : MonoBehaviour
             _animator.Play(_animationStates.Takeoff.ToString());
             _directionToFly = Random.Range(0, 361);
             _currentSpeed = TakeOffSpeed;
-            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientBirdFlap);
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientBirdFlapLong);
         }
 
         if (!_escaping)
