@@ -72,6 +72,20 @@ ScriptedImporter:
     100110: _MapPrfab/buoyTest/TrashZone/Collision_Default
     100112: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon
     100114: _MapPrfab/buoyTest/Water
+    100116: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (11)
+    100118: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (12)
+    100120: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (13)
+    100122: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (14)
+    100124: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (15)
+    100126: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (16)
+    100128: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (17)
+    100130: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (18)
+    100132: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (19)
+    100134: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (20)
+    100136: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (21)
+    100138: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (22)
+    100140: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (23)
+    100142: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (24)
     400000: _MapPrfab/buoyTest/Transform
     400002: _MapPrfab/buoyTest/Boat/Transform
     400004: _MapPrfab/buoyTest/Boat/Collision_Default/Transform
@@ -142,6 +156,20 @@ ScriptedImporter:
     400110: _MapPrfab/buoyTest/TrashZone/Collision_Default/Transform
     400112: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon/Transform
     400114: _MapPrfab/buoyTest/Water/Transform
+    400116: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (11)/Transform
+    400118: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (12)/Transform
+    400120: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (13)/Transform
+    400122: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (14)/Transform
+    400124: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (15)/Transform
+    400126: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (16)/Transform
+    400128: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (17)/Transform
+    400130: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (18)/Transform
+    400132: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (19)/Transform
+    400134: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (20)/Transform
+    400136: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (21)/Transform
+    400138: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (22)/Transform
+    400140: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (23)/Transform
+    400142: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (24)/Transform
     5000000: _MapPrfab/buoyTest/Boat/Collision_Default/Rigidbody2D
     5000002: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/Rigidbody2D
     5000004: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/Rigidbody2D
@@ -191,6 +219,20 @@ ScriptedImporter:
     6000054: _MapPrfab/buoyTest/Cargo/Object_10 (TRS)/Object_10 (CF)/Object_10/Object_1/ConvexPolygon
       (1)/PolygonCollider2D
     6000056: _MapPrfab/buoyTest/TrashZone/Collision_Default/Polygon/PolygonCollider2D
+    6000058: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (11)/PolygonCollider2D
+    6000060: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (12)/PolygonCollider2D
+    6000062: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (13)/PolygonCollider2D
+    6000064: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (14)/PolygonCollider2D
+    6000066: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (15)/PolygonCollider2D
+    6000068: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (16)/PolygonCollider2D
+    6000070: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (17)/PolygonCollider2D
+    6000072: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (18)/PolygonCollider2D
+    6000074: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (19)/PolygonCollider2D
+    6000076: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (20)/PolygonCollider2D
+    6000078: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (21)/PolygonCollider2D
+    6000080: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (22)/PolygonCollider2D
+    6000082: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (23)/PolygonCollider2D
+    6000084: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (24)/PolygonCollider2D
     6600000: _MapPrfab/buoyTest/Boat/Collision_Default/CompositeCollider2D
     6600002: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/Object_1/CompositeCollider2D
     6600004: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/Object_1/CompositeCollider2D
@@ -265,6 +307,20 @@ ScriptedImporter:
     11400104: _MapPrfab/buoyTest/Water/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400106: _MapPrfab/buoyTest/Water/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400108: _superAsset
+    11400110: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (11)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400112: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (12)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400114: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (13)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400116: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (14)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400118: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (15)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400120: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (16)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400122: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (17)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400124: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (18)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400126: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (19)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400128: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (20)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400130: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (21)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400132: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (22)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400134: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (23)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400136: _MapPrfab/buoyTest/Boat/Collision_Default/Polygon (24)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     21200000: _MapPrfab/buoyTest/Cargo/Object_5 (TRS)/Object_5 (CF)/Object_5/SpriteRenderer
     21200002: _MapPrfab/buoyTest/Cargo/Object_6 (TRS)/Object_6 (CF)/Object_6/SpriteRenderer
     21200004: _MapPrfab/buoyTest/Cargo/Object_8 (TRS)/Object_8 (CF)/Object_8/SpriteRenderer
