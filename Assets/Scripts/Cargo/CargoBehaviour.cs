@@ -23,6 +23,8 @@ namespace Cargo {
         public string description;
         public string bonusDescription;
 
+        public string material;
+
         void Start() {
             var level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
