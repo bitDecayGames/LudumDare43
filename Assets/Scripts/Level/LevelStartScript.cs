@@ -80,6 +80,11 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     cargoBehavior.score = int.Parse(p.m_Value);
                 }
+
+                if (p.m_Name == "material")
+                {
+                    cargoBehavior.material = p.m_Value;
+                }
             }
 
             cargoPiece.gameObject.SetActive(false);

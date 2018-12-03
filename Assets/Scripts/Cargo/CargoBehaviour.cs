@@ -20,6 +20,8 @@ namespace Cargo {
         public bool isBonus;
         public float delay;
 
+        public string material;
+
         void Start() {
             var level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
