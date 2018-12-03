@@ -100,11 +100,17 @@ namespace DropZone {
 			this.cargo = cargo;
 			if (timeTilDrop <= 0) this.timeTilDrop = 1f; // minumum drop tile is 1 second
 			else this.timeTilDrop = timeTilDrop;
-
-			if (!crane.HasPiece) {
+			
+			if (!crane.HasPiece)
+			{
 				crane.IsReady = false;
 				crane.GoGetNextPiece(timeTilDrop * .3f, () => {
 					crane.SetCargoSprite(cargo.spriteRenderer);
+					if (craneTip != null)
+					{
+						GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = true;
+						GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = true;
+					}
 					StartCoroutine(StartShadow(timeTilDrop * .7f * .3f));
 					crane.GoDropPiece(timeTilDrop * .7f, () => {
 						crane.SetCargoSprite(null);
@@ -115,6 +121,11 @@ namespace DropZone {
 			} else {
 				crane.IsReady = false;
 				crane.SetCargoSprite(cargo.spriteRenderer);
+				if (craneTip != null)
+				{
+					GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = true;
+					GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = true;
+				}
 				StartCoroutine(StartShadow(timeTilDrop * .3f));
 				crane.GoDropPiece(timeTilDrop, () => {
 					crane.SetCargoSprite(null);
@@ -154,6 +165,11 @@ namespace DropZone {
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
 				cargo.SetValueTip(MoneyIndicatorPrefab);
+				if (craneTip != null)
+				{
+					GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = false;
+					GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = false;
+				}
 				FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ImpactWood);
 				cargoInst.KillPlayerIfColliding();
 				StartCoroutine(WaitThenCheckForCollisions(cargoInst));
