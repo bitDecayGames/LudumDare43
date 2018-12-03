@@ -69,10 +69,18 @@ namespace Level {
             yield return new WaitForSeconds(0.1f);
             var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore(rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, null, () => {
-                // TODO: MW this might be bad?
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-            }, null); // TODO: MW do something with the actions at the end there
+            ScoreUI.SetScore(rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, () => {
+                // TODO: MW go to the level select
+            }, () => {
+                ScoreUI.Fader.Fade(2, () => {
+                    // restart this level
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                });
+            }, () => {
+                ScoreUI.Fader.Fade(2, () => {
+                    // TODO: MW go to the next scene                    
+                });
+            });
         }
 
         void Update() {
