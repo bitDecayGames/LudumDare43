@@ -8,6 +8,8 @@ using Utils;
 namespace Scoring {
 	public class ScoringBehaviour : MonoBehaviour {
 
+		public Text FinishReasonText;
+		
 		public StarBehaviour Star1;
 		public StarBehaviour Star2;
 		public StarBehaviour Star3;
@@ -15,6 +17,7 @@ namespace Scoring {
 		public Text Score;
 
 		public StarBehaviour Bonus;
+		public Text BonusText;
 
 		public Transform Menu;
 		public Button LevelSelectButton;
@@ -114,7 +117,7 @@ namespace Scoring {
 		/// <param name="onLevelSelect"></param>
 		/// <param name="onRestart"></param>
 		/// <param name="onNext"></param>
-		public void SetScore(float stars, int score, bool bonus, Action onLevelSelect, Action onRestart, Action onNext) {
+		public void SetScore(string finishReason, float stars, int score, bool bonus, string bonusText, Action onLevelSelect, Action onRestart, Action onNext) {
 			gameObject.SetActive(true);
 			
 			time = 0;
@@ -130,6 +133,9 @@ namespace Scoring {
 			this.onLevelSelect = onLevelSelect;
 			this.onRestart = onRestart;
 			this.onNext = onNext;
+
+			FinishReasonText.text = finishReason;
+			BonusText.text = bonusText;
 
 			StartCoroutine(WaitThenStart(timeToFlyIn)); 
 		}

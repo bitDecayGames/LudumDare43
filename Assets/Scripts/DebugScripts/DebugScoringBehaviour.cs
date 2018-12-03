@@ -10,7 +10,7 @@ namespace DebugScripts {
         void Start() {
             StartCoroutine(WaitThenDo(1, () => {
                 score = GameObject.FindGameObjectWithTag("ScoreBoard").GetComponent<ScoringBehaviour>(); 
-                score.SetScore(3, 1000, true, () => {
+                score.SetScore("You Sucked!", 3, 1000, true, "BONUS DICK!", () => {
                     print("Level select");
                 }, () => {
                     print("Restart");
