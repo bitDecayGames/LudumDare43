@@ -18,7 +18,7 @@ namespace Utils {
                     var eulerAngles = transform.rotation.eulerAngles;
                     eulerAngles.z = zRot;
                     transform.rotation = Quaternion.Euler(eulerAngles);
-                    time += Time.deltaTime;
+                    time += GetDeltaTime();
                 } else {
                     rotating = false;
                     var eulerAngles = transform.rotation.eulerAngles;
@@ -36,6 +36,12 @@ namespace Utils {
             time = 0;
             this.timeToRotate = timeToRotate;
             this.onDone = onDone;
+        }
+
+        private float GetDeltaTime() {
+            var deltaTime = Time.deltaTime;
+            if (Input.GetKey(MustGoFaster.Key)) return deltaTime * MustGoFaster.SpeedMultiplier;
+            return deltaTime;
         }
     }
 }
