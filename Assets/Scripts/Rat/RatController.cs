@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class RatController : MonoBehaviour
 {
@@ -11,17 +12,19 @@ public class RatController : MonoBehaviour
     
     private void Start()
     {
-        _animator = GetComponent<Animator>();
-
+        FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.VoiceRatSqueak);
         
-        var infectedComponent = FindObjectOfType<Infectable>();
-
-        if (infectedComponent == null)
+        _animator = GetComponent<Animator>();
+        
+        var infectableComponents = FindObjectsOfType<Infectable>();
+        if (infectableComponents == null)
         {
             throw new Exception("Rat could not find target cargo");
         }
         
-        TargetCargo = infectedComponent.gameObject;
+        var indexOfCrateToInfect = Random.Range(0, infectableComponents.Length);
+        var crateToInfect = infectableComponents[indexOfCrateToInfect].gameObject;
+        TargetCargo = crateToInfect;
 
         var spawnPoint = GameObject.Find("RatSpawn");
         if (spawnPoint == null)
@@ -36,14 +39,24 @@ public class RatController : MonoBehaviour
     {
         if (Math.Abs(transform.position.y - TargetCargo.transform.position.y) > .1f)
         {
+            _animator.Play("RunUp");
             transform.Translate(Vector2.up * RatSpeed * Time.deltaTime);
         }
         else
         {
             if (Vector2.Distance(transform.position, TargetCargo.transform.position) > .1f)
             {
-                _animator.Play("RunRight");
-                transform.position = Vector2.MoveTowards(transform.position, TargetCargo.transform.position, RatSpeed * Time.deltaTime);
+                var movementVector = Vector2.MoveTowards(transform.position, TargetCargo.transform.position, RatSpeed * Time.deltaTime);
+                transform.position = movementVector;
+                
+                if (transform.position.x - TargetCargo.transform.position.x > 0)
+                {
+                    _animator.Play("RunLeft");
+                }
+                else
+                {
+                    _animator.Play("RunRight");
+                }
             }
             else
             {

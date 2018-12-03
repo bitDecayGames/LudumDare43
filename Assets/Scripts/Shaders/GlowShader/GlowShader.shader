@@ -81,7 +81,7 @@
 			    // Sin function returns value between -1 and 1
 			    // divide this by 2 to return between -.5 and .5
 			    // add .5 to make the effective range between 0 and 1
-			    float percentageOfColorToSubtract = (sin(timeValue)/2 + .5f) * .6f;
+			    float percentageOfColorToSubtract = .1f + (sin(timeValue)/2 + .5f) * .5f;
 			    
 
 			    return originalRbgValue - percentageOfColorToSubtract*originalRbgValue;
@@ -92,7 +92,7 @@
 			    // Sin function returns value between -1 and 1
 			    // divide this by 2 to return between -.5 and .5
 			    // add .5 to make the effective range between 0 and 1
-			    float percentageOfColorMovement = (sin(timeValue)/2 + .5f) * .6f;
+			    float percentageOfColorMovement = .1f + (sin(timeValue)/2 + .5f) * .5f;
 			    
 			    // Calculate the amount of RGB color required to make the provided value 1
 			    float rangeOfColorToMove = .5f-originalRbgValue;
