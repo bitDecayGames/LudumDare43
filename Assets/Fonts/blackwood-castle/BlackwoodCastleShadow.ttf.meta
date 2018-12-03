@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eab3654f6ba114c888a5162942441e4d
+guid: 531b0daf91f3341bf8d2254bb1d28b0e
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Windlass
+  fontName: Blackwood Castle Shadow
   fontNames:
-  - Windlass
+  - Blackwood Castle Shadow
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0

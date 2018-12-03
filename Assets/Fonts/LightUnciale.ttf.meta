@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eab3654f6ba114c888a5162942441e4d
+guid: 57389dc47a9ea45cdbab87c59301dc91
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,9 +8,9 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Windlass
+  fontName: LightUnciale
   fontNames:
-  - Windlass
+  - LightUnciale
   fallbackFontReferences: []
   customCharacters: 
   fontRenderingMode: 0
