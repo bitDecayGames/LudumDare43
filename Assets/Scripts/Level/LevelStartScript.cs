@@ -13,10 +13,11 @@ public class LevelStartScript : MonoBehaviour {
 
     private GameObject mapObj;
 
-    private bool isTutorial = false;
+    private bool isTutorial;
 
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
+    public AccelTooltipController accelTip;
 
     // Use this for initialization
     void Start() {
@@ -139,9 +140,6 @@ public class LevelStartScript : MonoBehaviour {
     }
 
     private void SetupDropzone(GameObject tiledMap, LevelBehaviour level) {
-        // TODO: This should be pulled from the tiled map
-
-
         var items = tiledMap.transform.Find("KeyItems");
         var dropzoneNum = 0;
 
@@ -155,6 +153,14 @@ public class LevelStartScript : MonoBehaviour {
             newZone.transform.position = zoneBox.transform.position + vec3;
 
             newZone.ZoneOutline.transform.localScale = new Vector3(fullSize.x * 6, fullSize.y * 6, 0);
+
+
+            if (isTutorial)
+            {
+                // add tool tips to correct things
+                print("setting crane tool tip");
+                 newZone.craneTip = accelTip;
+            }
 
             level.AddDropZone(newZone);
             // TODO: Set drop zone size properly
