@@ -72,7 +72,7 @@ namespace DropZone {
             },
             () => {
                 chainSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene()
-                    .PlaySoundEffect(Sfx.AmbientChainMove);
+                    .PlaySoundEffect(Sfx.AmbientChainMove2);
             });
         }
 
@@ -90,7 +90,7 @@ namespace DropZone {
                     () =>
                     {
                         chainSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene()
-                            .PlaySoundEffect(Sfx.AmbientChainMove);
+                            .PlaySoundEffect(Sfx.AmbientChainMove2);
                     });
             });
         }
