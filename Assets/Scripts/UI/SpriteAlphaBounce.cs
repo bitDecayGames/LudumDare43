@@ -8,7 +8,7 @@ namespace UI
         public const float AlphaBounceSpeed = .5f;
         private bool isFading;
 
-        private float minAlpha = 0.5f;
+        public float bottomAlpha = 0.5f;
 
         private SpriteRenderer renderer;
 
@@ -42,7 +42,7 @@ namespace UI
             {
                 tmp.a = tmp.a - AlphaBounceSpeed*Time.deltaTime;  
             
-                if (tmp.a <= minAlpha)
+                if (tmp.a <= bottomAlpha)
                 {
                     isFading = false;
                 }

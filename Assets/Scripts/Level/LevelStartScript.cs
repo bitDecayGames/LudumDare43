@@ -104,7 +104,7 @@ public class LevelStartScript : MonoBehaviour {
 
             if (isTutorial)
             {
-                Instantiate(grabTip, cargoPiece);
+                Instantiate(grabTip, cargoPiece.GetChild(0));
             }
 
             level.AddToCargoQueue(cargoBehavior);
