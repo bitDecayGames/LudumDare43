@@ -2411,6 +2411,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2517,12 +2518,25 @@ MonoBehaviour:
   dropZone: {fileID: 114580977197033318, guid: 03b5a9b20adc84b1f9eebc0b04c7acc5, type: 2}
   CenterPrefab: {fileID: 114707348139202678, guid: b5ce15fa0e08c45858e621bdca5a42ef,
     type: 2}
+  SplashHasHappened: 0
   grabTip: {fileID: 114584995163685540, guid: 5840c9e5809b91543ba471ff1f2ab355, type: 2}
   moveTip: {fileID: 114900013999146522, guid: 0fa371ea840f6db4d9ae6a038e5c7b8d, type: 2}
   accelTip: {fileID: 114718523059504424, guid: cdc54300e90d4bc459fc4cde2a088e49, type: 2}
   rotateTip: {fileID: 114562626472526920, guid: dff5eda2b3b4e544f9747e65aa61d239,
     type: 2}
   SplashAnimation: {fileID: 0}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95101f29a9744c9a80be6707509e610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextLevelName: Level1
 --- !u!1001 &548417189
 Prefab:
   m_ObjectHideFlags: 0

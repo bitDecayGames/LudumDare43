@@ -9,6 +9,7 @@ using Transitions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UserStats;
 using Utils;
 
 namespace Level {
@@ -82,9 +83,14 @@ namespace Level {
             yield return new WaitForSeconds(0.1f);
             var currentScore = CalculateMyScore();
             scores.Clear();
-            ScoreUI.SetScore(finishReasonText, rating.StarRating(currentScore.score), currentScore.score, currentScore.hasBonus, bonusText, () => {
+            var starRating = rating.StarRating(currentScore.score);
+            ScoreStats.AddLevelScore(SceneManager.GetActiveScene().name, (int) starRating, currentScore.score, currentScore.hasBonus);
+            ScoreUI.SetScore(finishReasonText, starRating, currentScore.score, currentScore.hasBonus, bonusText, () => {
                 ScoreUI.Fader.Fade(2, () => { 
-                    // TODO: MW go to the level select
+                    // go to the level select
+                    ScoreUI.Fader.Fade(2, () => {
+                        SceneManager.LoadScene("WorldMap");
+                    });    
                 });
             }, () => {
                 ScoreUI.Fader.Fade(2, () => {
@@ -96,7 +102,8 @@ namespace Level {
                     // go to the next scene
                     var nextLevel = FindObjectOfType<NextLevel>();
                     if (nextLevel == null) throw new Exception("Could not find NextLevel component, need to add to MainCamera");
-                    nextLevel.GoToNextLevel();
+                    if (string.IsNullOrEmpty(nextLevel.NextLevelName)) SceneManager.LoadScene("WorldMap");
+                    else nextLevel.GoToNextLevel();
                 });
             });
         }

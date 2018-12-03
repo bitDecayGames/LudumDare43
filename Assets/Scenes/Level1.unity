@@ -253,6 +253,7 @@ GameObject:
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
+  - component: {fileID: 519420035}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -359,6 +360,24 @@ MonoBehaviour:
   dropZone: {fileID: 114580977197033318, guid: 03b5a9b20adc84b1f9eebc0b04c7acc5, type: 2}
   CenterPrefab: {fileID: 114707348139202678, guid: b5ce15fa0e08c45858e621bdca5a42ef,
     type: 2}
+  SplashHasHappened: 0
+  grabTip: {fileID: 0}
+  moveTip: {fileID: 0}
+  accelTip: {fileID: 0}
+  rotateTip: {fileID: 0}
+  SplashAnimation: {fileID: 0}
+--- !u!114 &519420035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d95101f29a9744c9a80be6707509e610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextLevelName: Level2
 --- !u!1001 &548417189
 Prefab:
   m_ObjectHideFlags: 0
