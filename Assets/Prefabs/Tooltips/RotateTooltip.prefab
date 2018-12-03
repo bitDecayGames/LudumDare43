@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212255163910675604}
   - component: {fileID: 114596467457474248}
   m_Layer: 0
-  m_Name: LeftTip
+  m_Name: LeftRotateTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 212714509577692246}
   - component: {fileID: 114968582279823438}
   m_Layer: 0
-  m_Name: RightTip
+  m_Name: RightRotateTip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d924012aeddc4089a6b69a6f18e91ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bottomAlpha: 0.5
 --- !u!114 &114871430539259562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,6 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d924012aeddc4089a6b69a6f18e91ebf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bottomAlpha: 0.5
 --- !u!212 &212255163910675604
 SpriteRenderer:
   m_ObjectHideFlags: 1

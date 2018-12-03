@@ -20,6 +20,8 @@ public class LevelStartScript : MonoBehaviour {
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
+    public PoisonedCrateTooltipController crateTip;
+    public TrashZoneTooltipController trashZoneTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
     public GameObject RatPrefab;
@@ -143,7 +145,7 @@ public class LevelStartScript : MonoBehaviour {
                 throw new Exception("You need to add the Prefabs/TrashZone/CenterMe prefab to the LevelStartScript");
             }
 
-            if (isTutorial)
+            if (isTutorial && i == 0)
             {
                 var tip = Instantiate(grabTip, cargoPiece.GetChild(0));
                 tip.transform.localPosition = new Vector3(0, 0, 0);
