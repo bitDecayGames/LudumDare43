@@ -10,7 +10,7 @@ namespace DropZone {
 	public class DropZoneBehaviour : MonoBehaviour {
 
 		public Crane CranePrefab;
-		private Crane crane;
+		public Crane crane;
 		public SpriteRenderer ZoneOutline;
 		private Material zoneMat;
 		public SpriteRenderer Shadow;
@@ -33,7 +33,7 @@ namespace DropZone {
 		private const float transparentnessStart = 0f;
 		private float transparentness = 0;
 
-		
+		public AccelTooltipController craneTip;
         
 		public bool IsCraneReady {
 			get { return crane != null && crane.IsReady; }
@@ -43,6 +43,11 @@ namespace DropZone {
 			zoneMat = ZoneOutline.material;
 			shadowMat = Shadow.material;
 			crane = Instantiate(CranePrefab, transform);
+			if (craneTip != null)
+			{
+				print("instantiating crane tool tip");
+				Instantiate(craneTip, crane.transform);
+			}
 			crane.InitializeCrane(this);
 		}
 		
