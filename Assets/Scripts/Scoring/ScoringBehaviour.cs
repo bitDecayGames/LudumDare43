@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace Scoring {
 	public class ScoringBehaviour : MonoBehaviour {
@@ -19,6 +20,8 @@ namespace Scoring {
 		public Button LevelSelectButton;
 		public Button RestartButton;
 		public Button NextButton;
+
+		public FadeToBlack Fader;
 
 		private bool started;
 
@@ -45,8 +48,6 @@ namespace Scoring {
 			LevelSelectButton.onClick.AddListener(OnLevelSelect);
 			RestartButton.onClick.AddListener(OnRestart);
 			NextButton.onClick.AddListener(OnNext);
-				
-			//gameObject.SetActive(false);
 		}
 
 		void Update() {
