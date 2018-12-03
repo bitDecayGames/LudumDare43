@@ -20,7 +20,7 @@ namespace DebugScripts {
 
             var level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
-                level.SetRating(new LevelRating(10, 30, 60));
+                //level.SetRating(new LevelRating(10, 30, 60));
                 //level.AddToCargoQueue(Factory.ByName("TCargo", 1, 5))
                     //.AddToCargoQueue(Factory.ByName("SCargo", 20, 5))
 //                    .AddToCargoQueue(Factory.ByName("SquareCargo", 2, 5))
