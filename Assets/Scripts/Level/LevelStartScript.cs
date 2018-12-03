@@ -64,6 +64,7 @@ public class LevelStartScript : MonoBehaviour {
 
         for (int i = 0; i < cargoT.childCount; i++)
         {
+            var innate = false;
             var cargoPiece = cargoT.GetChild(i);
             var childBod = cargoPiece.GetComponentInChildren<Rigidbody2D>();
 
@@ -104,9 +105,13 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     cargoBehavior.description = p.m_Value;
                 }
+
+                if (p.m_Name == "innate")
+                {
+                    innate = Boolean.Parse(p.m_Value);
+                }
             }
 
-            cargoPiece.gameObject.SetActive(false);
 
             var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
 
@@ -126,7 +131,13 @@ public class LevelStartScript : MonoBehaviour {
                 tip.transform.localPosition = new Vector3(0, 0, 0);
             }
 
-            level.AddToCargoQueue(cargoBehavior);
+            if (innate)
+            {
+                // we just leave these alone. They start on the deck
+            } else {
+                cargoPiece.gameObject.SetActive(false);
+                level.AddToCargoQueue(cargoBehavior);
+            }
         }
         
         var props = cargoT.GetComponent<SuperCustomProperties>();

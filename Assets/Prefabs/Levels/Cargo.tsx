@@ -67,6 +67,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Cannon Supplies"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -83,6 +84,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Golden Tigers"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -99,6 +101,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Miniature Piano"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -115,6 +118,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Jade Statue"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -131,6 +135,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Machining Parts"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -147,6 +152,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Textiles"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -163,6 +169,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Bundle of Rum"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -179,6 +186,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Cannon"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -195,6 +203,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Persian Rug"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -211,6 +220,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Timbers"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -227,6 +237,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -243,6 +254,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -259,6 +271,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -275,6 +288,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -291,6 +305,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -307,6 +322,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Gunpowder"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -323,6 +339,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Loot Crate"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -339,6 +356,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Strongbox"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -355,6 +373,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Statue"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -371,6 +390,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Steam Engine"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -387,6 +407,7 @@
    <property name="bonus_description" value="The Obelisk"/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Mysterious Statue"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -403,6 +424,7 @@
    <property name="bonus_description" value="San Holo"/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Strange Object"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -419,6 +441,7 @@
    <property name="bonus_description" value="Arc of the Covenant"/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Fancy Box"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
   </properties>
@@ -435,6 +458,7 @@
    <property name="bonus_description" value="Kang Kong's Banana"/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Large Fruit"/>
+   <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
   </properties>
