@@ -1,15 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using Cargo;
 using DropZone;
 using Level;
 using SuperTiled2Unity;
 using UnityEngine;
+using Utils;
 
 public class LevelStartScript : MonoBehaviour
 {
 
 	public DropZoneBehaviour dropZone;
+	public GetMeToCenter CenterPrefab;
 
 	private GameObject mapObj;
 	
@@ -29,6 +30,8 @@ public class LevelStartScript : MonoBehaviour
 		levelB.AddDropZone(dropZone);
 		// TODO: This should be pulled from the tiled map
 		levelB.SetRating(new LevelRating(1, 2, 3));
+		
+		if (CenterPrefab == null) throw new Exception("You must add the Prefabs/TrashZone/CenterMe prefab to this LevelStartScript component");
 		
 		
 	}
@@ -70,6 +73,11 @@ public class LevelStartScript : MonoBehaviour
 				}
 			}
 			cargoPiece.gameObject.SetActive(false);
+
+			var renderererer = cargoProps.GetComponentInChildren<SpriteRenderer>();
+			var centerer = Instantiate(CenterPrefab, cargoProps.transform);
+			centerer.Center(renderererer);
+			
 			level.AddToCargoQueue(cargoBehavior);
 		}
 	}

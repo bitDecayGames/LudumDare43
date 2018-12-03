@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using SuperTiled2Unity;
 using TrashZone;
+using UnityEngine;
+using Utils;
 
 public class Grabber : MonoBehaviour
 {
@@ -10,14 +9,21 @@ public class Grabber : MonoBehaviour
 	
 	public bool Activate(GameObject go)
 	{
-		if (go.GetComponent<FixedJoint2D>() != null)
-		{
+		if (go.GetComponent<FixedJoint2D>() != null) {
+			var theCargo = go.GetComponent<FixedJoint2D>().connectedBody.transform;
 			go.GetComponent<FixedJoint2D>().connectedBody.bodyType = RigidbodyType2D.Static;
 			Destroy(go.GetComponent<FixedJoint2D>());
 
 			var trashZone = FindObjectOfType<TrashZoneBehaviour>();
 			if (trashZone != null) {
-				trashZone.CheckAndTakeOutTrash(go.GetComponent<FixedJoint2D>().connectedBody.transform);
+				print("Got the trash zone");
+				var superObject = theCargo.GetComponentInParent<SuperObject>();
+				print("Tried to find the super object: " + (superObject != null));
+				if (superObject != null) {
+					var centeredCargo = superObject.GetComponentInChildren<GetMeToCenter>();
+					print("Tried to find the centered cargo: " + (centeredCargo != null));
+					if (centeredCargo != null) trashZone.CheckAndTakeOutTrash(centeredCargo.transform);
+				}
 			}
 			return false;
 		}
