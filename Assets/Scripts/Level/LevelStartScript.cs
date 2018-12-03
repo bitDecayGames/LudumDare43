@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Boo.Lang.Runtime;
 using Cargo;
 using DropZone;
 using Level;
@@ -8,7 +9,6 @@ using UnityEngine;
 
 public class LevelStartScript : MonoBehaviour
 {
-
 	public DropZoneBehaviour dropZone;
 
 	private GameObject mapObj;
@@ -23,14 +23,12 @@ public class LevelStartScript : MonoBehaviour
 		
 		SetupCargo(mapObj, levelB);
 
+		SetupDropzone(mapObj, levelB);
+
 		SetupPerspectivePoint(mapObj);
 
 		// TODO: This should be pulled from the tiled map
-		levelB.AddDropZone(dropZone);
-		// TODO: This should be pulled from the tiled map
 		levelB.SetRating(new LevelRating(1, 2, 3));
-		
-		
 	}
 
 	private void SetupTrash(GameObject tiledMap, LevelBehaviour level)
@@ -87,6 +85,41 @@ public class LevelStartScript : MonoBehaviour
 		var player = GameObject.FindWithTag("Player");
 		var playerScript = player.GetComponentInChildren<PlayerAnimationController>();
 		playerScript.PerspectivePoint = centerT.gameObject;
+	}
+
+	private void SetupDropzone(GameObject tiledMap, LevelBehaviour level)
+	{
+		// TODO: This should be pulled from the tiled map
+		
+		
+		var items = tiledMap.transform.Find("KeyItems");
+		var dropzoneNum = 0;
+		
+		var zoneBox = items.Find("drop_zone" + dropzoneNum);
+		while (zoneBox != null)
+		{
+			var newZone = Instantiate(dropZone);
+			newZone.gameObject.SetActive(true);
+			var fullSize = zoneBox.GetComponent<BoxCollider2D>().size;
+			var halfSize = fullSize / 2;
+			var vec3 = new Vector3(halfSize.x, -halfSize.y);
+			newZone.transform.position = zoneBox.transform.position + vec3;
+			
+			newZone.ZoneOutline.transform.localScale = new Vector3(fullSize.x * 6, fullSize.y * 6, 0);
+			
+			level.AddDropZone(newZone);
+			// TODO: Set drop zone size properly
+			Destroy(zoneBox.gameObject);
+
+			dropzoneNum++;
+			zoneBox = items.Find("drop_zone" + dropzoneNum);
+		}
+
+		if (dropzoneNum < 1)
+		{
+			throw new RuntimeException("No drop zones found in map");
+		}
+
 	}
 	
 	private int frameDelay = 100;
