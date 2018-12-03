@@ -2,6 +2,7 @@ using Boo.Lang.Runtime;
 using Level;
 using UnityEngine;
 using Utils;
+using TrashZone;
 
 namespace Cargo {
     public class CargoBehaviour : MonoBehaviour {
@@ -26,10 +27,25 @@ namespace Cargo {
 
         public string material;
 
+        private bool spinAndShrink = false;
+        private float spinAndShrinkDuration = 1;
+        
+        private GameObject trashZone;
+
         void Start() {
             var level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
                 level.Score(this);
+            }
+        }
+
+        void Update() {
+            if (spinAndShrink) {
+                SpinAndShrink();
+                spinAndShrinkDuration -= Time.deltaTime;
+                if (spinAndShrinkDuration <= 0) {
+                    SplashAndDie();
+                }
             }
         }
 
@@ -79,14 +95,27 @@ namespace Cargo {
         }
 
         public void DestroyInWater() {
-            var splash = Camera.main.GetComponent<LevelStartScript>().SplashAnimation;
-            var splashAnimationGameObj = Instantiate(splash);
-            splashAnimationGameObj.transform.position = GetComponentInChildren<GetMeToCenter>().transform.position;
-            Destroy(gameObject);
+            trashZone = FindObjectOfType<TrashZoneBehaviour>().gameObject;
+            spinAndShrink = true;
         }
 
         public void DestroyOnBoat() {
             // TODO: MW spawn dry destruction animator
+            Destroy(gameObject);
+        }
+
+        private void SpinAndShrink() {
+            transform.RotateAround(GetComponentInChildren<GetMeToCenter>().transform.position, new Vector3(0,0,1), 1f);
+            var childTransform = transform.GetChild(0).transform;
+            childTransform.localScale = childTransform.localScale * 0.99f;
+            var trashZoneDelta = trashZone.transform.position - childTransform.position;
+            childTransform.position += trashZoneDelta * .03f;
+        }
+
+        private void SplashAndDie() {
+            var splash = Camera.main.GetComponent<LevelStartScript>().SplashAnimation;
+            var splashAnimationGameObj = Instantiate(splash);
+            splashAnimationGameObj.transform.position = transform.GetChild(0).transform.position;
             Destroy(gameObject);
         }
     }
