@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="Wooden" tilewidth="16" tileheight="16" tilecount="208" columns="8">
- <image source="../../Art/Tiles/Wooden.png" width="128" height="416"/>
+<tileset version="1.2" tiledversion="1.2.1" name="Wooden" tilewidth="16" tileheight="16" tilecount="216" columns="8">
+ <image source="../../Art/Tiles/Wooden.png" width="128" height="432"/>
  <tile id="3">
   <objectgroup draworder="index">
    <object id="1" x="10" y="0" width="6" height="16"/>
@@ -274,6 +274,11 @@
  <tile id="66">
   <objectgroup draworder="index">
    <object id="1" x="1" y="0" width="15" height="15"/>
+  </objectgroup>
+ </tile>
+ <tile id="67">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
   </objectgroup>
  </tile>
  <tile id="68">
@@ -678,6 +683,11 @@
    <object id="1" x="1" y="0" width="15" height="15"/>
   </objectgroup>
  </tile>
+ <tile id="171">
+  <objectgroup draworder="index">
+   <object id="1" x="0" y="0" width="16" height="16"/>
+  </objectgroup>
+ </tile>
  <tile id="172">
   <objectgroup draworder="index">
    <object id="1" x="1" y="0" width="15" height="16"/>
@@ -741,6 +751,11 @@
  <tile id="205">
   <objectgroup draworder="index">
    <object id="1" x="0" y="0" width="15" height="16"/>
+  </objectgroup>
+ </tile>
+ <tile id="215">
+  <objectgroup draworder="index">
+   <object id="1" x="1" y="1" width="14" height="14"/>
   </objectgroup>
  </tile>
 </tileset>

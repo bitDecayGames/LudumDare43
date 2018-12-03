@@ -213,6 +213,14 @@ ScriptedImporter:
     11400414: Tile_Wooden_206
     11400416: Tile_Wooden_207
     11400418: Tile_Wooden_208
+    11400420: Tile_Wooden_209
+    11400422: Tile_Wooden_210
+    11400424: Tile_Wooden_211
+    11400426: Tile_Wooden_212
+    11400428: Tile_Wooden_213
+    11400430: Tile_Wooden_214
+    11400432: Tile_Wooden_215
+    11400434: Tile_Wooden_216
     21300000: Sprite_Wooden_1
     21300002: Sprite_Wooden_2
     21300004: Sprite_Wooden_3
@@ -421,6 +429,14 @@ ScriptedImporter:
     21300410: Sprite_Wooden_206
     21300412: Sprite_Wooden_207
     21300414: Sprite_Wooden_208
+    21300416: Sprite_Wooden_209
+    21300418: Sprite_Wooden_210
+    21300420: Sprite_Wooden_211
+    21300422: Sprite_Wooden_212
+    21300424: Sprite_Wooden_213
+    21300426: Sprite_Wooden_214
+    21300428: Sprite_Wooden_215
+    21300430: Sprite_Wooden_216
   externalObjects: {}
   userData: 
   assetBundleName: 
