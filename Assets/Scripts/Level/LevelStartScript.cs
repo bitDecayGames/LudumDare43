@@ -44,7 +44,7 @@ public class LevelStartScript : MonoBehaviour {
 
         SetupDropzone(mapObj, levelB);
 
-        SetupPerspectivePoint(mapObj);
+        SetupPlayer(mapObj);
     }
 
     private void SetupTrash(GameObject tiledMap, LevelBehaviour level) {
@@ -132,7 +132,7 @@ public class LevelStartScript : MonoBehaviour {
         level.SetRating(new LevelRating(star1Score, star2Score, star3Score));
     }
 
-    private void SetupPerspectivePoint(GameObject tiledMap) {
+    private void SetupPlayer(GameObject tiledMap) {
         var items = tiledMap.transform.Find("KeyItems");
         var centerT = items.Find("center");
 
@@ -143,6 +143,11 @@ public class LevelStartScript : MonoBehaviour {
         var player = GameObject.FindWithTag("Player");
         var playerScript = player.GetComponentInChildren<PlayerAnimationController>();
         playerScript.PerspectivePoint = centerT.gameObject;
+
+        if (isTutorial)
+        {
+            Instantiate(moveTip, player.transform);
+        }
     }
 
     private void SetupDropzone(GameObject tiledMap, LevelBehaviour level) {
