@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4633251779848856}
   - component: {fileID: 114584995163685540}
+  - component: {fileID: 114017775399138364}
   m_Layer: 0
   m_Name: GrabTip
   m_TagString: Untagged
@@ -52,6 +53,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4584314419022440}
   - component: {fileID: 212887573032083578}
+  - component: {fileID: 114269466179538590}
   m_Layer: 0
   m_Name: Grab
   m_TagString: Untagged
@@ -94,12 +96,36 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1423756027837586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -0.32, z: 0}
+  m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4633251779848856}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114017775399138364
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436850669625204}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9da4b3a7b543b988923f2c111842cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Rotation: 0
+--- !u!114 &114269466179538590
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1631060832855950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d924012aeddc4089a6b69a6f18e91ebf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bottomAlpha: 0.2
 --- !u!114 &114584995163685540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -148,7 +174,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 227
-  m_Sprite: {fileID: 21300000, guid: c4ab07d1b379f5b40a806b8e8c051ac5, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -156,7 +182,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!212 &212887573032083578
@@ -194,7 +220,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 240
-  m_Sprite: {fileID: 21300000, guid: c4ab07d1b379f5b40a806b8e8c051ac5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c1794bc39bbb6834bb797713d25f8c47, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

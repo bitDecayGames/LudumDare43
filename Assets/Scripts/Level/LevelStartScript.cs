@@ -18,6 +18,7 @@ public class LevelStartScript : MonoBehaviour {
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
+    public RotateTooltipController rotateTip;
 
     // Use this for initialization
     void Start() {
@@ -43,7 +44,7 @@ public class LevelStartScript : MonoBehaviour {
 
         SetupDropzone(mapObj, levelB);
 
-        SetupPerspectivePoint(mapObj);
+        SetupPlayer(mapObj);
     }
 
     private void SetupTrash(GameObject tiledMap, LevelBehaviour level) {
@@ -103,7 +104,8 @@ public class LevelStartScript : MonoBehaviour {
 
             if (isTutorial)
             {
-                Instantiate(grabTip, cargoPiece);
+                var tip = Instantiate(grabTip, cargoPiece.GetChild(0));
+                tip.transform.localPosition = new Vector3(0, 0, 0);
             }
 
             level.AddToCargoQueue(cargoBehavior);
@@ -131,7 +133,7 @@ public class LevelStartScript : MonoBehaviour {
         level.SetRating(new LevelRating(star1Score, star2Score, star3Score));
     }
 
-    private void SetupPerspectivePoint(GameObject tiledMap) {
+    private void SetupPlayer(GameObject tiledMap) {
         var items = tiledMap.transform.Find("KeyItems");
         var centerT = items.Find("center");
 
@@ -142,6 +144,11 @@ public class LevelStartScript : MonoBehaviour {
         var player = GameObject.FindWithTag("Player");
         var playerScript = player.GetComponentInChildren<PlayerAnimationController>();
         playerScript.PerspectivePoint = centerT.gameObject;
+
+        if (isTutorial)
+        {
+            Instantiate(moveTip, player.transform);
+        }
     }
 
     private void SetupDropzone(GameObject tiledMap, LevelBehaviour level) {
@@ -164,7 +171,8 @@ public class LevelStartScript : MonoBehaviour {
             {
                 // add tool tips to correct things
                 print("setting crane tool tip");
-                 newZone.craneTip = accelTip;
+                newZone.craneTip = accelTip;
+                newZone.rotateTip = rotateTip;
             }
 
             level.AddDropZone(newZone);
