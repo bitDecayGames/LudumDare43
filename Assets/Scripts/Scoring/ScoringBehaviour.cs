@@ -64,14 +64,17 @@ namespace Scoring {
 					if (previousFill < 1 && currentFill >= 1) {
 						// flash first star
 //						Debug.Log("Flash first star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarOne);
 						Star1.Flash();
 					} else if (previousFill < 2 && currentFill >= 2) {
 						// flash second star
 //						Debug.Log("Flash second star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarTwo);
 						Star2.Flash();
 					} else if (previousFill < 3 && currentFill >= 3) {
 						// flash third star
 //						Debug.Log("Flash third star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarThree);
 						Star3.Flash();
 					}
 
@@ -88,6 +91,11 @@ namespace Scoring {
 					if (bonus) {
 						Bonus.SetFill(1);
 //						Debug.Log("Flash bonus");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenBonusStamp);
+						if (targetFill >= 3)
+						{
+							FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarStarsAndBonus);
+						}
 						Bonus.Flash();
 					}
 

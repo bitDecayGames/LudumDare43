@@ -5,7 +5,7 @@ public class Sfx : MonoBehaviour
     public static string AmbientFogHorn = "Ambient/FogHorn";
     public static string AmbientShipBell = "Ambient/ShipBell";
     public static string AmbientChainMove = "Ambient/ChainMove";
-    public static string AmbientChainMove2 = "Ambi ent/ChainMove2";
+    public static string AmbientChainMove2 = "Ambient/ChainMove2";
     public static string AmbientBirdFlap = "Ambient/BirdFlap";
     public static string AmbientSplash = "Ambient/Splash";
     public static string AmbientRotatePieceClockwise = "Ambient/RotatePieceClockwise";
