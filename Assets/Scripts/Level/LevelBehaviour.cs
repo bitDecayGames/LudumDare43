@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Cargo;
 using DropZone;
+using FMOD.Studio;
 using Scoring;
 using UnityEngine;
 using UnityEngine.SceneManagement;
