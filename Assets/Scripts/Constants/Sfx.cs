@@ -1,7 +1,13 @@
+using System;
 using UnityEngine;
 
 public class Sfx : MonoBehaviour
 {
+    public static string BuildSlideSfxStringFromMaterialType(String material)
+    {
+        return String.Format("Slide/{0}", char.ToUpper(material[0]) + material.Substring(1));
+    }
+    
     public static string AmbientFogHorn = "Ambient/FogHorn";
     public static string AmbientShipBell = "Ambient/ShipBell";
     public static string AmbientChainMove = "Ambient/ChainMove";

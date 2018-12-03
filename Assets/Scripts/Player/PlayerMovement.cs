@@ -1,4 +1,5 @@
 ﻿using System;
+using Cargo;
 using FMOD.Studio;
 using UnityEngine;
 
@@ -89,7 +90,25 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!_playingSlideSound && IsHoldingAnObject())
             {
-                _slidingSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.SlideWood);
+                var joint = gameObject.GetComponent<FixedJoint2D>();
+                if (joint == null)
+                {
+                    throw new Exception("Unable to find joint");
+                }
+
+                var attachedObject = joint.connectedBody.transform;
+                if (joint == null)
+                {
+                    throw new Exception("Unable to find connected body");
+                }
+                
+                var cargoBehaviour = attachedObject.GetComponentInParent<CargoBehaviour>();
+                if (cargoBehaviour == null)
+                {
+                    throw new Exception("Unable to find cargoBehavior");
+                }
+                
+                _slidingSound = FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.BuildSlideSfxStringFromMaterialType(cargoBehaviour.material));
                 _playingSlideSound = true;
             }
 
