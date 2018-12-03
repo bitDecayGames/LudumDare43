@@ -3,10 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Utils;
 
 namespace Scoring {
 	public class ScoringBehaviour : MonoBehaviour {
 
+		public Text FinishReasonText;
+		
 		public StarBehaviour Star1;
 		public StarBehaviour Star2;
 		public StarBehaviour Star3;
@@ -14,11 +17,14 @@ namespace Scoring {
 		public Text Score;
 
 		public StarBehaviour Bonus;
+		public Text BonusText;
 
 		public Transform Menu;
 		public Button LevelSelectButton;
 		public Button RestartButton;
 		public Button NextButton;
+
+		public FadeToBlack Fader;
 
 		private bool started;
 
@@ -45,8 +51,6 @@ namespace Scoring {
 			LevelSelectButton.onClick.AddListener(OnLevelSelect);
 			RestartButton.onClick.AddListener(OnRestart);
 			NextButton.onClick.AddListener(OnNext);
-				
-			//gameObject.SetActive(false);
 		}
 
 		void Update() {
@@ -63,14 +67,17 @@ namespace Scoring {
 					if (previousFill < 1 && currentFill >= 1) {
 						// flash first star
 //						Debug.Log("Flash first star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarOne);
 						Star1.Flash();
 					} else if (previousFill < 2 && currentFill >= 2) {
 						// flash second star
 //						Debug.Log("Flash second star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarTwo);
 						Star2.Flash();
 					} else if (previousFill < 3 && currentFill >= 3) {
 						// flash third star
 //						Debug.Log("Flash third star");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarThree);
 						Star3.Flash();
 					}
 
@@ -87,6 +94,11 @@ namespace Scoring {
 					if (bonus) {
 						Bonus.SetFill(1);
 //						Debug.Log("Flash bonus");
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenBonusStamp);
+						if (targetFill >= 3)
+						{
+							FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.ScoreScreenStarStarsAndBonus);
+						}
 						Bonus.Flash();
 					}
 
@@ -105,7 +117,7 @@ namespace Scoring {
 		/// <param name="onLevelSelect"></param>
 		/// <param name="onRestart"></param>
 		/// <param name="onNext"></param>
-		public void SetScore(float stars, int score, bool bonus, Action onLevelSelect, Action onRestart, Action onNext) {
+		public void SetScore(string finishReason, float stars, int score, bool bonus, string bonusText, Action onLevelSelect, Action onRestart, Action onNext) {
 			gameObject.SetActive(true);
 			
 			time = 0;
@@ -122,18 +134,25 @@ namespace Scoring {
 			this.onRestart = onRestart;
 			this.onNext = onNext;
 
+			FinishReasonText.text = finishReason;
+			BonusText.text = bonusText;
+
 			StartCoroutine(WaitThenStart(timeToFlyIn)); 
 		}
 
-		private void OnLevelSelect() {
+		private void OnLevelSelect()
+		{
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onLevelSelect != null) onLevelSelect();
 		}
 
 		private void OnRestart() {
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onRestart != null) onRestart();
 		}
 
 		private void OnNext() {
+			FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
 			if (onNext != null) onNext();
 		}
 
