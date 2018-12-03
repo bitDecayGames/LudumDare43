@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="37" columns="0">
+<tileset version="1.2" tiledversion="1.2.1" name="Cargo" tilewidth="80" tileheight="112" tilecount="38" columns="0">
  <grid orientation="orthogonal" width="1" height="1"/>
  <tile id="0">
   <properties>
@@ -103,7 +103,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Miniature Piano"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -157,7 +157,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Textiles"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -175,7 +175,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Bundle of Rum"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -211,7 +211,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Persian Rug"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
@@ -247,7 +247,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -265,7 +265,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value=""/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -301,7 +301,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Sunshade"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -319,7 +319,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Sarcophagus"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
    <property name="score" type="float" value="2"/>
@@ -355,7 +355,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Loot Crate"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -521,7 +521,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Fromage Grande"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -539,7 +539,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Sausages"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -557,7 +557,7 @@
    <property name="bonus_description" value=""/>
    <property name="delay" type="float" value="20"/>
    <property name="description" value="Rat Trap"/>
-   <property name="infectable" type="bool" value="true"/>
+   <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
    <property name="score" type="float" value="2"/>
@@ -620,5 +620,12 @@
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/32.png"/>
+ </tile>
+ <tile id="37">
+  <properties>
+   <property name="infectable" type="bool" value="false"/>
+   <property name="special" value="rat"/>
+  </properties>
+  <image width="16" height="16" source="../../Images/Pieces/rat.png"/>
  </tile>
 </tileset>

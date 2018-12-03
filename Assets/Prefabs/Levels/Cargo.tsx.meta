@@ -42,6 +42,7 @@ ScriptedImporter:
     11400072: Tile_Cargo_35
     11400074: Tile_Cargo_36
     11400076: Tile_Cargo_37
+    11400078: Tile_Cargo_38
     21300000: Sprite_Cargo_1
     21300002: Sprite_Cargo_2
     21300004: Sprite_Cargo_3
@@ -79,6 +80,7 @@ ScriptedImporter:
     21300068: Sprite_Cargo_35
     21300070: Sprite_Cargo_36
     21300072: Sprite_Cargo_37
+    21300074: Sprite_Cargo_38
   externalObjects: {}
   userData: 
   assetBundleName: 

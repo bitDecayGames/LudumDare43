@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
 using Cargo;
 using DropZone;
 using FMOD.Studio;
@@ -114,12 +115,19 @@ namespace Level {
             }
         }
 
-        private void DropNextPiece() {
+        private void DropNextPiece()
+        {
             if (cargoQueue.Count > 0) {
                 var dropZone = GetNextDropZone();
                 if (dropZone.IsCraneReady) {
                     currentlyDropping = true;
                     var cargo = cargoQueue.Dequeue();
+                    if (cargo.GetComponent<RatMarker>() != null)
+                    {
+                        Instantiate(Camera.main.GetComponent<LevelStartScript>().RatPrefab);
+                        currentlyDropping = false;
+                        return;
+                    }
                     if (dropZone != null) {
                         dropZone.SetCargo(cargo, cargo.delay, c => { currentlyDropping = false; });
                     }
