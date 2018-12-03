@@ -172,8 +172,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxSpeed: 0.01
   MinSpeed: 0.005
-  MaxLife: 1
-  MinLife: 0.5
+  MaxLife: 2
+  MinLife: 1.75
   ParticlePrefab: {fileID: 114836045806679314, guid: 5fb1308b9ea2749fcade8484640fa9d9,
     type: 2}
 --- !u!114 &114636084514142978

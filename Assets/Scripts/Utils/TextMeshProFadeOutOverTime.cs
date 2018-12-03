@@ -1,12 +1,12 @@
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace Utils {
-    public class FadeOutOverTime : AbstractFadeOutOverTime {
-        private MaskableGraphic img;
+    public class TextMeshProFadeOutOverTime : AbstractFadeOutOverTime {
+        private TextMeshPro txt;
 
         void Start() {
-            img = GetComponent<MaskableGraphic>();
+            txt = GetComponentInChildren<TextMeshPro>();
         }
         
         void Update() {
@@ -14,15 +14,15 @@ namespace Utils {
         }
 
         public override bool IsReady() {
-            return img != null;
+            return txt != null;
         }
 
         public override Color GetColor() {
-            return img.color;
+            return txt.color;
         }
 
         public override void SetColor(Color color) {
-            img.color = color;
+            txt.color = color;
         }
     }
 }
