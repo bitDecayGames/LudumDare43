@@ -3,6 +3,7 @@ using Boo.Lang.Runtime;
 using Cargo;
 using DropZone;
 using Level;
+using Scoring;
 using SuperTiled2Unity;
 using UnityEngine;
 using Utils;
@@ -21,6 +22,8 @@ public class LevelStartScript : MonoBehaviour {
     public AccelTooltipController accelTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
+
+    public MoneyIndicator moneyPrefab;
 
     // Use this for initialization
     void Start() {
@@ -133,6 +136,7 @@ public class LevelStartScript : MonoBehaviour {
             if (innate)
             {
                 // we just leave these alone. They start on the deck
+                cargoBehavior.SetValueTip(moneyPrefab);
             } else {
                 cargoPiece.gameObject.SetActive(false);
                 level.AddToCargoQueue(cargoBehavior);

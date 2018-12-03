@@ -1,6 +1,7 @@
 using Boo.Lang.Runtime;
 using Level;
 using Particles;
+using Scoring;
 using UnityEngine;
 using Utils;
 using TrashZone;
@@ -48,6 +49,14 @@ namespace Cargo {
                     SplashAndDie();
                 }
             }
+        }
+
+        public void SetValueTip(MoneyIndicator prefab)
+        {
+            var money = Instantiate(prefab, transform.GetChild(0));
+            if (isBonus) money.SetText("BONUS");
+            else money.SetText("$" + ScoringBehaviour.IntToCurrency(score));
+            money.transform.localPosition = new Vector3(0, 0, 0);
         }
 
         public void KillPlayerIfColliding() {
