@@ -113,6 +113,14 @@ public class LevelStartScript : MonoBehaviour {
                 {
                     innate = Boolean.Parse(p.m_Value);
                 }
+
+                if (p.m_Name == "infectable")
+                {
+                    if (Boolean.Parse(p.m_Value))
+                    {
+                        cargoBehavior.gameObject.AddComponent<Infectable>();
+                    }
+                }
             }
 
 

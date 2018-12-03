@@ -98,7 +98,6 @@ ScriptedImporter:
     100184: _MapPrfab/puzzle02/KeyItems
     100186: _MapPrfab/puzzle02/KeyItems/center
     100188: _MapPrfab/puzzle02/KeyItems/drop_zone0
-    100190: _MapPrfab/puzzle02/KeyItems/rat
     100192: _MapPrfab/puzzle02/TrashZone
     100194: _MapPrfab/puzzle02/TrashZone/Collision_Default
     100196: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon
@@ -198,7 +197,6 @@ ScriptedImporter:
     400184: _MapPrfab/puzzle02/KeyItems/Transform
     400186: _MapPrfab/puzzle02/KeyItems/center/Transform
     400188: _MapPrfab/puzzle02/KeyItems/drop_zone0/Transform
-    400190: _MapPrfab/puzzle02/KeyItems/rat/Transform
     400192: _MapPrfab/puzzle02/TrashZone/Transform
     400194: _MapPrfab/puzzle02/TrashZone/Collision_Default/Transform
     400196: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon/Transform
@@ -367,8 +365,6 @@ ScriptedImporter:
     11400160: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400162: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400164: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400166: _MapPrfab/puzzle02/KeyItems/rat/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400168: _MapPrfab/puzzle02/KeyItems/rat/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400170: _MapPrfab/puzzle02/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400172: _MapPrfab/puzzle02/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400174: _superAsset

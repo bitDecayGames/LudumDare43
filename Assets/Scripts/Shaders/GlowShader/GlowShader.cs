@@ -7,7 +7,7 @@ public class GlowShader : MonoBehaviour
     
     private void Start()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         if (_spriteRenderer == null)
         {
             throw new Exception(String.Format("{0}: Unable to act on sprite: Object is missing SpriteRenderer", GetType().Name));

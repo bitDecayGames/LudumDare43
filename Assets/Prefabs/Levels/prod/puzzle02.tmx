@@ -55,9 +55,6 @@
    <point/>
   </object>
   <object id="2" name="drop_zone0" x="128.318" y="239.909" width="48" height="47.8182"/>
-  <object id="15" name="rat" x="104" y="306.5">
-   <point/>
-  </object>
  </objectgroup>
  <objectgroup id="4" name="Cargo">
   <properties>
