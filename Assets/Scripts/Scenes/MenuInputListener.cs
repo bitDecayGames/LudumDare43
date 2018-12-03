@@ -7,7 +7,7 @@ public class MenuInputListener : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.O))
         {
-            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect);            
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);            
         }
         
         if (Input.GetKeyDown(KeyCode.Return))
