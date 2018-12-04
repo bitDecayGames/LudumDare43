@@ -528,8 +528,8 @@
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/26.png"/>
   <objectgroup draworder="index">
-   <object id="1" x="4.0625" y="4" width="24" height="24">
-    <ellipse/>
+   <object id="2" x="14.5455" y="4.45455">
+    <polygon points="0,0 -6.36364,2.72727 -10,8.45455 -9.90909,15.0909 -7.09091,19.1818 -5.36364,20.7273 -2.81818,19 -3.27273,22.2727 5.36364,22.7273 9.81818,19.8182 13.2727,15.0909 12.4545,6.45455 9.36364,2.27273 4.72727,0.363636"/>
    </object>
   </objectgroup>
  </tile>

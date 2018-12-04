@@ -94,6 +94,11 @@ namespace DropZone {
 			if (crane.HasPiece) {
 				var rot = ShadowRotator.transform.rotation;
 				ShadowRotator.transform.rotation = Quaternion.Euler(0, 0, degrees + rot.eulerAngles.z);
+				if (cargo == null)
+				{
+					return;
+				}
+
 				cargo.transform.rotation = ShadowRotator.transform.rotation;
 				crane.SetCargoSprite(cargo.spriteRenderer);
 			}
