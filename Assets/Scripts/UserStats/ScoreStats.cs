@@ -35,6 +35,7 @@ namespace UserStats {
                 if (!existing.bonus && s.bonus) existing.bonus = s.bonus;
             } else lvlScores.Add(s);
             PlayerPrefs.SetString("level_scores", string.Join(",", lvlScores.ConvertAll(l => l.ToString()).ToArray()));
+            TallyTotalScoreAndSave();
         }
 
         public static int GetTotalScore() {
