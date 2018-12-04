@@ -34,8 +34,10 @@ namespace Cargo {
         
         private GameObject trashZone;
 
+        private LevelBehaviour level;
+
         void Start() {
-            var level = FindObjectOfType<LevelBehaviour>();
+            level = FindObjectOfType<LevelBehaviour>();
             if (level != null) {
                 level.Score(this);
             }
@@ -122,10 +124,12 @@ namespace Cargo {
         public void DestroyInWater() {
             trashZone = FindObjectOfType<TrashZoneBehaviour>().gameObject;
             spinAndShrink = true;
+            
+            level.RemoveScore(this);
         }
 
         public void DestroyOnBoat() {
-            // TODO: MW spawn dry destruction animator
+            level.RemoveScore(this);
             Destroy(gameObject);
         }
 

@@ -36,71 +36,71 @@ ScriptedImporter:
     100062: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (28)
     100064: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (29)
     100066: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (30)
+    100068: _MapPrfab/puzzle02/Cargo/a (TRS)
+    100070: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)
     100072: _MapPrfab/puzzle02/Cargo
-    100074: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)
-    100076: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)
-    100078: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19
-    100080: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1
-    100082: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon
-    100084: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon
-      (1)
-    100086: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)
-    100088: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)
-    100090: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21
-    100092: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1
-    100094: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-    100096: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (1)
-    100098: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (2)
-    100100: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)
-    100102: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)
-    100104: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22
-    100106: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1
-    100108: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon
-    100110: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon
-      (1)
-    100112: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)
-    100114: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)
-    100116: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23
-    100118: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1
-    100120: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon
-    100122: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon
-      (1)
-    100124: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)
-    100126: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)
-    100128: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24
-    100130: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1
-    100132: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon
-    100134: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon
-      (1)
-    100136: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)
-    100138: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)
-    100140: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25
-    100142: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1
-    100144: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon
-    100146: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon
-      (1)
-    100148: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)
-    100150: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)
-    100152: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26
-    100154: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1
-    100156: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon
-    100158: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon
-      (1)
-    100160: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)
-    100162: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)
-    100164: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27
-    100166: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1
-    100168: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon
-    100170: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon
-      (1)
+    100074: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1
+    100076: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon
+    100078: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (1)
+    100080: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (2)
+    100172: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a
+    100174: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1
+    100176: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon
+    100178: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon (1)
+    100180: _MapPrfab/puzzle02/Cargo/b (TRS)
+    100182: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)
     100184: _MapPrfab/puzzle02/KeyItems
     100186: _MapPrfab/puzzle02/KeyItems/center
     100188: _MapPrfab/puzzle02/KeyItems/drop_zone0
+    100190: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b
     100192: _MapPrfab/puzzle02/TrashZone
     100194: _MapPrfab/puzzle02/TrashZone/Collision_Default
     100196: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon
+    100198: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1
+    100200: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon
+    100202: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon (1)
+    100204: _MapPrfab/puzzle02/Cargo/c (TRS)
+    100206: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)
+    100208: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c
+    100210: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1
+    100212: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon
+    100214: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon (1)
+    100216: _MapPrfab/puzzle02/Cargo/d (TRS)
+    100218: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)
+    100220: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d
+    100222: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1
+    100224: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon
+    100226: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon (1)
+    100228: _MapPrfab/puzzle02/Cargo/e (TRS)
+    100230: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)
+    100232: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e
+    100234: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1
+    100236: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon
+    100238: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon (1)
+    100240: _MapPrfab/puzzle02/Cargo/e2 (TRS)
+    100242: _MapPrfab/puzzle02/Cargo/e2 (TRS)/e2 (CF)
+    100244: _MapPrfab/puzzle02/Cargo/e2 (TRS)/e2 (CF)/e2
+    100246: _MapPrfab/puzzle02/Cargo/f (TRS)
+    100248: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)
+    100250: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f
+    100252: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1
+    100254: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon
+    100256: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon (1)
+    100258: _MapPrfab/puzzle02/Cargo/g (TRS)
+    100260: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)
+    100262: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g
+    100264: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1
+    100266: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon
+    100268: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon (1)
+    100270: _MapPrfab/puzzle02/Cargo/h (TRS)
+    100272: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)
+    100274: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h
+    100276: _MapPrfab/puzzle02/Cargo/i (TRS)
+    100278: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)
+    100280: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i
+    100282: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1
+    100284: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon
+    100286: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon (1)
     400000: _MapPrfab/puzzle02/Transform
     400002: _MapPrfab/puzzle02/Boat/Transform
     400004: _MapPrfab/puzzle02/Boat/Collision_Default/Transform
@@ -135,81 +135,82 @@ ScriptedImporter:
     400062: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (28)/Transform
     400064: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (29)/Transform
     400066: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (30)/Transform
+    400068: _MapPrfab/puzzle02/Cargo/a (TRS)/Transform
+    400070: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/Transform
     400072: _MapPrfab/puzzle02/Cargo/Transform
-    400074: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Transform
-    400076: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Transform
-    400078: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Transform
-    400080: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/Transform
-    400082: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon/Transform
-    400084: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon
-      (1)/Transform
-    400086: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Transform
-    400088: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Transform
-    400090: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Transform
-    400092: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/Transform
-    400094: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon/Transform
-    400096: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (1)/Transform
-    400098: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (2)/Transform
-    400100: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Transform
-    400102: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Transform
-    400104: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Transform
-    400106: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/Transform
-    400108: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon/Transform
-    400110: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon
-      (1)/Transform
-    400112: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Transform
-    400114: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Transform
-    400116: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Transform
-    400118: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/Transform
-    400120: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon/Transform
-    400122: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon
-      (1)/Transform
-    400124: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Transform
-    400126: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Transform
-    400128: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Transform
-    400130: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/Transform
-    400132: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon/Transform
-    400134: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon
-      (1)/Transform
-    400136: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Transform
-    400138: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Transform
-    400140: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Transform
-    400142: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/Transform
-    400144: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon/Transform
-    400146: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon
-      (1)/Transform
-    400148: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Transform
-    400150: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Transform
-    400152: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Transform
-    400154: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/Transform
-    400156: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon/Transform
-    400158: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon
-      (1)/Transform
-    400160: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Transform
-    400162: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Transform
-    400164: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Transform
-    400166: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/Transform
-    400168: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon/Transform
-    400170: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon
-      (1)/Transform
+    400074: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/Transform
+    400076: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon/Transform
+    400078: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (1)/Transform
+    400080: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (2)/Transform
+    400172: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Transform
+    400174: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/Transform
+    400176: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon/Transform
+    400178: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon (1)/Transform
+    400180: _MapPrfab/puzzle02/Cargo/b (TRS)/Transform
+    400182: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/Transform
     400184: _MapPrfab/puzzle02/KeyItems/Transform
     400186: _MapPrfab/puzzle02/KeyItems/center/Transform
     400188: _MapPrfab/puzzle02/KeyItems/drop_zone0/Transform
+    400190: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Transform
     400192: _MapPrfab/puzzle02/TrashZone/Transform
     400194: _MapPrfab/puzzle02/TrashZone/Collision_Default/Transform
     400196: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon/Transform
+    400198: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/Transform
+    400200: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon/Transform
+    400202: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon (1)/Transform
+    400204: _MapPrfab/puzzle02/Cargo/c (TRS)/Transform
+    400206: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/Transform
+    400208: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Transform
+    400210: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/Transform
+    400212: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon/Transform
+    400214: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon (1)/Transform
+    400216: _MapPrfab/puzzle02/Cargo/d (TRS)/Transform
+    400218: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/Transform
+    400220: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Transform
+    400222: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/Transform
+    400224: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon/Transform
+    400226: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon (1)/Transform
+    400228: _MapPrfab/puzzle02/Cargo/e (TRS)/Transform
+    400230: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/Transform
+    400232: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Transform
+    400234: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/Transform
+    400236: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon/Transform
+    400238: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon (1)/Transform
+    400240: _MapPrfab/puzzle02/Cargo/e2 (TRS)/Transform
+    400242: _MapPrfab/puzzle02/Cargo/e2 (TRS)/e2 (CF)/Transform
+    400244: _MapPrfab/puzzle02/Cargo/e2 (TRS)/e2 (CF)/e2/Transform
+    400246: _MapPrfab/puzzle02/Cargo/f (TRS)/Transform
+    400248: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/Transform
+    400250: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Transform
+    400252: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/Transform
+    400254: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon/Transform
+    400256: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon (1)/Transform
+    400258: _MapPrfab/puzzle02/Cargo/g (TRS)/Transform
+    400260: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/Transform
+    400262: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Transform
+    400264: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/Transform
+    400266: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon/Transform
+    400268: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon (1)/Transform
+    400270: _MapPrfab/puzzle02/Cargo/h (TRS)/Transform
+    400272: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/Transform
+    400274: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Transform
+    400276: _MapPrfab/puzzle02/Cargo/i (TRS)/Transform
+    400278: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/Transform
+    400280: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Transform
+    400282: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/Transform
+    400284: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon/Transform
+    400286: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon (1)/Transform
     5000000: _MapPrfab/puzzle02/Boat/Collision_Default/Rigidbody2D
-    5000002: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/Rigidbody2D
-    5000004: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/Rigidbody2D
-    5000006: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/Rigidbody2D
-    5000008: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/Rigidbody2D
-    5000010: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/Rigidbody2D
-    5000012: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/Rigidbody2D
-    5000014: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/Rigidbody2D
-    5000016: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/Rigidbody2D
+    5000002: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/Rigidbody2D
+    5000018: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/Rigidbody2D
     5000020: _MapPrfab/puzzle02/TrashZone/Collision_Default/Rigidbody2D
+    5000022: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/Rigidbody2D
+    5000024: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/Rigidbody2D
+    5000026: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/Rigidbody2D
+    5000028: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/Rigidbody2D
+    5000030: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/Rigidbody2D
+    5000032: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/Rigidbody2D
+    5000034: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/Rigidbody2D
     6000000: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon/PolygonCollider2D
     6000002: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (1)/PolygonCollider2D
     6000004: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (2)/PolygonCollider2D
@@ -241,44 +242,38 @@ ScriptedImporter:
     6000056: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (28)/PolygonCollider2D
     6000058: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (29)/PolygonCollider2D
     6000060: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (30)/PolygonCollider2D
-    6000066: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon/PolygonCollider2D
-    6000068: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000070: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon/PolygonCollider2D
-    6000072: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000074: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (2)/PolygonCollider2D
-    6000076: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon/PolygonCollider2D
-    6000078: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000080: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon/PolygonCollider2D
-    6000082: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000084: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon/PolygonCollider2D
-    6000086: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000088: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon/PolygonCollider2D
-    6000090: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000092: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon/PolygonCollider2D
-    6000094: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
-    6000096: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon/PolygonCollider2D
-    6000098: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon
-      (1)/PolygonCollider2D
+    6000062: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon/PolygonCollider2D
+    6000064: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000066: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon/PolygonCollider2D
+    6000068: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000070: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (2)/PolygonCollider2D
+    6000100: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon/PolygonCollider2D
+    6000102: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon (1)/PolygonCollider2D
     6000104: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon/PolygonCollider2D
+    6000106: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon/PolygonCollider2D
+    6000108: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000110: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon/PolygonCollider2D
+    6000112: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000114: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon/PolygonCollider2D
+    6000116: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000118: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon/PolygonCollider2D
+    6000120: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000122: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon/PolygonCollider2D
+    6000124: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon (1)/PolygonCollider2D
+    6000126: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon/PolygonCollider2D
+    6000128: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon (1)/PolygonCollider2D
     6100000: _MapPrfab/puzzle02/KeyItems/drop_zone0/BoxCollider2D
     6600000: _MapPrfab/puzzle02/Boat/Collision_Default/CompositeCollider2D
-    6600002: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/CompositeCollider2D
-    6600004: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/CompositeCollider2D
-    6600006: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/CompositeCollider2D
-    6600008: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/CompositeCollider2D
-    6600010: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/CompositeCollider2D
-    6600012: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/CompositeCollider2D
-    6600014: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/CompositeCollider2D
-    6600016: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/CompositeCollider2D
+    6600002: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/CompositeCollider2D
+    6600018: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/CompositeCollider2D
     6600020: _MapPrfab/puzzle02/TrashZone/Collision_Default/CompositeCollider2D
+    6600022: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/CompositeCollider2D
+    6600024: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/CompositeCollider2D
+    6600026: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/CompositeCollider2D
+    6600028: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/CompositeCollider2D
+    6600030: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/CompositeCollider2D
+    6600032: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/CompositeCollider2D
+    6600034: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/CompositeCollider2D
     11400000: _MapPrfab/puzzle02/MonoBehaviour-SuperTiled2Unity.SuperMap
     11400002: _MapPrfab/puzzle02/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400004: _MapPrfab/puzzle02/Boat/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
@@ -314,50 +309,17 @@ ScriptedImporter:
     11400064: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (28)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400066: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (29)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400068: _MapPrfab/puzzle02/Boat/Collision_Default/Polygon (30)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400070: _MapPrfab/puzzle02/Cargo/a (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400072: _MapPrfab/puzzle02/Cargo/a (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400074: _MapPrfab/puzzle02/Cargo/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400076: _MapPrfab/puzzle02/Cargo/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400078: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400080: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400082: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400084: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400086: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400088: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400090: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400092: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400094: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/Object_1/ConvexPolygon
-      (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400096: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400098: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400100: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400102: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400104: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400106: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400108: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400110: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400112: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400114: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400116: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400118: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400120: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400122: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400124: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400126: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400128: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400130: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400132: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400134: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400136: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
-    11400138: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
-    11400140: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    11400142: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/Object_1/ConvexPolygon
-      (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400078: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400080: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400082: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/Object_1/ConvexPolygon (2)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400144: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400146: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400148: _MapPrfab/puzzle02/Cargo/b (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400150: _MapPrfab/puzzle02/Cargo/b (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400152: _MapPrfab/puzzle02/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperObjectLayer
     11400154: _MapPrfab/puzzle02/KeyItems/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400156: _MapPrfab/puzzle02/KeyItems/center/MonoBehaviour-SuperTiled2Unity.SuperObject
@@ -365,18 +327,50 @@ ScriptedImporter:
     11400160: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperObject
     11400162: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400164: _MapPrfab/puzzle02/KeyItems/drop_zone0/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400166: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400168: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
     11400170: _MapPrfab/puzzle02/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperTileLayer
     11400172: _MapPrfab/puzzle02/TrashZone/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
     11400174: _superAsset
     11400176: _MapPrfab/puzzle02/TrashZone/Collision_Default/Polygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
-    21200000: _MapPrfab/puzzle02/Cargo/Object_19 (TRS)/Object_19 (CF)/Object_19/SpriteRenderer
-    21200002: _MapPrfab/puzzle02/Cargo/Object_21 (TRS)/Object_21 (CF)/Object_21/SpriteRenderer
-    21200004: _MapPrfab/puzzle02/Cargo/Object_22 (TRS)/Object_22 (CF)/Object_22/SpriteRenderer
-    21200006: _MapPrfab/puzzle02/Cargo/Object_23 (TRS)/Object_23 (CF)/Object_23/SpriteRenderer
-    21200008: _MapPrfab/puzzle02/Cargo/Object_24 (TRS)/Object_24 (CF)/Object_24/SpriteRenderer
-    21200010: _MapPrfab/puzzle02/Cargo/Object_25 (TRS)/Object_25 (CF)/Object_25/SpriteRenderer
-    21200012: _MapPrfab/puzzle02/Cargo/Object_26 (TRS)/Object_26 (CF)/Object_26/SpriteRenderer
-    21200014: _MapPrfab/puzzle02/Cargo/Object_27 (TRS)/Object_27 (CF)/Object_27/SpriteRenderer
+    11400178: _MapPrfab/puzzle02/Cargo/c (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400180: _MapPrfab/puzzle02/Cargo/c (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400182: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400184: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400186: _MapPrfab/puzzle02/Cargo/d (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400188: _MapPrfab/puzzle02/Cargo/d (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400190: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400192: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400194: _MapPrfab/puzzle02/Cargo/e (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400196: _MapPrfab/puzzle02/Cargo/e (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400198: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400200: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400202: _MapPrfab/puzzle02/Cargo/e2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400204: _MapPrfab/puzzle02/Cargo/e2 (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400206: _MapPrfab/puzzle02/Cargo/f (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400208: _MapPrfab/puzzle02/Cargo/f (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400210: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400212: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400214: _MapPrfab/puzzle02/Cargo/g (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400216: _MapPrfab/puzzle02/Cargo/g (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400218: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400220: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400222: _MapPrfab/puzzle02/Cargo/h (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400224: _MapPrfab/puzzle02/Cargo/h (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400226: _MapPrfab/puzzle02/Cargo/i (TRS)/MonoBehaviour-SuperTiled2Unity.SuperObject
+    11400228: _MapPrfab/puzzle02/Cargo/i (TRS)/MonoBehaviour-SuperTiled2Unity.SuperCustomProperties
+    11400230: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    11400232: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/Object_1/ConvexPolygon (1)/MonoBehaviour-SuperTiled2Unity.SuperColliderComponent
+    21200016: _MapPrfab/puzzle02/Cargo/a (TRS)/a (CF)/a/SpriteRenderer
+    21200018: _MapPrfab/puzzle02/Cargo/b (TRS)/b (CF)/b/SpriteRenderer
+    21200020: _MapPrfab/puzzle02/Cargo/c (TRS)/c (CF)/c/SpriteRenderer
+    21200022: _MapPrfab/puzzle02/Cargo/d (TRS)/d (CF)/d/SpriteRenderer
+    21200024: _MapPrfab/puzzle02/Cargo/e (TRS)/e (CF)/e/SpriteRenderer
+    21200026: _MapPrfab/puzzle02/Cargo/e2 (TRS)/e2 (CF)/e2/SpriteRenderer
+    21200028: _MapPrfab/puzzle02/Cargo/f (TRS)/f (CF)/f/SpriteRenderer
+    21200030: _MapPrfab/puzzle02/Cargo/g (TRS)/g (CF)/g/SpriteRenderer
+    21200032: _MapPrfab/puzzle02/Cargo/h (TRS)/h (CF)/h/SpriteRenderer
+    21200034: _MapPrfab/puzzle02/Cargo/i (TRS)/i (CF)/i/SpriteRenderer
     100100000: _MapPrfab
     2569400265252428796: _MapPrfab/puzzle02/Grid
     3664157343022684176: _MapPrfab/puzzle02/Boat/TilemapRenderer
