@@ -1,4 +1,5 @@
-﻿using SuperTiled2Unity;
+﻿using Particles;
+using SuperTiled2Unity;
 using TrashZone;
 using UnityEngine;
 using Utils;
@@ -6,6 +7,15 @@ using Utils;
 public class Grabber : MonoBehaviour
 {
 	private Collider2D mostRecent;
+
+	private MyParticleEmitter HeartEmitter;
+
+	void Start() {
+		var hEObj = GameObject.FindWithTag("HeartEmitter");
+		if (hEObj) {
+			HeartEmitter = hEObj.GetComponent<MyParticleEmitter>();
+		}
+	}
 	
 	public bool Activate(GameObject go)
 	{
@@ -28,8 +38,9 @@ public class Grabber : MonoBehaviour
 		if (mostRecent != null)
 		{
 			mostRecent.attachedRigidbody.bodyType = RigidbodyType2D.Dynamic;
-			go.AddComponent<FixedJoint2D>();  
+			go.AddComponent<FixedJoint2D>();
 			go.GetComponent<FixedJoint2D>().connectedBody = mostRecent.attachedRigidbody;
+			EmitHearts();
 			return true;
 		}
 
@@ -50,6 +61,15 @@ public class Grabber : MonoBehaviour
 		if (other == mostRecent)
 		{
 			mostRecent = null;
+		}
+	}
+
+	private void EmitHearts() {
+		if (HeartEmitter != null) {
+			var women = FindObjectsOfType<WomanMovement>();
+			foreach (var lady in women) {
+				HeartEmitter.EmitParticles(lady.transform.position, 5);
+			}
 		}
 	}
 }
