@@ -11289,7 +11289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d95101f29a9744c9a80be6707509e610, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevelName: Level1
+  NextLevelName: 
 --- !u!60 &544462058 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000016, guid: 137f334ed086942448d9971abf8c7a6d,
