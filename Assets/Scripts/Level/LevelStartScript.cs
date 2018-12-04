@@ -20,7 +20,7 @@ public class LevelStartScript : MonoBehaviour {
     public GrabTooltipController grabTip;
     public MoveTooltipController moveTip;
     public AccelTooltipController accelTip;
-    public PoisonedCrateTooltipController crateTip;
+    public PoisonedCrateTooltipController poisonedCrateTip;
     public TrashZoneTooltipController trashZoneTip;
     public RotateTooltipController rotateTip;
     public GameObject SplashAnimation;
@@ -149,6 +149,16 @@ public class LevelStartScript : MonoBehaviour {
             {
                 var tip = Instantiate(grabTip, cargoPiece.GetChild(0));
                 tip.transform.localPosition = new Vector3(0, 0, 0);
+            }
+            
+            if (isTutorial && i == 3)
+            {
+                var tip = Instantiate(poisonedCrateTip, cargoPiece.GetChild(0));
+                tip.PoisonedCrate = cargoBehavior.gameObject;
+                tip.transform.localPosition = new Vector3(-.2f, .2f, 0);
+                
+                var tip2 = Instantiate(trashZoneTip);
+                tip2.PoisonedCrate = cargoBehavior.gameObject;
             }
 
             if (innate)

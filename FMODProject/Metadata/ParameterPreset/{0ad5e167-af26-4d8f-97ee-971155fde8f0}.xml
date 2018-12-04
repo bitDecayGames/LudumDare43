@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{0ad5e167-af26-4d8f-97ee-971155fde8f0}">
+        <property name="name">
+            <value>LowerAudio</value>
+        </property>
+        <relationship name="folder">
+            <destination>{850859b5-02d9-44bd-88df-e7ca28e759c6}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{e2f159af-250c-4e30-aa1a-df5fdcd6c546}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{e2f159af-250c-4e30-aa1a-df5fdcd6c546}">
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+        <property name="seekSpeed">
+            <value>0.9800000786781311</value>
+        </property>
+    </object>
+</objects>

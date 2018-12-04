@@ -5,7 +5,7 @@ using Random = UnityEngine.Random;
 
 public class RatController : MonoBehaviour
 {
-    public static float RatStandTimeGateDelay = 1500f;   
+    public static float RatStandTimeGateDelay = 2500f;   
     public static float RatSpeed = .5f;
 
     private Animator _animator;
