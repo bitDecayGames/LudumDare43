@@ -9061,6 +9061,48 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000042, guid: 51982864bcc36c44cb2331082ab7b194,
     type: 3}
   m_PrefabInternal: {fileID: 389351060}
+--- !u!1001 &1913984633
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4571738329333368, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e962d672d149b4fe3b22e95b9265444c, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!60 &1919334058 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000030, guid: 51982864bcc36c44cb2331082ab7b194,
