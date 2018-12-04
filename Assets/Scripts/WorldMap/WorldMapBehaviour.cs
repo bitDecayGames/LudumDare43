@@ -23,9 +23,9 @@ namespace WorldMap {
         
         public void Back() {
             if (Fader != null) Fader.Fade(2f, () => {
-                SceneManager.LoadScene("TitleScreen");
+                SceneManager.LoadScene("TitleSceneCopy");
             });
-            else SceneManager.LoadScene("TitleScreen");
+            else SceneManager.LoadScene("TitleSceneCopy");
         }
 
         public void Clear() {
