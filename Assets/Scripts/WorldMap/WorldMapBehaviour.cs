@@ -27,5 +27,9 @@ namespace WorldMap {
             });
             else SceneManager.LoadScene("TitleScreen");
         }
+
+        public void Clear() {
+            ScoreStats.ClearStats();
+        }
     }
 }
