@@ -20,7 +20,7 @@ public class TrashZoneTooltipController : MonoBehaviour
             return;
         }
         
-        if (PoisonedCrate.GetComponent<CargoBehaviour>().score == -50)
+        if (PoisonedCrate.GetComponent<CargoBehaviour>().score == -10)
         {
             GetComponentInChildren<SpriteRenderer>().enabled = true;
         }
