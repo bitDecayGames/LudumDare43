@@ -93,7 +93,7 @@ namespace Level {
             var currentScore = CalculateMyScore();
             scores.Clear();
             var starRating = rating.StarRating(currentScore.score);
-            ScoreStats.AddLevelScore(SceneManager.GetActiveScene().name, (int) starRating, currentScore.score, currentScore.hasBonus);
+            ScoreStats.AddLevelScore(SceneManager.GetActiveScene().name, (int) starRating, Math.Max(1, currentScore.score), currentScore.hasBonus);
             ScoreUI.SetScore(finishReasonText, starRating, currentScore.score, currentScore.hasBonus, bonusText, () => {
                 ScoreUI.Fader.Fade(2, () => { 
                     // go to the level select

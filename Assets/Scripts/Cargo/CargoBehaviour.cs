@@ -54,7 +54,7 @@ namespace Cargo {
 
             if (GetComponentInChildren<Infected>() != null)
             {
-                score = -50;
+                score = -10;
                 transform.GetComponentInChildren<MoneyIndicator>().SetText("$" + ScoringBehaviour.IntToCurrency(score));
                 transform.GetComponentInChildren<MoneyIndicator>().Text.color = Color.red;
             }
