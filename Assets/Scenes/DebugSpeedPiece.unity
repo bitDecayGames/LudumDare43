@@ -2861,8 +2861,12 @@ MonoBehaviour:
   grabTip: {fileID: 0}
   moveTip: {fileID: 0}
   accelTip: {fileID: 0}
+  crateTip: {fileID: 0}
+  trashZoneTip: {fileID: 0}
   rotateTip: {fileID: 0}
   SplashAnimation: {fileID: 0}
+  RatPrefab: {fileID: 0}
+  moneyPrefab: {fileID: 0}
 --- !u!60 &537943774 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000024, guid: 6105cf5074d89fd4c976cf0ed50798bd,

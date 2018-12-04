@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Scoring;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace DebugScripts {
     public class DebugScoringBehaviour : MonoBehaviour {
@@ -14,6 +15,7 @@ namespace DebugScripts {
                     print("Level select");
                 }, () => {
                     print("Restart");
+                    SceneManager.LoadScene("DebugScoring");
                 }, () => {
                     score.Fader.Fade(2, () => {
                         print("Next!");

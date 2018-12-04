@@ -26,6 +26,8 @@ namespace Scoring {
 
 		public FadeToBlack Fader;
 
+		public float InitialWaitTime;
+
 		private bool started;
 
 		private const float timeToFlyIn = 1f;
@@ -120,7 +122,7 @@ namespace Scoring {
 		public void SetScore(string finishReason, float stars, int score, bool bonus, string bonusText, Action onLevelSelect, Action onRestart, Action onNext) {
 			gameObject.SetActive(true);
 			
-			time = 0;
+			time = -InitialWaitTime;
 			targetFill = stars;
 			currentFill = 0;
 			previousFill = 0;
