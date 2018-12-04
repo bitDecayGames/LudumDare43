@@ -35,7 +35,10 @@ namespace DropZone {
 
 		public AccelTooltipController craneTip;
 		public RotateTooltipController rotateTip;
-        
+
+		private int destroyCounter;
+		private bool noMoreTips; 
+		
 		public bool IsCraneReady {
 			get { return crane != null && crane.IsReady; }
 		}
@@ -106,7 +109,7 @@ namespace DropZone {
 				crane.IsReady = false;
 				crane.GoGetNextPiece(timeTilDrop * .3f, () => {
 					crane.SetCargoSprite(cargo.spriteRenderer);
-					if (craneTip != null)
+					if (!noMoreTips && craneTip != null)
 					{
 						GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = true;
 						GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = true;
@@ -121,7 +124,7 @@ namespace DropZone {
 			} else {
 				crane.IsReady = false;
 				crane.SetCargoSprite(cargo.spriteRenderer);
-				if (craneTip != null)
+				if (!noMoreTips && craneTip != null)
 				{
 					GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = true;
 					GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = true;
@@ -165,8 +168,13 @@ namespace DropZone {
 				cargoInst.transform.position = Shadow.transform.position;
 				cargoInst.transform.rotation = Shadow.transform.rotation;
 				cargo.SetValueTip(MoneyIndicatorPrefab);
-				if (craneTip != null)
+				if (!noMoreTips && craneTip != null)
 				{
+					destroyCounter++;
+					if (destroyCounter == 4)
+					{
+						noMoreTips = true;
+					}
 					GameObject.Find("LeftRotateTip").GetComponent<SpriteRenderer>().enabled = false;
 					GameObject.Find("RightRotateTip").GetComponent<SpriteRenderer>().enabled = false;
 				}
