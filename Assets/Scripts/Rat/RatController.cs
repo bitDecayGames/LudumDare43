@@ -30,10 +30,22 @@ public class RatController : MonoBehaviour
         {
             throw new Exception("Rat could not find target cargo");
         }
+
+        if (infectableComponents.Length <= 0) 
+        {
+            Destroy(gameObject);
+            return;
+        }
         
         var indexOfCrateToInfect = Random.Range(0, infectableComponents.Length);
         var crateToInfect = infectableComponents[indexOfCrateToInfect].gameObject;
         TargetCargo = crateToInfect.GetComponentInChildren<GetMeToCenter>().gameObject;
+
+        if (TargetCargo == null)
+        {
+            Destroy(gameObject);
+            return;
+        }
 
         var spawnPoint = GameObject.Find("RatSpawn");
         if (spawnPoint == null)
@@ -46,6 +58,14 @@ public class RatController : MonoBehaviour
 
     private void Update()
     {
+        if (TargetCargo == null)
+        {
+            FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.VoiceRatSqueak);
+            Destroy(gameObject);
+            return;
+        }
+
+        
         if (!_waiting && _pauseTimeGate.IsItTime())
         {
             _waiting = true;
