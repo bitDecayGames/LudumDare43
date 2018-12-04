@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UserStats;
 
 [Serializable]
 public class StatsAggregator : MonoBehaviour
@@ -60,8 +61,7 @@ public class StatsAggregator : MonoBehaviour
         return _sceneStatsData;
     }
 	
-    private void Update()
-    {
+    private void Update() {
 		
         foreach (char c in Input.inputString)
         {
@@ -88,7 +88,13 @@ public class StatsAggregator : MonoBehaviour
             Id = SessionId,
             KeysPressed = KeySet.ToArray(),
             LevelWhenQuit = GetSceneStatsData().Level,
-            LevelsCleared = LevelSummaryObjects.ToArray(),
+            LevelsCleared = ScoreStats.GetLevelScores().ConvertAll(score => {
+                var tannersScore = new LevelSummaryObject();
+                tannersScore.StarCount = score.stars;
+                tannersScore.BonusAquired = score.bonus;
+                tannersScore.LevelName = score.name;
+                return tannersScore;
+            }).ToArray(),
             LocationOnQuit = GetSceneStatsData().Player.transform.position,
             Platform = Application.platform.ToString(),
             TimePlayedSeconds = Time.time,

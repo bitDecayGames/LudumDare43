@@ -6,6 +6,7 @@ using Cargo;
 using DropZone;
 using FMOD.Studio;
 using Scoring;
+using SuperTiled2Unity;
 using Transitions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -108,7 +109,11 @@ namespace Level {
                     // go to the next scene
                     var nextLevel = FindObjectOfType<NextLevel>();
                     if (nextLevel == null) throw new Exception("Could not find NextLevel component, need to add to MainCamera");
-                    if (string.IsNullOrEmpty(nextLevel.NextLevelName)) SceneManager.LoadScene("CreditsScene");
+                    if (string.IsNullOrEmpty(nextLevel.NextLevelName)) {
+                        // this is the end of the game
+                        StatsAggregator.Instance.GameCompleted = true;
+                        SceneManager.LoadScene("CreditsScene");
+                    }
                     else nextLevel.GoToNextLevel();
                 });
             });
