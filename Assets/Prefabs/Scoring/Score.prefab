@@ -1117,7 +1117,7 @@ MonoBehaviour:
   RestartButton: {fileID: 114890175119085476}
   NextButton: {fileID: 114683294791750650}
   Fader: {fileID: 114468970848492500}
-  InitialWaitTime: 2.5
+  InitialWaitTime: 0
 --- !u!114 &114516020529716276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1179,7 +1179,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1763330861177950}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 817dda22cc3e4b98851593af6ca43890, type: 3}
   m_Name: 
