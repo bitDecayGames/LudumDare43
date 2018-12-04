@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="29">
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="34">
  <tileset firstgid="1" source="../WoodenTiles2.tsx"/>
  <tileset firstgid="217" source="../Cargo.tsx"/>
  <layer id="1" name="Boat" width="20" height="20">
@@ -62,22 +62,29 @@
    <property name="star2" type="int" value="8"/>
    <property name="star3" type="int" value="12"/>
   </properties>
-  <object id="19" gid="225" x="128.182" y="192.182" width="48" height="32" rotation="90">
+  <object id="27" name="a" gid="224" x="98.1818" y="193.091" width="48" height="32"/>
+  <object id="22" name="b" gid="224" x="127.818" y="80.7273" width="48" height="32" rotation="90"/>
+  <object id="32" name="c" gid="238" x="191.333" y="207.667" width="16" height="16">
    <properties>
-    <property name="innate" type="bool" value="true"/>
+    <property name="infectable" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="21" gid="223" x="143.818" y="224" width="48" height="32">
+  <object id="23" name="d" gid="224" x="96" y="112.364" width="48" height="32" rotation="90"/>
+  <object id="24" name="e" gid="224" x="206.727" y="113.091" width="48" height="32" rotation="180"/>
+  <object id="33" name="e2" gid="254" x="259" y="193" width="16" height="16"/>
+  <object id="25" name="f" gid="224" x="164.909" y="177.636" width="48" height="32"/>
+  <object id="26" name="g" gid="224" x="163.273" y="161.455" width="48" height="32" rotation="-90"/>
+  <object id="30" name="h" gid="253" x="112" y="223.5" width="48" height="32">
    <properties>
     <property name="bonus" type="bool" value="true"/>
+    <property name="bonus_description" value="Dusty Old Bones"/>
     <property name="innate" type="bool" value="true"/>
    </properties>
   </object>
-  <object id="27" gid="224" x="98.1818" y="193.091" width="48" height="32"/>
-  <object id="22" gid="224" x="127.818" y="80.7273" width="48" height="32" rotation="90"/>
-  <object id="23" gid="224" x="96" y="112.364" width="48" height="32" rotation="90"/>
-  <object id="24" gid="224" x="206.727" y="113.091" width="48" height="32" rotation="180"/>
-  <object id="25" gid="224" x="164.909" y="177.636" width="48" height="32"/>
-  <object id="26" gid="224" x="163.273" y="161.455" width="48" height="32" rotation="-90"/>
+  <object id="31" name="i" gid="222" x="143.5" y="191" width="48" height="32" rotation="90">
+   <properties>
+    <property name="innate" type="bool" value="true"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>

@@ -581,6 +581,11 @@
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="48" source="../../Images/Pieces/29.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="3.90909" y="15.5455">
+    <polygon points="0,0 12.0909,-8.54545 18.5455,-10.0909 29.3636,-8.72727 35.6364,-3.81818 39.0909,1 38.6364,9.27273 35.6364,16.2727 36.2727,20.5455 30.3636,23.7273 24.1818,26.6364 20.5455,28.4545 14.4545,25.6364 10.9091,23.7273 8.63636,18.4545 1.54545,16.7273 0.909091,14.0909 0.727273,8.27273 -1.54545,2.27273"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="34">
   <properties>
@@ -594,6 +599,11 @@
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="48" source="../../Images/Pieces/30.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="5.27273" y="13.6364">
+    <polygon points="0,0 5.54545,-3.90909 11.3636,-9.54545 15.2727,-11.3636 17.8182,-9.45455 22.2727,-8.81818 25.6364,-7.90909 27.7273,-5.27273 31.4545,-3.90909 34.4545,-1.18182 35.7273,3.45455 34.6364,6.81818 35.7273,11.6364 38.2727,16.9091 36.1818,21.3636 32.9091,25 27.4545,27 25.1818,31.2727 23,33.4545 16.3636,31.8182 11.2727,29.5455 9.27273,26.0909 2.81818,26.0909 0.272727,21.7273 -1.81818,19.0909 1.09091,12.1818 -1.09091,8.54545 -2.45455,2.54545 -0.818182,0.636364"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="35">
   <properties>
@@ -607,6 +617,11 @@
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/31.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="1.09091" y="15.9091">
+    <polygon points="0,0 5.27273,-5.36364 7.09091,-5.45455 7.09091,-7.27273 14.8182,-15.0909 29.5455,-0.545455 14.8182,14.9091"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="36">
   <properties>
@@ -620,6 +635,11 @@
    <property name="score" type="float" value="2"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/32.png"/>
+  <objectgroup draworder="index">
+   <object id="1" x="1.36364" y="1.54545">
+    <polygon points="0,1.63636 -0.181818,11.6364 1.36364,13.5455 15.7273,13.2727 16,27.6364 17.8182,29.2727 44,29.2727 45.3636,27.9091 45.4545,16.9091 43.4545,15.1818 28.1818,15.0909 27.7273,1.63636 25.7273,-0.363636 2.09091,-0.363636"/>
+   </object>
+  </objectgroup>
  </tile>
  <tile id="37">
   <properties>

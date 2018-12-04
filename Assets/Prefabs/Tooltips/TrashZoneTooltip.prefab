@@ -22,7 +22,8 @@ GameObject:
   - component: {fileID: 114525191657906712}
   - component: {fileID: 212543273801476894}
   - component: {fileID: 114157062104831060}
-  - component: {fileID: 114272349440127552}
+  - component: {fileID: 114364006729154718}
+  - component: {fileID: 95575123013484468}
   m_Layer: 0
   m_Name: TrashZoneTooltip
   m_TagString: Untagged
@@ -37,12 +38,30 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894645858775202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.198, y: 1.768, z: 0}
+  m_LocalPosition: {x: -0.17649649, y: 0.9928246, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95575123013484468
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1894645858775202}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9ed2a4695a5169742a3140251c2c0f20, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &114157062104831060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -55,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bottomAlpha: 0.5
---- !u!114 &114272349440127552
+--- !u!114 &114364006729154718
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -63,7 +82,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1894645858775202}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47edb6402e214f1eb6d34005e58fab1c, type: 3}
+  m_Script: {fileID: 11500000, guid: f69415df7a594271a02065205aecc621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PoisonedCrate: {fileID: 0}

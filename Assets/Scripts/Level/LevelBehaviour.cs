@@ -60,8 +60,14 @@ namespace Level {
             return this;
         }
 
-        public void Score(CargoBehaviour cargo) {
+        public void Score(CargoBehaviour cargo)
+        {
             scores.Add(cargo);
+            CurrentScore.text = "$" + ScoringBehaviour.IntToCurrency(CalculateMyScore().score);
+        }
+        
+        public void RemoveScore(CargoBehaviour cargo) {
+            scores.Remove(cargo);
             CurrentScore.text = "$" + ScoringBehaviour.IntToCurrency(CalculateMyScore().score);
         }
 
