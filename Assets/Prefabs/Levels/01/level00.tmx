@@ -317,9 +317,9 @@
  </layer>
  <objectgroup id="2" name="Cargo">
   <properties>
-   <property name="star1" type="int" value="5"/>
-   <property name="star2" type="int" value="8"/>
-   <property name="star3" type="int" value="10"/>
+   <property name="star1" type="int" value="10"/>
+   <property name="star2" type="int" value="15"/>
+   <property name="star3" type="int" value="20"/>
   </properties>
   <object id="19" name="a" gid="263" x="596" y="209.333" width="48" height="16"/>
   <object id="20" name="b" gid="247" x="608" y="241" width="48" height="32">
