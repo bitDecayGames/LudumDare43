@@ -10,6 +10,56 @@ public partial class PlayerAnimationController : MonoBehaviour
 
     private void Update()
     {
+        if (PlayerMovementController.disable)
+        {
+            if (Facing.IsFacingLeft())
+            {
+                if (IsAboveCenterPointOnMap())
+                {
+                    _animationToPlay = "still_left_upper";
+                }
+                else
+                {
+                    _animationToPlay = "still_left_lower";
+                }
+            } 
+            else if (Facing.IsFacingRight())
+            {
+                if (IsAboveCenterPointOnMap())
+                {
+                    _animationToPlay = "still_right_upper";
+                }
+                else
+                {
+                    _animationToPlay = "still_right_lower";
+                }
+            }
+            else if (Facing.IsFacingUp())
+            {
+                if (IsToTheRightOfCenterPointOnMap())
+                {
+                    _animationToPlay = "still_up_righter";
+                }
+                else
+                {
+                    _animationToPlay = "still_up_lefter";
+                }
+            }
+            else if (Facing.IsFacingDown())
+            {
+                if (IsToTheRightOfCenterPointOnMap())
+                {
+                    _animationToPlay = "still_down_righter";
+                }
+                else
+                {
+                    _animationToPlay = "still_down_lefter";
+                }
+            }
+
+            return;
+        }
+        
         if (PlayerMovementController.IsHoldingAnObject())
         {
             HandleHoldAnimation();
