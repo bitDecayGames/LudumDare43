@@ -893,12 +893,12 @@ Prefab:
     - target: {fileID: 212964806073842776, guid: 737430e4754cc4b3aa6060995ee812ac,
         type: 2}
       propertyPath: m_Size.y
-      value: 10.572234
+      value: 17.181787
       objectReference: {fileID: 0}
     - target: {fileID: 212964806073842776, guid: 737430e4754cc4b3aa6060995ee812ac,
         type: 2}
       propertyPath: m_Size.x
-      value: 12.061218
+      value: 21.764996
       objectReference: {fileID: 0}
     - target: {fileID: 212964806073842776, guid: 737430e4754cc4b3aa6060995ee812ac,
         type: 2}
