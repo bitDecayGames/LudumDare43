@@ -11,6 +11,7 @@ TagManager:
   - WoodEmitter
   - PoofEmitter
   - MoneyEmitter
+  - HeartEmitter
   layers:
   - Default
   - TransparentFX

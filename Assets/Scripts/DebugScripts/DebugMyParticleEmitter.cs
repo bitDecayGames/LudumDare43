@@ -8,6 +8,7 @@ namespace DebugScripts {
         public MyParticleEmitter WoodEmitter;
         public MyParticleEmitter PoofEmitter;
         public MyParticleEmitter MoneyEmitter;
+        public MyParticleEmitter HeartEmitter;
 
         void Update() {
             var mousePos = MyCamera.ScreenToWorldPoint(Input.mousePosition);
@@ -20,6 +21,8 @@ namespace DebugScripts {
             } else if (Input.GetKeyDown(KeyCode.Alpha4)) {
                 ((MoneyParticle) MoneyEmitter.EmitParticle(mousePos)).Green().SetText("$123");
                 ((MoneyParticle) MoneyEmitter.EmitParticle(mousePos)).Red().SetText("$333");
+            } else if (Input.GetKey(KeyCode.Alpha5)) {
+                HeartEmitter.EmitParticle(mousePos);
             }
         }
     }

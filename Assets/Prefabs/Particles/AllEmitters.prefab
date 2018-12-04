@@ -21,6 +21,22 @@ GameObject:
   - component: {fileID: 4419119695336556}
   - component: {fileID: 114240768092213720}
   m_Layer: 0
+  m_Name: HeartEmitter
+  m_TagString: HeartEmitter
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1154691441282494
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4817758071262776}
+  - component: {fileID: 114977104151832316}
+  m_Layer: 0
   m_Name: MoneyEmitter
   m_TagString: MoneyEmitter
   m_Icon: {fileID: 0}
@@ -129,6 +145,7 @@ Transform:
   - {fileID: 4055066291408504}
   - {fileID: 4334821898540166}
   - {fileID: 4014901884337170}
+  - {fileID: 4817758071262776}
   - {fileID: 4419119695336556}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -157,6 +174,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4057512778747374}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4817758071262776
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154691441282494}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.3625089, y: 2.2534635, z: -19.469383}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4057512778747374}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &114240768092213720
@@ -174,7 +204,7 @@ MonoBehaviour:
   MinSpeed: 0.005
   MaxLife: 2
   MinLife: 1.75
-  ParticlePrefab: {fileID: 114836045806679314, guid: 5fb1308b9ea2749fcade8484640fa9d9,
+  ParticlePrefab: {fileID: 114962209520342550, guid: d91e4a282fe434a79b396ab18212f994,
     type: 2}
 --- !u!114 &114636084514142978
 MonoBehaviour:
@@ -226,4 +256,21 @@ MonoBehaviour:
   MaxLife: 5
   MinLife: 4
   ParticlePrefab: {fileID: 114193178114555560, guid: 64e18ac7fe4a6406986dc4fe767d3eb5,
+    type: 2}
+--- !u!114 &114977104151832316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1154691441282494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da1db2f0d37a4521b60bb632586f0ecb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxSpeed: 0.01
+  MinSpeed: 0.005
+  MaxLife: 2
+  MinLife: 1.75
+  ParticlePrefab: {fileID: 114836045806679314, guid: 5fb1308b9ea2749fcade8484640fa9d9,
     type: 2}
