@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.2.1" orientation="orthogonal" renderorder="right-down" width="20" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="61">
+ <tileset firstgid="1" source="../WoodenTiles2.tsx"/>
+ <tileset firstgid="217" source="../Cargo.tsx"/>
+ <layer id="1" name="Boat" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,31,32,60,60,60,60,60,60,60,40,39,0,0,0,0,0,0,0,
+27,28,29,30,3,3,3,3,3,3,3,38,37,36,35,0,0,0,0,0,
+69,26,216,3,3,3,3,3,3,3,3,3,216,34,70,0,0,0,0,0,
+65,66,3,3,3,3,3,3,3,3,3,3,3,67,68,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,12,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,12,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,12,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,12,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,12,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,13,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,
+7,3,3,3,3,3,3,3,3,3,3,3,3,3,0,0,0,0,0,0,
+7,216,3,3,3,3,3,3,3,3,3,3,3,3,11,0,0,0,0,0,
+21,22,23,23,23,23,23,23,23,23,23,23,23,23,24,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="TrashZone" width="20" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,10,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="3" name="KeyItems" opacity="0.4">
+  <object id="1" name="center" x="122" y="186.5">
+   <point/>
+  </object>
+  <object id="2" name="drop_zone0" x="26.818" y="143.409" width="88" height="112.818"/>
+ </objectgroup>
+ <objectgroup id="4" name="Cargo">
+  <properties>
+   <property name="star1" type="int" value="4"/>
+   <property name="star2" type="int" value="8"/>
+   <property name="star3" type="int" value="12"/>
+  </properties>
+  <object id="34" name="a" gid="241" x="176.5" y="145.5" width="48" height="48"/>
+  <object id="35" name="b" gid="229" x="143" y="104" width="48" height="32"/>
+  <object id="36" name="c" gid="242" x="111" y="255" width="32" height="112" rotation="90"/>
+  <object id="37" name="d" gid="244" x="143.5" y="104.5" width="80" height="32" rotation="90"/>
+  <object id="38" name="e" gid="230" x="208.5" y="203" width="16" height="64"/>
+  <object id="39" name="f" gid="240" x="77.5" y="288" width="48" height="64"/>
+  <object id="40" name="g" gid="251" x="182.5" y="252.5" width="48" height="48"/>
+  <object id="41" name="h" gid="247" x="111" y="95.5" width="32" height="32"/>
+  <object id="42" name="i" gid="245" x="150" y="205.5" width="48" height="32">
+   <properties>
+    <property name="infectable" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="43" name="j" gid="247" x="60" y="288" width="32" height="32"/>
+  <object id="44" name="k" gid="232" x="146.5" y="252.5" width="32" height="32"/>
+  <object id="45" name="l" gid="232" x="77" y="97" width="32" height="32"/>
+  <object id="46" name="m" gid="242" x="114" y="208" width="32" height="112"/>
+  <object id="47" name="n" gid="243" x="129" y="253.5" width="16" height="32"/>
+  <object id="48" name="o" gid="236" x="63" y="97.5" width="16" height="32"/>
+  <object id="49" name="p" gid="246" x="33.5" y="287" width="32" height="48"/>
+  <object id="50" name="q" gid="228" x="32.5" y="113" width="48" height="32"/>
+  <object id="51" name="r" gid="231" x="26" y="220.5" width="16" height="64" rotation="90"/>
+  <object id="52" name="s" gid="238" x="82" y="112" width="16" height="16"/>
+  <object id="53" name="t" gid="238" x="98.5" y="112.5" width="16" height="16"/>
+  <object id="54" name="u" gid="248" x="17" y="146" width="48" height="32">
+   <properties>
+    <property name="bonus" type="bool" value="true"/>
+    <property name="bonus_description" value="Steve's Sausages"/>
+    <property name="description" value=""/>
+   </properties>
+  </object>
+  <object id="55" name="v" gid="226" x="64.5" y="145.5" width="48" height="32"/>
+  <object id="56" name="w" gid="233" x="17.5" y="177" width="32" height="32"/>
+  <object id="57" name="x" gid="237" x="112" y="224.5" width="16" height="16"/>
+  <object id="58" name="y" gid="237" x="94" y="221.5" width="16" height="16"/>
+  <object id="59" name="z" gid="247" x="15" y="222.5" width="32" height="32"/>
+  <object id="60" name="n2" gid="254" x="-20.5" y="273.5" width="16" height="16"/>
+ </objectgroup>
+</map>
