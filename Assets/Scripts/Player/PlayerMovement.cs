@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform playerHands;
     public FacingComponent Facing;
 
+    public bool disable;
+    
     private bool attached;
     private int anchoredDirection;
     private bool anchorAligned;
@@ -59,6 +61,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (disable)
+        {
+            return;
+        }
+        
         Vector2 movementVector = new Vector2();
         if (!IsHoldingAnObject())
         {
