@@ -58,9 +58,9 @@
  </objectgroup>
  <objectgroup id="4" name="Cargo">
   <properties>
-   <property name="star1" type="int" value="4"/>
-   <property name="star2" type="int" value="8"/>
-   <property name="star3" type="int" value="12"/>
+   <property name="star1" type="int" value="20"/>
+   <property name="star2" type="int" value="33"/>
+   <property name="star3" type="int" value="38"/>
   </properties>
   <object id="27" name="a" gid="224" x="98.1818" y="193.091" width="48" height="32"/>
   <object id="22" name="b" gid="224" x="127.818" y="80.7273" width="48" height="32" rotation="90"/>

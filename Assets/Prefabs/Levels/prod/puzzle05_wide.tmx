@@ -58,28 +58,45 @@
  </objectgroup>
  <objectgroup id="4" name="Cargo">
   <properties>
-   <property name="star1" type="int" value="4"/>
-   <property name="star2" type="int" value="8"/>
-   <property name="star3" type="int" value="12"/>
+   <property name="star1" type="int" value="60"/>
+   <property name="star2" type="int" value="100"/>
+   <property name="star3" type="int" value="120"/>
   </properties>
   <object id="34" name="a" gid="241" x="176.5" y="145.5" width="48" height="48"/>
   <object id="35" name="b" gid="229" x="143" y="104" width="48" height="32"/>
-  <object id="36" name="c" gid="242" x="111" y="255" width="32" height="112" rotation="90"/>
-  <object id="37" name="d" gid="244" x="143.5" y="104.5" width="80" height="32" rotation="90"/>
+  <object id="36" name="c" gid="242" x="111" y="255" width="32" height="112" rotation="90">
+   <properties>
+    <property name="bonus" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="37" name="d" gid="244" x="143.5" y="104.5" width="80" height="32" rotation="90">
+   <properties>
+    <property name="bonus" type="bool" value="false"/>
+   </properties>
+  </object>
   <object id="38" name="e" gid="230" x="208.5" y="203" width="16" height="64"/>
   <object id="39" name="f" gid="240" x="77.5" y="288" width="48" height="64"/>
-  <object id="40" name="g" gid="251" x="182.5" y="252.5" width="48" height="48"/>
+  <object id="40" name="z" gid="251" x="182.5" y="252.5" width="48" height="48"/>
   <object id="41" name="h" gid="247" x="111" y="95.5" width="32" height="32"/>
   <object id="42" name="i" gid="245" x="150" y="205.5" width="48" height="32">
    <properties>
+    <property name="bonus" type="bool" value="false"/>
     <property name="infectable" type="bool" value="true"/>
    </properties>
   </object>
   <object id="43" name="j" gid="247" x="60" y="288" width="32" height="32"/>
   <object id="44" name="k" gid="232" x="146.5" y="252.5" width="32" height="32"/>
   <object id="45" name="l" gid="232" x="77" y="97" width="32" height="32"/>
-  <object id="46" name="m" gid="242" x="114" y="208" width="32" height="112"/>
-  <object id="47" name="n" gid="243" x="129" y="253.5" width="16" height="32"/>
+  <object id="46" name="m" gid="242" x="114" y="208" width="32" height="112">
+   <properties>
+    <property name="bonus" type="bool" value="false"/>
+   </properties>
+  </object>
+  <object id="47" name="n" gid="243" x="129" y="253.5" width="16" height="32">
+   <properties>
+    <property name="bonus" type="bool" value="false"/>
+   </properties>
+  </object>
   <object id="48" name="o" gid="236" x="63" y="97.5" width="16" height="32"/>
   <object id="49" name="p" gid="246" x="33.5" y="287" width="32" height="48"/>
   <object id="50" name="q" gid="228" x="32.5" y="113" width="48" height="32"/>
@@ -97,7 +114,7 @@
   <object id="56" name="w" gid="233" x="17.5" y="177" width="32" height="32"/>
   <object id="57" name="x" gid="237" x="112" y="224.5" width="16" height="16"/>
   <object id="58" name="y" gid="237" x="94" y="221.5" width="16" height="16"/>
-  <object id="59" name="z" gid="247" x="15" y="222.5" width="32" height="32"/>
+  <object id="59" name="g" gid="247" x="15" y="222.5" width="32" height="32"/>
   <object id="60" name="n2" gid="254" x="-20.5" y="273.5" width="16" height="16"/>
  </objectgroup>
 </map>

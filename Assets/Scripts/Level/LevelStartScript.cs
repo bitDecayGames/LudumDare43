@@ -203,6 +203,11 @@ public class LevelStartScript : MonoBehaviour {
         var items = tiledMap.transform.Find("KeyItems");
         var centerT = items.Find("center");
 
+        if (centerT == null)
+        {
+            throw new RuntimeException("No center for player");
+        }
+
         foreach (Collider2D p in centerT.GetComponentsInChildren<Collider2D>()) {
             Destroy(p);
         }

@@ -70,7 +70,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/1.png"/>
   <objectgroup draworder="index">
@@ -88,7 +88,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/2.png"/>
   <objectgroup draworder="index">
@@ -106,7 +106,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="5"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/3.png"/>
   <objectgroup draworder="index">
@@ -124,7 +124,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/4.png"/>
   <objectgroup draworder="index">
@@ -142,7 +142,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/5.png"/>
   <objectgroup draworder="index">
@@ -160,7 +160,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/6.png"/>
   <objectgroup draworder="index">
@@ -178,7 +178,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/7.png"/>
   <objectgroup draworder="index">
@@ -196,7 +196,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="6"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/8.png"/>
   <objectgroup draworder="index">
@@ -214,7 +214,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="5"/>
   </properties>
   <image width="16" height="64" source="../../Images/Pieces/9.png"/>
   <objectgroup draworder="index">
@@ -232,7 +232,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="16" height="64" source="../../Images/Pieces/10.png"/>
   <objectgroup draworder="index">
@@ -250,7 +250,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/11.png"/>
   <objectgroup draworder="index">
@@ -268,7 +268,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/12.png"/>
   <objectgroup draworder="index">
@@ -286,7 +286,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/13.png"/>
   <objectgroup draworder="index">
@@ -340,7 +340,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="1"/>
   </properties>
   <image width="16" height="16" source="../../Images/Pieces/16.png"/>
   <objectgroup draworder="index">
@@ -358,7 +358,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="1"/>
   </properties>
   <image width="16" height="16" source="../../Images/Pieces/17.png"/>
   <objectgroup draworder="index">
@@ -376,7 +376,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="48" height="16" source="../../Images/Pieces/18.png"/>
   <objectgroup draworder="index">
@@ -394,7 +394,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="10"/>
   </properties>
   <image width="48" height="64" source="../../Images/Pieces/19.png"/>
   <objectgroup draworder="index">
@@ -412,7 +412,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="8"/>
   </properties>
   <image width="48" height="48" source="../../Images/Pieces/20.png"/>
   <objectgroup draworder="index">
@@ -430,7 +430,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="20"/>
   </properties>
   <image width="32" height="112" source="../../Images/Pieces/21.png"/>
   <objectgroup draworder="index">
@@ -448,7 +448,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="metal"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="16" height="32" source="../../Images/Pieces/22.png"/>
   <objectgroup draworder="index">
@@ -466,7 +466,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="7"/>
   </properties>
   <image width="80" height="32" source="../../Images/Pieces/23.png"/>
   <objectgroup draworder="index">
@@ -484,7 +484,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="5"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/24.png"/>
   <objectgroup draworder="index">
@@ -506,7 +506,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="5"/>
   </properties>
   <image width="32" height="48" source="../../Images/Pieces/25.png"/>
   <objectgroup draworder="index">
@@ -542,7 +542,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/27.png"/>
   <objectgroup draworder="index">
@@ -596,7 +596,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="wood"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="48" source="../../Images/Pieces/30.png"/>
   <objectgroup draworder="index">
@@ -614,7 +614,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="3"/>
   </properties>
   <image width="32" height="32" source="../../Images/Pieces/31.png"/>
   <objectgroup draworder="index">
@@ -632,7 +632,7 @@
    <property name="infectable" type="bool" value="false"/>
    <property name="innate" type="bool" value="false"/>
    <property name="material" value="stone"/>
-   <property name="score" type="float" value="2"/>
+   <property name="score" type="float" value="4"/>
   </properties>
   <image width="48" height="32" source="../../Images/Pieces/32.png"/>
   <objectgroup draworder="index">
