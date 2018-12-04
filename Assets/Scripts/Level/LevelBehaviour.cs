@@ -84,7 +84,6 @@ namespace Level {
             GameObject.Find("Player").GetComponent<PlayerMovement>().disable = true;
             CurrentScore.gameObject.AddComponent<FadeOutOverTime>().timeToFadeOut = 1f;
             FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientFogHorn);
-            FMODMusicPlayer.GetDontDestroyOnLoadReference().SetParameter(ParametersListEnum.Parameters.LowerAudio, 1f);
             StartCoroutine(WaitThenShowScore());
         }
 

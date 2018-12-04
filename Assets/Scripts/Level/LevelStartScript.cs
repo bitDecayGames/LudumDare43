@@ -33,8 +33,6 @@ public class LevelStartScript : MonoBehaviour {
         mapObj = GameObject.Find("level");
         var levelB = GetComponent<LevelBehaviour>();
         
-        FMODMusicPlayer.GetDontDestroyOnLoadReference().SetParameter(ParametersListEnum.Parameters.LowerAudio, 0f);
-        
         var items = mapObj.transform.Find("KeyItems");
         var props = items.GetComponent<SuperCustomProperties>();
         var star1Score = 0;
