@@ -5,6 +5,13 @@ using UnityEngine;
 namespace UserStats {
     public static class ScoreStats {
 
+        public static void ClearStats() {
+            PlayerPrefs.SetString("level_scores", "");
+            PlayerPrefs.SetInt("total_score", 0);
+            PlayerPrefs.SetInt("total_stars", 0);
+            PlayerPrefs.SetInt("total_bonuses", 0);
+        }
+
         private static List<LevelScore> _levelScores;
         public static List<LevelScore> GetLevelScores() {
             if (_levelScores == null) {
