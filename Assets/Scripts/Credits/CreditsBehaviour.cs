@@ -13,11 +13,12 @@ namespace Credits {
         public FadeToBlack Fader;
         
         public List<CreditsSection> Credits = new List<CreditsSection> {
-            CreditsSection.GetNew().SetTItle("Programming").SetCreditList(CreditList.GetNew().Add("Jake Fisher", "Logan Moore", "Tanner Moore")),
+            CreditsSection.GetNew().SetTItle("Programming").SetCreditList(CreditList.GetNew().Add("Jake Fisher", "Logan Moore", "Tanner Moore", "Mike Wingfield")),
             CreditsSection.GetNew().SetTItle("Art").SetCreditList(CreditList.GetNew().Add("Erik Meredith")),
             CreditsSection.GetNew().SetTItle("Music").SetCreditList(CreditList.GetNew().Add("Tanner Moore")),
             CreditsSection.GetNew().SetTItle("SFX").SetCreditList(CreditList.GetNew().Add("Tanner Moore")),
-            CreditsSection.GetNew().SetTItle("Level Design").SetCreditList(CreditList.GetNew().Add("Logan Moore", "Erik Meredith", "Jake Fisher"))
+            CreditsSection.GetNew().SetTItle("Level Design").SetCreditList(CreditList.GetNew().Add("Logan Moore", "Erik Meredith", "Jake Fisher")),
+            CreditsSection.GetNew().SetTItle("Special Thanks").SetCreditList(CreditList.GetNew().Add("You!", "If you are reading", "this, this is it.", "No cutscenes...", "Sorry...", "", "...Ramshackle"))
         };
 
         void Start() {
