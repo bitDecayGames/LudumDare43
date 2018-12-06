@@ -100,9 +100,6 @@ public class StatsAggregator : MonoBehaviour
             TimePlayedSeconds = Time.time,
         };
 	
-        
-        Debug.Log("Stats: ");
-        Debug.Log(JsonUtility.ToJson(statsObject));
         GetComponent<RestApiAccessor>().SendStats(statsObject);
     }
 }
