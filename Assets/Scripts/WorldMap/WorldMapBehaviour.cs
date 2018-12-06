@@ -25,9 +25,9 @@ namespace WorldMap {
         public void Back() {
             FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
             if (Fader != null) Fader.Fade(2f, () => {
-                SceneManager.LoadScene("TitleSceneCopy");
+                SceneManager.LoadScene("TitleScene");
             });
-            else SceneManager.LoadScene("TitleSceneCopy");
+            else SceneManager.LoadScene("TitleScene");
         }
 
         public void Clear() {

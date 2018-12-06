@@ -21,7 +21,7 @@ namespace Utils {
             var camPos = cam.transform.position;
             camPos.z = 0;
             transform.position = camPos;
-            transform.localScale = new Vector3(1, 1, 0) * 10000000f + new Vector3(0, 0, 1);
+            transform.localScale = new Vector3(1, 1, 0) * 10000f + new Vector3(0, 0, 1);
             started = true;
         }
         
