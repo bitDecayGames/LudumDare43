@@ -2,67 +2,44 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UserStats;
 
 [Serializable]
 public class StatsAggregator : MonoBehaviour
 {
-    private static StatsAggregator instance;
-	
-    public static StatsAggregator Instance
-    {
-        get
-        {
-            if (instance == null)
-            {
-                GameObject gameObject = new GameObject();
-                instance = gameObject.AddComponent<StatsAggregator>();
-                gameObject.name = "StatsAggregator";
-            }
+    private RestApiAccessor _rest;
+    private Transform _playerOrCamera;
+    
+    private HashSet<string> KeySet = new HashSet<string>();
 
-            return instance;
-        }
+	
+    void Start() {
+        _rest = gameObject.AddComponent<RestApiAccessor>();
+        var player = GameObject.FindWithTag("Player");
+        if (player == null) {
+            var cam = Camera.main;
+            if (cam == null) throw new Exception("Couldn't find player OR camera for stat tracking");
+            _playerOrCamera = cam.transform;
+        } else _playerOrCamera = player.transform;
+
+        Save();
     }
 
-    private SceneStatsData _sceneStatsData;
-	
-    public HashSet<string> KeySet = new HashSet<string>();
-    public string SessionId;
-    public bool GameCompleted;
-    public List<LevelSummaryObject> LevelSummaryObjects = new List<LevelSummaryObject>();
-	
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-
-        gameObject.AddComponent<RestApiAccessor>();
-        SessionId = Guid.NewGuid().ToString();
-
-        var summaryObject = new LevelSummaryObject();
-        summaryObject.BonusAquired = true;
-        summaryObject.LevelName = "1";
-        summaryObject.StarCount = 2;
-        
-        LevelSummaryObjects.Add(summaryObject);
-        
-        DontDestroyOnLoad(gameObject);
+    private void OnDestroy() {
+         Save();
     }
 
-    private SceneStatsData GetSceneStatsData()
-    {
-        if (_sceneStatsData != null)
-        {
-            return _sceneStatsData;
-        }
-        _sceneStatsData = SceneStatsData.GetLocalInstance();
-        return _sceneStatsData;
+    private void OnApplicationQuit() {
+        Save();
     }
-	
+
+    private void OnApplicationFocus(bool hasFocus) {
+        Save();
+    }
+
     private void Update() {
-		
+        ScoreStats.TimePlayedTracker += Time.deltaTime;
         foreach (char c in Input.inputString)
         {
             try
@@ -80,26 +57,29 @@ public class StatsAggregator : MonoBehaviour
         }
     }
 	
-    private void OnApplicationQuit()
-    {
-        StatsObject statsObject = new StatsObject
-        {
-            GameCompleted = GameCompleted,
-            Id = SessionId,
-            KeysPressed = KeySet.ToArray(),
-            LevelWhenQuit = GetSceneStatsData().Level,
-            LevelsCleared = ScoreStats.GetLevelScores().ConvertAll(score => {
-                var tannersScore = new LevelSummaryObject();
-                tannersScore.StarCount = score.stars;
-                tannersScore.BonusAquired = score.bonus;
-                tannersScore.LevelName = score.name;
-                return tannersScore;
-            }).ToArray(),
-            LocationOnQuit = GetSceneStatsData().Player.transform.position,
-            Platform = Application.platform.ToString(),
-            TimePlayedSeconds = Time.time,
-        };
-	
-        GetComponent<RestApiAccessor>().SendStats(statsObject);
+    private void Save() {
+        if (gameObject != null && gameObject.activeSelf && gameObject.activeInHierarchy) {
+            ScoreStats.TimePlayed += ScoreStats.TimePlayedTracker;
+            ScoreStats.TimePlayedTracker = 0;
+            StatsObject statsObject = new StatsObject {
+                GameCompleted = ScoreStats.GameCompleted,
+                Id = ScoreStats.SessionID,
+                KeysPressed = KeySet.ToArray(),
+                LevelWhenQuit = SceneManager.GetActiveScene().name,
+                LevelsCleared = ScoreStats.GetLevelScores()
+                    .ConvertAll(score => {
+                        var tannersScore = new LevelSummaryObject();
+                        tannersScore.StarCount = score.stars;
+                        tannersScore.BonusAquired = score.bonus;
+                        tannersScore.LevelName = score.name;
+                        return tannersScore;
+                    })
+                    .ToArray(),
+                LocationOnQuit = _playerOrCamera != null ? _playerOrCamera.position : new Vector3(0, 0, 0),
+                Platform = Application.platform.ToString(),
+                TimePlayedSeconds = ScoreStats.TimePlayed
+            };
+            _rest.SendStats(statsObject);
+        }
     }
 }

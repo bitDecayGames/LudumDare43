@@ -6,7 +6,8 @@ namespace UserStats {
     public static class ScoreStats {
 
         public static void ClearStats() {
-            PlayerPrefs.SetString("level_scores", "");
+            PlayerPrefs.SetString("level_scores", null);
+            _levelScores.Clear();
             PlayerPrefs.SetInt("total_score", 0);
             PlayerPrefs.SetInt("total_stars", 0);
             PlayerPrefs.SetInt("total_bonuses", 0);
@@ -63,6 +64,38 @@ namespace UserStats {
             PlayerPrefs.SetInt("total_score", scoreTally);
             PlayerPrefs.SetInt("total_stars", starTally);
             PlayerPrefs.SetInt("total_bonuses", bonusTally);
+        }
+
+        public static string SessionID {
+            get {
+                var sessionId = PlayerPrefs.GetString("session_id", null);
+                if (string.IsNullOrEmpty(sessionId)) {
+                    sessionId = Guid.NewGuid().ToString();
+                    PlayerPrefs.SetString("session_id", sessionId);
+                }
+
+                return sessionId;
+            }
+        }
+
+        public static float TimePlayed {
+            get {
+                return PlayerPrefs.GetFloat("time_played", 0);
+            }
+            set {
+                PlayerPrefs.SetFloat("time_played", value);
+            }
+        }
+
+        public static float TimePlayedTracker = 0f;
+
+        public static bool GameCompleted {
+            get {
+                return PlayerPrefs.GetInt("game_completed", 0) == 1;
+            }
+            set {
+                PlayerPrefs.SetInt("game_completed", value ? 1 : 0);
+            }
         }
 
         public class LevelScore {

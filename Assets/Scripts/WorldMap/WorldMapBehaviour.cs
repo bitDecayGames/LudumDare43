@@ -1,3 +1,4 @@
+using System.Collections;
 using Scoring;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,15 @@ namespace WorldMap {
 
         public void Clear() {
             ScoreStats.ClearStats();
+            StartCoroutine(WaitThenRefreshScene());
+        }
+
+        private IEnumerator WaitThenRefreshScene() {
+            yield return new WaitForSeconds(0.25f);
+            if (Fader != null) Fader.Fade(1f, () => {
+                SceneManager.LoadScene("WorldMap");
+            });
+            else SceneManager.LoadScene("WorldMap");
         }
     }
 }
