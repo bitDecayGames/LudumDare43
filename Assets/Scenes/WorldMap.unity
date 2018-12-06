@@ -909,12 +909,12 @@ Prefab:
     - target: {fileID: 114350191389611860, guid: f49477c6e3f6a416a8ecdc4536aa9d19,
         type: 2}
       propertyPath: LevelName
-      value: Prod_Level3
+      value: Level2
       objectReference: {fileID: 0}
     - target: {fileID: 114350191389611860, guid: f49477c6e3f6a416a8ecdc4536aa9d19,
         type: 2}
       propertyPath: PreviousLevelName
-      value: Prod_Level1
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49477c6e3f6a416a8ecdc4536aa9d19, type: 2}
@@ -980,12 +980,12 @@ Prefab:
     - target: {fileID: 114350191389611860, guid: f49477c6e3f6a416a8ecdc4536aa9d19,
         type: 2}
       propertyPath: LevelName
-      value: Prod_Level4
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 114350191389611860, guid: f49477c6e3f6a416a8ecdc4536aa9d19,
         type: 2}
       propertyPath: PreviousLevelName
-      value: Prod_Level3
+      value: Level2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f49477c6e3f6a416a8ecdc4536aa9d19, type: 2}
@@ -1109,7 +1109,7 @@ Prefab:
     - target: {fileID: 114350191389611860, guid: f49477c6e3f6a416a8ecdc4536aa9d19,
         type: 2}
       propertyPath: LevelName
-      value: Prod_Level1
+      value: Level1
       objectReference: {fileID: 0}
     - target: {fileID: 1011035510944824, guid: f49477c6e3f6a416a8ecdc4536aa9d19, type: 2}
       propertyPath: m_Name

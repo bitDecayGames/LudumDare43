@@ -259,6 +259,48 @@ PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000268, guid: 137f334ed086942448d9971abf8c7a6d,
     type: 3}
   m_PrefabInternal: {fileID: 432652354}
+--- !u!1001 &353183935
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -0.028813435
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4672024711735012, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ba7e6a57f7e4f48eb9c447dc777f57b8, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!60 &379412012 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 6000250, guid: 137f334ed086942448d9971abf8c7a6d,
