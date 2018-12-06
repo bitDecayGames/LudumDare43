@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4677121826370588}
   - component: {fileID: 114280302154112874}
   - component: {fileID: 114328355940816968}
+  - component: {fileID: 114575232725808402}
   m_Layer: 0
   m_Name: PoisonedCrateTooltipHolder
   m_TagString: Untagged
@@ -66,7 +67,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1404247601103942}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.44, y: 1.78, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -128,6 +129,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Rotation: 0
+--- !u!114 &114575232725808402
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1404247601103942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c618c2a23145199bc41de78fd98a21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LocalPosition: {x: -0.1, y: 0.1, z: 0}
 --- !u!114 &114665382169060064
 MonoBehaviour:
   m_ObjectHideFlags: 1
