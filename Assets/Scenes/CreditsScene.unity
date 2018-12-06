@@ -410,32 +410,6 @@ Prefab:
       propertyPath: Fader
       value: 
       objectReference: {fileID: 584764490}
-    - target: {fileID: 224547824622287454, guid: ce13f816c57b9484ea85442fb208db4d,
-        type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114991613000787020, guid: ce13f816c57b9484ea85442fb208db4d,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114991613000787020, guid: ce13f816c57b9484ea85442fb208db4d,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: d0fcb8d36fd2d4d218ea6b7c550530f1,
-        type: 3}
-    - target: {fileID: 114991613000787020, guid: ce13f816c57b9484ea85442fb208db4d,
-        type: 2}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 224547824622287454, guid: ce13f816c57b9484ea85442fb208db4d,
-        type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.00005119874
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce13f816c57b9484ea85442fb208db4d, type: 2}
   m_IsPrefabAsset: 0

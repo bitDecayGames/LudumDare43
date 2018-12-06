@@ -21,7 +21,7 @@ namespace Utils {
         void Update() {
             if (scroller != null && !atBottom && ready) {
                 var offset = scroller.normalizedPosition;
-                offset.y -= Speed;
+                offset.y -= Speed * Time.deltaTime;
                 scroller.normalizedPosition = offset;
                 if (offset.y <= 0) {
                     atBottom = true;
