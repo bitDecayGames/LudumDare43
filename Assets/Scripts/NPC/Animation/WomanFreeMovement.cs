@@ -8,93 +8,23 @@ public partial class WomanAnimationController
     {
         if (IsMovingLeft())
         {
-            if (IsAboveCenterPointOnMap())
-            {
-                _animationToPlay = "left_up";
-            }
-            else
-            {
-                _animationToPlay = "left_down";
-            }
+            LastDirectionWasLeft = true;
+            _animationToPlay = "left_up";
         }
         else if (IsMovingRight())
         {
-            if (IsAboveCenterPointOnMap())
-            {
-                _animationToPlay = "right_up";
-            }
-            else
-            {
-                _animationToPlay = "right_down";
-            }
-        }
-        else if (IsMovingUp())
-        {
-            if (IsToTheRightOfCenterPointOnMap())
-            {
-                _animationToPlay = "up_right";
-            }
-            else
-            {
-                _animationToPlay = "up_left";
-            }
-        }
-        else if (IsMovingDown())
-        {
-            if (IsToTheRightOfCenterPointOnMap())
-            {
-                _animationToPlay = "down_right";
-            }
-            else
-            {
-                _animationToPlay = "down_left";
-            }
+            LastDirectionWasLeft = false;
+            _animationToPlay = "right_up";
         }
         else
         {
-            if (Facing.IsFacingLeft())
+            if (LastDirectionWasLeft)
             {
-                if (IsAboveCenterPointOnMap())
-                {
-                    _animationToPlay = "still_left_up";
-                }
-                else
-                {
-                    _animationToPlay = "still_left_down";
-                }
+                _animationToPlay = "still_left_up";
             } 
-            else if (Facing.IsFacingRight())
+            else
             {
-                if (IsAboveCenterPointOnMap())
-                {
-                    _animationToPlay = "still_right_up";
-                }
-                else
-                {
-                    _animationToPlay = "still_right_down";
-                }
-            }
-            else if (Facing.IsFacingUp())
-            {
-                if (IsToTheRightOfCenterPointOnMap())
-                {
-                    _animationToPlay = "still_up_right";
-                }
-                else
-                {
-                    _animationToPlay = "still_up_left";
-                }
-            }
-            else if (Facing.IsFacingDown())
-            {
-                if (IsToTheRightOfCenterPointOnMap())
-                {
-                    _animationToPlay = "still_down_right";
-                }
-                else
-                {
-                    _animationToPlay = "still_down_left";
-                }
+                _animationToPlay = "still_right_up";
             }
         }
         Animator.Play(_animationToPlay);
