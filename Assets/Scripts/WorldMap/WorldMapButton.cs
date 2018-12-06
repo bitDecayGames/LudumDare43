@@ -20,7 +20,11 @@ namespace WorldMap {
         }
 
         void Update() {
-            if (JustClicked()) OnClick.Invoke(this);
+            if (JustClicked())
+            {
+                FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.MenuSelect2);
+                OnClick.Invoke(this);
+            }
             if (HoverJustEnter()) OnHoverEnter.Invoke(this);
             if (HoverJustExit()) OnHoverExit.Invoke(this);
         }
