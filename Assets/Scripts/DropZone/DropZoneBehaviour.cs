@@ -68,10 +68,16 @@ namespace DropZone {
 
 				else if (Input.GetKeyDown(KeyCode.Q))
 				{
-					FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceCounterClockwise);
+					if (crane.HasPiece)
+					{
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceCounterClockwise);
+					}
 					RotateCargo(90);
 				} if (Input.GetKeyDown(KeyCode.E)) {
-					FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceClockwise);
+					if (crane.HasPiece)
+					{
+						FMODSoundEffectsPlayer.GetLocalReferenceInScene().PlaySoundEffect(Sfx.AmbientRotatePieceClockwise);
+					}
 					RotateCargo(-90);
 				}
 			}
