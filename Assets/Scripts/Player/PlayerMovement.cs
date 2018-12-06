@@ -36,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (disable)
+        {
+            return;
+        }
+        
         var handPos = Facing.DirectionVector;
 		
         handPos.Scale(new Vector2(hitbox.radius, hitbox.radius));
@@ -63,6 +68,13 @@ public class PlayerMovement : MonoBehaviour
     {
         if (disable)
         {
+            if (_playingSlideSound)
+            {
+                _slidingSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+                _playingSlideSound = false;
+            }
+
+            body.velocity = Vector2.zero;
             return;
         }
         
@@ -155,6 +167,7 @@ public class PlayerMovement : MonoBehaviour
     }
     
     void OnDestroy() {
-        // TODO: MW the player has been squished, it should spawn a player animation for squishyness
+        _slidingSound.stop(FMOD.Studio.STOP_MODE.IMMEDIATE);
+        _playingSlideSound = false;
     }
 }

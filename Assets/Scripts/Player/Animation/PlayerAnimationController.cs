@@ -57,6 +57,8 @@ public partial class PlayerAnimationController : MonoBehaviour
                 }
             }
 
+            Animator.Play(_animationToPlay);
+            
             return;
         }
         
